@@ -391,11 +391,25 @@ private command EnsureMergMarkdown
 end EnsureMergMarkdown
 
 command OutputUpdatesHtml
-   local tHtml
-   EnsureMergMarkdown
-   put mergMarkdownToXHTML(sMarkdownText["updates"] \
-         ,true,true,true,true,false,true,true,true) into tHtml
+   local tCmark, tPath, tHtml
+   --EnsureMergMarkdown
+   --put mergMarkdownToXHTML(sMarkdownText["updates"] \
+   --      ,true,true,true,true,false,true,true,true) into tHtml
    
+   get shell("which cmark")
+   if it is not empty then
+      put line 1 of it into tCmark
+   else
+      put "/opt/homebrew/bin/cmark" into tCmark
+      get shell(tCmark & " --version")
+      if the result is not empty then
+         builderLog "warning", merge("cmark not found, markdown to HTML conversion may fail: [[the result]]")
+      end if
+   end if
+
+   put OutputGetUpdatesFilename("md") into tPath
+   put shell(merge("[[tCmark]] -t html [[tPath]]")) into tHtml
+
    // Shrink all headers by 2
    MakeHeadersSmaller tHTML, 2
    
@@ -406,7 +420,6 @@ command OutputUpdatesHtml
    // Add extra blank paragraphs between paragraphs
    RespectBlankLinesBetween tHTML, "p", "p"
    
-   local tPath
    put OutputGetUpdatesFilename("html") into tPath
    builderLog "report", merge("Writing [[tPath]]")
    builderFileSetUTF8Contents tPath, tHtml
