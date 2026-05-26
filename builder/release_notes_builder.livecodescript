@@ -303,6 +303,7 @@ private command OutputNotesPdf
    put "--footer-center [page] --footer-font-size 8 --footer-spacing 5 " after tArgs
    put "--margin-top 30 --margin-bottom 20 --margin-left 20 --margin-right 20 " after tArgs
    put "--enable-internal-links --encoding UTF-8 " after tArgs
+   put "--enable-local-file-access --no-stop-slow-scripts " after tArgs
    
    local tExitCode
    builderLog "report", merge("Generating [[tPdfPath]] with [[tCommand]]")
