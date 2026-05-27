@@ -141,7 +141,7 @@ buildtool_command = $(HYPERXTALK) -ui $(BUILDTOOL_STACK) \
 	--build $(BUILD_STABILITY) \
 	--engine-dir ${engine_dir} --output-dir ${docs_build_dir} --work-dir ${work_dir}
 
-build-docs: dist-docs-api dist-docs-guide
+build-docs: build-docs-api build-docs-guide
 
 build-docs-api:
 	mkdir -p $(docs_build_dir)
@@ -158,4 +158,5 @@ build-notes:
 build-docs-guide:
 	WKHTMLTOPDF=$(WKHTMLTOPDF) \
 	$(buildtool_command) --platform $(buildtool_platform) \
-		--stage guide --warn-as-error
+		--stage guide --warn-as-error \
+		--built-docs-dir $(docs_build_dir)

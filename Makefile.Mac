@@ -216,11 +216,20 @@ endif
 	@echo ""
 	@# Clearing existing documentation to force a rebuild
 	@rm -rf ide/Documentation/html_viewer/resources/data/*
-	@echo "Launching HyperXTalk from mac-bin to build docs"
-	@echo "Be sure to close HyperXTalk before packaging"
-	@open mac-bin/HyperXTalk.app
+	@echo "Launching HyperXTalk from mac-bin will also build docs"
+	@echo "Be sure to close HyperXTalk before packaging if using this method"
 	@echo ""
-	@echo "=== Lastly: make package-mac-bin ==="
+	@echo "=== Next:    make docs-mac        ==="
+	@echo "=== Finally: make package-mac-bin ==="
+
+docs-mac:
+	@echo "=== Building documentation files ==="
+	@echo ""
+	$(MAKE) build-docs-api
+	@echo ""
+	@echo "=== docs-mac: done. ==="
+	@echo ""
+	@echo "=== Next: make package-mac-bin ==="
 
 check-mac:
 ifneq ($(TRAVIS),undefined)

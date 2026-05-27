@@ -62,6 +62,7 @@ private command OutputGuide
    OutputGuideJson
    OutputGuideHtml
    OutputGuidePdf
+   MoveOutputs
 end OutputGuide
 
 private function OutputEscape pMarkdown, pEscapeHtml
@@ -148,6 +149,24 @@ private command OutputGuidePdf
       throw merge("Failed to run [[tCommand]]: exit code [[tExitCode]]")
    end if
 end OutputGuidePdf
+
+-- Relocate output files from repo root to the builder output folder.
+-- The original location is necessary to generate the PDF correctly, 
+-- as wkhtmltopdf needs to be able to access the HTML file and its 
+-- dependencies via a file path.
+private command MoveOutputs
+   local tSourcePath, tOutpath, tExitCode
+   put OutputGetGuideFilename("*") into tSourcePath
+   put builderOutputFolder() into tOutpath
+   
+   builderLog "report", merge("Moving [[tSourcePath]] to [[tOutpath]]")
+   get shell(merge("mv -f [[tSourcePath]] [[tOutpath]]"))
+   put the result into tExitCode
+
+   if tExitCode is not 0 then
+      builderLog "error", merge("Failed to move files: exit code [[tExitCode]]")
+   end if
+end MoveOutputs
 
 ----------------------------------------------------------------
 -- Base file sections
