@@ -2181,7 +2181,7 @@ To open a document with the application it is associated with use the
 To open a URL in the default web browser, use the **launch URL**
 command.
 
-	launch URL "<http://www.HyperXTalk.org/>"
+	launch URL "<http://www.HyperXTalk.com/>"
 
 For more information on launching URLs and details on how to render web
 pages within your stack, see the Transferring Information guide.
