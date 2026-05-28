@@ -1254,7 +1254,7 @@ on revMenubarMenuButtonClicked pWhich
          //         break
       case "Documentation"
       case "Dictionary"
-         revIDEDocumentationLoad "API", "LiveCode Script"
+         revIDEDocumentationLoad "API", "Script"
          break
          //      case "Test"
          //         revIDEDeployAction
@@ -3363,7 +3363,7 @@ on revMenubarHelpMenuPick pWhich
    switch tPick
       case "Documentation"
       case "Dictionary"
-         revIDEDocumentationLoad "API", "LiveCode Script"
+         revIDEDocumentationLoad "API", "Script"
          break
          //      case "Start Center"
          //      case "Welcome"

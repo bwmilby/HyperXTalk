@@ -15,7 +15,7 @@
  along with LiveCode.  If not see <http://www.gnu.org/licenses/>.  */
 
 /**
-This library provides license entitlement related operations for LiveCode Builder (commercial only).
+This library provides license entitlement related operations for Builder (commercial only).
 
 Tags: License
 */

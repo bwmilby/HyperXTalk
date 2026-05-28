@@ -152,7 +152,7 @@ public handler EvalJavaScriptWithArguments(in pScript as String, in pArgs as Lis
 end handler
 
 /**
-Summary:    Wrap a LiveCode Builder handler within a JavaScript function, suitable for passing as an event handler.
+Summary:    Wrap a Builder handler within a JavaScript function, suitable for passing as an event handler.
 
 Parameters:
 pHandler: The handler to wrap

@@ -1312,7 +1312,7 @@ on systemAppearanceChanged pMode, pWindowColor, pTextColor
    --   set the backgroundColor of this card to tBgColor
    set the foregroundColor of this stack to pTextColor
    
-   -- LCB widgets sit outside the LiveCode Script message hierarchy and cannot
+   -- LCB widgets sit outside the Script message hierarchy and cannot
    -- receive SystemAppearanceChanged themselves.  Drive the appearance change
    -- by updating the foregroundColor of every SVG path widget in the palette;
    -- their OnPaint handler uses "my foreground paint", so they repaint

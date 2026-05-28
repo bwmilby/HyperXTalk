@@ -398,12 +398,12 @@ component Resources
 
 	into [[ToolsFolder]]/Documentation/html_viewer/resources/data place
 		rfolder "ide:Documentation/html_viewer/resources/data/api"
-		rfolder "ide:Documentation/html_viewer/resources/data/api_livecode_script"
-		rfolder "ide:Documentation/html_viewer/resources/data/api_livecode_builder"				
+		rfolder "ide:Documentation/html_viewer/resources/data/api_script"
+		rfolder "ide:Documentation/html_viewer/resources/data/api_builder"				
 		rfolder "ide:Documentation/html_viewer/resources/data/guide"
 	
 	into [[ToolsFolder]]/Documentation/pdf place
-		file "repo:LiveCodeUserGuide-[[EscapedVersionTag]].pdf" as "LiveCode User Guide.pdf"
+		file "repo:HyperXTalkUserGuide-[[EscapedVersionTag]].pdf" as "HyperXTalk User Guide.pdf"
 
 component Extensions
 	into [[ToolsFolder]]/Extensions place

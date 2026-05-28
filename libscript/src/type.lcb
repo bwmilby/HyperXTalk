@@ -1,5 +1,5 @@
 /**
-  This library consists of the general operations on types provided by the standard library of LiveCode Builder.
+  This library consists of the general operations on types provided by the standard library of Builder.
 */
 
 module com.livecode.type

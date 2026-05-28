@@ -1,5 +1,5 @@
 /**
-This library consists of the operations on codeunits included in the standard library of LiveCode Builder.
+This library consists of the operations on codeunits included in the standard library of Builder.
 */
 
 module com.livecode.codeunit

@@ -32,7 +32,7 @@ along with LiveCode.  If not see <http://www.gnu.org/licenses/>.  */
  * 1. The command line arguments.  These are the arguments passed to
  *    the command line program, and correspond roughly to elements 1+
  *    of the standard C argv[] array.  Normally, wrappers (e.g. the
- *    engine or LiveCode builder VM) should consume and remove any
+ *    engine or builder VM) should consume and remove any
  *    wrapper-specific arguments.
  *
  * 2. The command name.  This corresponds to element 0 of the standard

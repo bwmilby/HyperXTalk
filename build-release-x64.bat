@@ -973,7 +973,7 @@ if exist "%BROWSER_LCB%" (
 
 echo.
 :: ----------------------------------------------------------
-:: Build lcs-extensions (LiveCode Script library extensions).
+:: Build lcs-extensions (Script library extensions).
 ::
 :: These are .livecodescript files (oauth2, getopt, mime, etc.)
 :: packaged via server-community.exe + extension-utils.lc in
