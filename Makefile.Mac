@@ -5,6 +5,10 @@
 # Prettifying output for CI builds
 XCODEBUILD_FILTER ?=
 
+all-mac:
+	$(MAKE) config-mac
+	$(MAKE) compile-mac
+
 # Build all macOS arm64 prebuilt dependencies in one pass.
 # Replaces the manual ritual previously documented in BUILD1.md.
 # Requires Homebrew prereqs: openssl@3, libpq, mysql-client, pixman.
@@ -47,6 +51,13 @@ endif
 ifneq ($(TRAVIS),undefined)
 	@echo "travis_fold:end:config"
 endif
+	@echo ""
+	@echo "=== config-mac: done. ==="
+	@if [ -f "prebuilt/lib/mac/libmysql.a" ]; then \
+	   echo "=== Next: make compile-mac ==="; \
+	else \
+	   echo "=== Next: make prebuilt-mac ==="; \
+	fi
 
 compile-mac:
 ifneq ($(TRAVIS),undefined)
@@ -200,6 +211,25 @@ endif
 	        "mac-bin/$$f" || true; \
 	  fi; \
 	done
+	@echo ""
+	@echo "=== compile-mac: done. ==="
+	@echo ""
+	@# Clearing existing documentation to force a rebuild
+	@rm -rf ide/Documentation/html_viewer/resources/data/*
+	@echo "Launching HyperXTalk from mac-bin will also build docs"
+	@echo "Be sure to close HyperXTalk before packaging if using this method"
+	@echo ""
+	@echo "=== Next:    make docs-mac        ==="
+	@echo "=== Finally: make package-mac-bin ==="
+
+docs-mac:
+	@echo "=== Building documentation files ==="
+	@echo ""
+	$(MAKE) build-docs-api
+	@echo ""
+	@echo "=== docs-mac: done. ==="
+	@echo ""
+	@echo "=== Next: make package-mac-bin ==="
 
 check-mac:
 ifneq ($(TRAVIS),undefined)
@@ -212,10 +242,6 @@ ifneq ($(TRAVIS),undefined)
 	@echo "travis_fold:end:testcpp"
 endif
 	$(MAKE) check-common-mac
-
-all-mac:
-	$(MAKE) config-mac
-	$(MAKE) compile-mac
 
 ################################################################
 # Mac packaging (self-contained bundle, no installer required)
@@ -439,19 +465,14 @@ package-mac-bin:
 	@mkdir -p "$(MACBIN_TOOLS)/Plugins"
 	@mkdir -p "$(MACBIN_TOOLS)/Externals/Database Drivers"
 	@mkdir -p "$(MACBIN_TOOLS)/Documentation"
-	@[ -d "ide/Documentation" ] && cp -R "ide/Documentation/." "$(MACBIN_TOOLS)/Documentation/" || true
-	@# docs/dictionary and docs/glossary are required by revIDEGenerateDistributedAPI
-	@# on installed builds to rebuild script.js into the user documentation cache.
-	@# Without them the function exits early and the in-app HTML doc viewer shows nothing.
-	@mkdir -p "$(MACBIN_TOOLS)/docs"
-	@[ -d "docs/dictionary" ] && cp -R "docs/dictionary" "$(MACBIN_TOOLS)/docs/" || true
-	@[ -d "docs/glossary"  ] && cp -R "docs/glossary"  "$(MACBIN_TOOLS)/docs/" || true
 	@mkdir -p "$(MACBIN_RT_ARM64)/Support"
 	@mkdir -p "$(MACBIN_RT_ARM64)/Externals/Database Drivers"
 	@mkdir -p "$(MACBIN_TOOLS)/Extensions"
 	@mkdir -p "$(MACBIN_TOOLS)/Toolchain"
 	@mkdir -p "$(MACBIN_SUPPORT)"
+	@# ----------------------------------------------------------------
 	@# Sign all loose executables in mac-bin with hardened runtime
+	@# ----------------------------------------------------------------
 	@for f in server-community lc-compile lc-run lc-compile-ffi-java installer-stub; do \
 	  [ -f "$(MACBIN_BIN)/$$f" ] && \
 	    codesign --force --sign "$(CODESIGN_IDENTITY)" \
@@ -466,7 +487,9 @@ package-mac-bin:
 	        --entitlements HyperXTalk.entitlements \
 	        "$(MACBIN_BIN)/$$f" || true; \
 	done
+	@# ----------------------------------------------------------------
 	@# Sign all loose bundles in mac-bin with hardened runtime.
+	@# ----------------------------------------------------------------
 	@# Do NOT use --deep: on macOS 26+ --deep re-signs nested executables
 	@# with --options runtime and produces page-hash mismatches (SIGKILL).
 	@for b in revbrowser revxml revspeech revzip revdb revpdfprinter dbmysql dbodbc dbpostgresql dbsqlite; do \
@@ -619,6 +642,11 @@ package-mac-bin:
 	@[ -f "ide/Open Source Licenses.txt" ] && \
 	    cp "ide/Open Source Licenses.txt" "$(MACBIN_SUPPORT)/" || true
 	@# ----------------------------------------------------------------
+	@# Documentation: Dictionary and help files
+	@# ----------------------------------------------------------------
+	@[ -d "ide/Documentation" ] && \
+	    cp -R "ide/Documentation/." "$(MACBIN_TOOLS)/Documentation/" || true
+	@# ----------------------------------------------------------------
 	@# Quick Look extension: build and embed
 	@# ----------------------------------------------------------------
 	@echo "Building HyperXTalkQL Quick Look extension..."
@@ -728,12 +756,14 @@ package-mac-bin:
 	    --options runtime \
 	    --entitlements HyperXTalk.entitlements \
 	    "$(MACBIN_BUNDLE)"
-	@echo "=== Package complete: $(MACBIN_BUNDLE) ==="
+	@# -------------------------------------------------------------------
 	@# Re-register the app bundle so the Quick Look extension is picked up
 	@# immediately without needing to relaunch or manually run lsregister.
+	@# -------------------------------------------------------------------
 	@/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister \
 	    -f "$(MACBIN_BUNDLE)" 2>/dev/null || true
 	@pluginkit -a "$(MACBIN_BUNDLE)/Contents/PlugIns/HyperXTalkQL.appex" 2>/dev/null || true
 	@qlmanage -r 2>/dev/null || true
 	@echo "Quick Look extension registered."
-
+	@echo ""
+	@echo "=== Package complete: $(MACBIN_BUNDLE) ==="

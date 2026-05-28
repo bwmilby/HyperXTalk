@@ -231,7 +231,7 @@ command docsBuilderGenerateDistributedAPI pEdition
    put "community" into tComponents[tIndex]["metadata"]["edition"]
 
    local tLCSDictionaryA
-   put docsBuilderParseDictionary("Script", "", tComponents, tAdditionalFolders, false) into tLCSDictionaryA
+   put docsBuilderParseDictionary("LiveCode Script", "LiveCode", tComponents, tAdditionalFolders, false) into tLCSDictionaryA
 
    if tLCSDictionaryA is empty then
       logError "Couldn't parse script dictionary data for" && pEdition
@@ -239,7 +239,7 @@ command docsBuilderGenerateDistributedAPI pEdition
    end if
 
    put "script" into tLCSDictionaryA["filename"]
-   put "script" into tLCSDictionaryA["api"]
+   put "livecode_script" into tLCSDictionaryA["api"]
    addToList tLCSDictionaryA, tLibrariesA
 
    local tModuleList, tModularA, tModularCount, tBlocksA, tParsedA
@@ -275,12 +275,12 @@ command docsBuilderGenerateDistributedAPI pEdition
       exit docsBuilderGenerateDistributedAPI
    end if
 
-   put "Builder" into tLCBDictionaryA["display name"]
-   put revDocsModifyForUrl("Builder") into tLCBDictionaryA["name"]
-   put "xTalk" into tLCBDictionaryA["author"]
+   put "LiveCode Builder" into tLCBDictionaryA["display name"]
+   put revDocsModifyForUrl("LiveCode Builder") into tLCBDictionaryA["name"]
+   put "HyperXTalk" into tLCBDictionaryA["author"]
    put "dictionary" into tLCBDictionaryA["type"]
    put "builder" into tLCBDictionaryA["filename"]
-   put "builder" into tLCBDictionaryA["api"]
+   put "livecode_builder" into tLCBDictionaryA["api"]
    addToList tLCBDictionaryA, tLibrariesA
 
    local tDatagridA, tDGDocs
@@ -295,7 +295,7 @@ command docsBuilderGenerateDistributedAPI pEdition
 
    put "dictionary" into tDataGridA["type"]
    put "dg" into tDataGridA["filename"]
-   put "script" into tDataGridA["api"]
+   put "livecode_script" into tDataGridA["api"]
 
    addToList tDataGridA, tLibrariesA
 
@@ -310,14 +310,14 @@ command docsBuilderGenerateDistributedAPI pEdition
    local tFile
    repeat for each line tFile in tFiles
       local tLibA
-      put revDocsParseDocFileToLibraryArray(tExtractedDocsFolder & slash & tFile, item -2 of tFile, "") into tLibA
+      put revDocsParseDocFileToLibraryArray(tExtractedDocsFolder & slash & tFile, item -2 of tFile, "LiveCode") into tLibA
 
       if tLibA is empty then
          builderLog "error", "Couldn't parse" && item -2 of tFile && "dictionary data for" && pEdition
          exit docsBuilderGenerateDistributedAPI
       end if
       put tLibA["name"] into tLibA["filename"]
-      put "script" into tLibA["api"]
+      put "livecode_script" into tLibA["api"]
 
       addToList tLibA, tLibrariesA
    end repeat
@@ -368,7 +368,7 @@ end docsBuilderPopulateDatabase
 private command docsBuilderGenerateZip pEdition, pVersion
    -- Ensure edition string is in titlecase
    -- put editionTitleCase(pEdition) into pEdition
-   put "community" into pEdition
+   put "Community" into pEdition
    put replaceText(pVersion, "[-,\.]", "_") into pVersion
 
    local tInputs, tZipPath
@@ -380,7 +380,7 @@ private command docsBuilderGenerateZip pEdition, pVersion
 
    -- Figure out a filename for the docs archive
    put builderOutputFolder() & slash & \
-         merge("xTalk[[pEdition]]Docs-[[pVersion]].zip") into tZipPath
+         merge("HyperXTalk[[pEdition]]Docs-[[pVersion]].zip") into tZipPath
 
    -- Use the "zip" command to store the data
    local tDocItem, tCmd, tCmdOutput
