@@ -24,7 +24,7 @@ From the top directory of the git repository working tree, run `make check`.  Th
 
 ### Running tests on Windows
 
-Open the `livecode.sln` solution file in Visual Studio, and build the "check" project.  This will run the C++-based tests.
+Open the `hyperxtalk.sln` solution file in Visual Studio, and build the "check" project.  This will run the C++-based tests.
 
 There's not currently a convenient way to run the Script and Builder tests on Windows.
 
