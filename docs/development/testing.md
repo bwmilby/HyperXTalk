@@ -24,19 +24,6 @@ Open the `HyperXTalk.sln` solution file in Visual Studio, and build the "check" 
 
 There's not currently a convenient way to run the Script and Builder tests on Windows.
 
-### Running tests on Emscripten
-
-To run the C++ tests, run `make check-emscripten` from the top of the HyperXTalk git repository working tree.
-
-To run the Script tests:
-
-1) Run `tools/emscripten_testgen.sh`.  This generates an HTML5 standalone in the `_tests/emscripten` directory.
-
-2) Open `_tests/emscripten/tests.html` in a web browser.
-
-The tests are run automatically as the web page loads, and the TAP log
-output is shown in the browser.
-
 ## Writing Tests
 
 If at all possible, please add tests whenever make a change to HyperXTalk -- whether it's a feature added, a bug fixed, or a behaviour tweaked.
@@ -82,7 +69,6 @@ particular `pRequirement`. The following requirements are implemented:
    - `ui` - the test is running in a graphical environment (as opposed
    to the command line)
    - `desktop` - the test is running on a desktop computer
-   - `mobile` - the test is running on a mobile device
    - `external` - an external module can be loaded/used. Options are a
    comma delimited list of external module names
    - `database` - an database module can be loaded/used. Options are a

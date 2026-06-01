@@ -150,7 +150,7 @@ end headerActionEditSource
 on headerActionOpenExtension
    answer file "Please select a valid extension file" \ 
          with type "Builder|lcb" \
-         or type "Script|livecode,livecodescript,hyperxtalk,hyperxtalkscript"
+         or type "Script|hyperxtalk,hyperxtalkscript,livecode,livecodescript"
    
    if the result is "cancel" then exit headerActionOpenExtension
    if there is not a file it then exit headerActionOpenExtension
