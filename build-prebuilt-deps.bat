@@ -3,7 +3,7 @@ SETLOCAL ENABLEEXTENSIONS ENABLEDELAYEDEXPANSION
 
 REM ============================================================================
 REM  HyperXTalk Windows x64 Prebuilt Dependency Setup Script
-REM  Run this ONCE before building livecode.sln for the first time.
+REM  Run this ONCE before building hyperxtalk.sln for the first time.
 REM  Must be run from the repository root (where this file lives).
 REM  Requires: VS2019 Community (or Build Tools) with v142 toolset.
 REM ============================================================================
@@ -145,7 +145,7 @@ ECHO This compiles: libz, libffi, libgif, libpng, libjpeg, libpcre, libskia, etc
 ECHO This may take 10-30 minutes...
 ECHO.
 
-SET SLN=%REPO_ROOT%\build-win-x86_64\livecode\livecode.sln
+SET SLN=%REPO_ROOT%\build-win-x86_64\hyperxtalk\hyperxtalk.sln
 
 msbuild "%SLN%" /nologo /m /t:thirdparty-prebuilts /p:Configuration=Debug /p:Platform=x64 /fl /flp:LogFile=thirdparty-build-debug.log;Verbosity=normal
 IF %ERRORLEVEL% NEQ 0 (
@@ -187,7 +187,7 @@ ECHO Setup complete! You can now build HyperXTalk.exe:
 ECHO.
 ECHO   msbuild "%SLN%" /nologo /m /t:development /p:Configuration=Debug /p:Platform=x64
 ECHO.
-ECHO Or open livecode.sln in Visual Studio 2019 and build the 'development' project.
+ECHO Or open hyperxtalk.sln in Visual Studio 2019 and build the 'development' project.
 ECHO.
 ECHO Note: ICU DLLs (icuuc58.dll, icuin58.dll, etc.) have been copied to:
 ECHO   %DBG_OUT%\
