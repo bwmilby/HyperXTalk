@@ -126,6 +126,7 @@ prebuilt/bin
 prebuilt/share
 prebuilt/build
 prebuilt/fetched
+prebuilt/include/zconf.h
 
 # Windows build artefacts
 *.idb
@@ -145,4 +146,5 @@ build-win-x86_64/livecode/Debug/Externals/CEF/libcef.dll
 build/engine/Debug/Externals/CEF
 build/engine/Release/Externals/CEF
 /thirdparty/libcef
+/thirdparty/libjpeg/src/jconfig.h
 /Installer/output
