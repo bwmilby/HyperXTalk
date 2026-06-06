@@ -26,9 +26,9 @@ EMMAKE ?= emmake
 # Choose the correct build type
 MODE ?= release
 
-BUILD_EDITION ?= community
-BUILD_SUBDIR := /livecode
-BUILD_PROJECT := livecode
+# Where to run the build command depends on community vs commercial
+BUILD_SUBDIR := /hyperxtalk
+BUILD_PROJECT := hyperxtalk
 
 # Prettifying output for CI builds
 XCODEBUILD_FILTER ?=
