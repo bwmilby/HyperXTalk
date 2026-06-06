@@ -175,7 +175,7 @@ label of the dropdown and the url of your browser.
 Now use the file system browser to find the file you want to modify, and
 click on it.
 
-![](images/hyperxtalk-repo-filesystem.png)
+![](images/repo-filesystem.png)
 
 **Click the pencil icon to the right of Raw|Blame|History buttons**
 
