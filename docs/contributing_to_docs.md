@@ -11,7 +11,7 @@ currently explained? Please consider submitting your proposed changes
 directly to the HyperXTalk repo on GitHub.
 
 Please consult the [documentation style guide](development/docs_style_guide.md)
-and the [documentation format specification](guides/Documentation%20Format%20Reference.md)
+and the [documentation format specification](guides/HyperXTalk%20Documentation%20Format%20Reference.md)
 for information on the standards and structure we aim to maintain in our
 documentation.
 
@@ -29,7 +29,7 @@ documentation of all HyperXTalk syntax. The most basic form of
 incompleteness is a completely missing dictionary entry. If you intend 
 to write a missing dictionary entry, please bear these documentation 
 objectives in mind and consult the 
-[documentation format specification](guides/Documentation%20Format%20Reference.md).
+[documentation format specification](guides/HyperXTalk%20Documentation%20Format%20Reference.md).
 
 The dictionary ought to contain *all* the relevant information about a
 particular piece of HyperXTalk syntax. Every syntax variant should be 
@@ -50,7 +50,7 @@ prior to major developments in both our software and the hardware it
 runs on.
 
 Secondly, dictionary Syntax elements must be correct. The
-[documentation format specification](guides/Documentation%20Format%20Reference.md)
+[documentation format specification](guides/HyperXTalk%20Documentation%20Format%20Reference.md)
 contains a description of the Syntax element.
 
 Thirdly, the dictionary files must be formatted correctly. This means 
@@ -158,11 +158,11 @@ website, without having to download any software or use the command line.
 **Navigate to the file you want to modify in the [dictionary folder of the main branch](https://github.com/emily-elizabeth/HyperXTalk/blob/main/docs/dictionary).**
 
 For example, the accept command is at:
-https://github.com/emily-elizabeth/HyperXTalk/blob/develop-9.0/docs/dictionary/command/accept.lcdoc
+https://github.com/emily-elizabeth/HyperXTalk/blob/main/docs/dictionary/command/accept.lcdoc
 
-Either go directly to the Docs branch URL
-(https://github.com/emily-elizabeth/HyperXTalk/tree/develop-9.0) or if you are 
-on the main HyperXTalk repository page, select 'develop-9.0' from the 
+Either go directly to the community docs branch URL
+(https://github.com/emily-elizabeth/HyperXTalk/tree/main) or if you are 
+on the main LiveCode repository page, select 'main' from the 
 branch dropdown menu:
 
 ![](images/branch-dropdown.png)
@@ -175,7 +175,7 @@ label of the dropdown and the url of your browser.
 Now use the file system browser to find the file you want to modify, and
 click on it.
 
-![](images/repo-filesystem.png)
+![](images/hyperxtalk-repo-filesystem.png)
 
 **Click the pencil icon to the right of Raw|Blame|History buttons**
 

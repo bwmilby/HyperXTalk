@@ -316,7 +316,7 @@ Boolean MCScreenDC::handle(Boolean dispatch, Boolean anyevent, Boolean& abort, B
                 }
                 else
                 {
-                    // Focus was lost. Was it to another LiveCode window or to
+                    // Focus was lost. Was it to another HyperXTalk window or to
                     // a different application?
                     bool t_lostfocus = false;
                     x11::Window t_return_window;
@@ -347,8 +347,18 @@ Boolean MCScreenDC::handle(Boolean dispatch, Boolean anyevent, Boolean& abort, B
                             hidebackdrop(true);
                             if (MCdefaultstackptr)
                                 MCdefaultstackptr->getcard()->message(MCM_suspend);
-                            
+
                             MCstacks->hidepalettes(true);
+
+                            // Dismiss any open popover — it must not float
+                            // above an unrelated application's window.
+                            if (MCpopoverstack != nullptr)
+                            {
+                                MCStack *t_closing = MCpopoverstack;
+                                MCpopoverstack = nullptr;
+                                MCpopoverparentstack = nullptr;
+                                MCdispatcher->wclose(t_closing->getwindowalways());
+                            }
                         }
                     }
                     
@@ -600,7 +610,7 @@ Boolean MCScreenDC::handle(Boolean dispatch, Boolean anyevent, Boolean& abort, B
                         if (MCmousestackptr && t_event->type == GDK_SCROLL)
                         {
                             // GDK_SCROLL_UP/DOWN name the physical gesture direction under
-                            // natural scrolling. LiveCode's XK_WheelUp/Down name the content
+                            // natural scrolling. HyperXTalk's XK_WheelUp/Down name the content
                             // movement direction, which is the opposite convention — so
                             // GDK_SCROLL_UP (finger moves up) scrolls content DOWN (XK_WheelDown).
                             // The scrollWheel message receives deltas in the same sign convention
@@ -1216,7 +1226,7 @@ void MCScreenDC::DnDClientEvent(GdkEvent* p_event)
             t_dragboard->SetDragContext(p_event->dnd.context);
             
             // We use the destination window as the clipboard window for drag-
-            // and-drop operations from outside LiveCode as some sources get
+            // and-drop operations from outside HyperXTalk as some sources get
             // confused when the window requesting the data != the drag target
             // window.
             if (!MCdispatcher->isdragsource())
