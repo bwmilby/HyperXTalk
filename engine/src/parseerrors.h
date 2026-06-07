@@ -1,3 +1,19 @@
+/* Copyright (C) 2003-2015 LiveCode Ltd.
+
+This file is part of LiveCode.
+
+LiveCode is free software; you can redistribute it and/or modify it under
+the terms of the GNU General Public License v3 as published by the Free
+Software Foundation.
+
+LiveCode is distributed in the hope that it will be useful, but WITHOUT ANY
+WARRANTY; without even the implied warranty of MERCHANTABILITY or
+FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License
+for more details.
+
+You should have received a copy of the GNU General Public License
+along with LiveCode.  If not see <http://www.gnu.org/licenses/>.  */
+
 #ifndef __MC_PARSE_ERRORS__
 #define __MC_PARSE_ERRORS__
 
@@ -1794,10 +1810,10 @@ enum Parse_errors
 	
     // {PE-0582} send: can't send script in time
     PE_SEND_SCRIPTINTIME,
-    
-    // {PE-0583} fontLanguage: bad type expression
+
+    // {PE-0583} fontLanguage: bad type
     PE_FONTLANGUAGE_BADPARAM,
-    
+
     // {PE-0584} out of memory
     PE_OUTOFMEMORY,
 
@@ -1807,17 +1823,22 @@ enum Parse_errors
     // {PE-0586} iff: requires exactly 3 parameters
     PE_IFF_BADPARAM,
 
-    // {PE-0587} storeCredential: bad parameter expression
-    PE_STORECREDENTIAL_BADPARAM,
+    // {PE-0587} iconDataForFile: bad parameter
+    PE_ICONDATAFORFILE_BADPARAM,
 
-    // {PE-0588} retrieveCredential: bad parameter expression
-    PE_RETRIEVECREDENTIAL_BADPARAM,
+    // {PE-0588} iconDataForExtension: bad parameter
+    PE_ICONDATAFOREXTENSION_BADPARAM,
 
     // {PE-0589} deleteCredential: bad parameter expression
     PE_DELETECREDENTIAL_BADPARAM,
+
+    // {PE-0590} retrieveCredential: bad parameter expression
+    PE_RETRIEVECREDENTIAL_BADPARAM,
+
+    // {PE-0591} storeCredential: bad parameter expression
+    PE_STORECREDENTIAL_BADPARAM,
 };
 
 extern const char *MCparsingerrors;
 
 #endif
-
