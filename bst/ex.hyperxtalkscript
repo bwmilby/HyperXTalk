@@ -1,0 +1,793 @@
+script "BinaryStackTracker"
+
+local sTemplatePropsA, sBasePath
+
+constant kSkipCustomProps = "bwmScriptTracker,cREVGeneral,SmartCrumbsVCW,cREVLoadInfo" //"cGlx2TimeStamp"
+constant kExtension = ".livecodescript" // linting and syntax highlighting only works for .livecodescript
+constant kExtensions = "rev.livecode.openxtalk.hyperxtalk"
+constant kFolders = "builder,engine,ide,revzip,tools"
+constant kDisableLog = false
+
+on startup
+   delete file "./bst.log" -- clear log file
+   getTemplateProps
+   --
+   set the itemdel to "/"
+   put the item 1 to -2 of (the filename of me) & "/" into sBasePath
+   send "BinaryStackTrackerMain" to me in 0 milliseconds
+end startup
+
+command BinaryStackTrackerMain
+   local tInfo, tArg
+   --
+   put getCommandLineInfo() into tInfo
+   if tInfo["args"][1] is empty then
+      repeat for each item tArg in kFolders
+         processFolderOrStack "../" & tArg
+      end repeat
+      exit BinaryStackTrackerMain
+   else
+      repeat for each element tArg in tInfo["args"]
+         processFolderOrStack tArg
+      end repeat
+   end if
+end BinaryStackTrackerMain
+
+command processFolderOrStack pPath
+   local tFiles, tFolder, tStack
+   --
+   if there is a file pPath then
+      set the itemdel to "."
+      if item -1 of pPath is not among the items of kExtensions then
+         --_log "Skipping file" && pPath
+         exit processFolderOrStack
+      end if
+      try
+         put the long id of stack pPath into tStack
+         put the long id of stack (the mainstack of tStack) into tStack
+         set the itemdel to "/"
+         delete item -1 of pPath
+         if pPath is empty then
+            put "./" into pPath
+         end if
+         exportStack tStack, pPath
+         --
+         // ensure stack removed from memory after export
+         close tStack
+         delete stack tStack
+      catch e
+         _log "Cannot process the stack" && tStack & lf & pPath & lf & e
+         exit processFolderOrStack
+      end try
+   else if there is a folder pPath then
+      put files(pPath) & lf & folders(pPath) into tFiles
+      if char -1 of pPath is not "/" then put "/" after pPath
+      repeat for each line tFile in tFiles
+         if tFile is empty then next repeat
+         if tFile begins with "." then next repeat
+         processFolderOrStack (pPath & tFile)
+      end repeat
+   else
+      _log "Cannot find file or folder" && pPath
+   end if
+end processFolderOrStack
+
+on exportStack pStackLongId, pPath
+   local xDataA, tStackName, tSubstack
+   --
+   _log pStackLongId
+   set the itemdel to "/"
+   repeat while pPath begins with "../"
+      put the item 2 to -1 of pPath into pPath
+   end repeat
+   if char -1 of pPath is not "/" then put "/" after pPath
+   --
+   // put "0.0.1" into xDataA["#stackTrackerVersion"]
+   // put the version into xDataA["#ideVersion"]
+   // put getIde() into xDataA["#ideName"]
+   --
+   put the short name of pStackLongId into tStackName
+   put tStackName into xDataA["#mainstack"]
+   put "./" & pPath & (item -1 of the filename of pStackLongId) & ".bst/" into pPath
+   ensureFolder pPath
+   ensureFolder pPath & "scripts/"
+   ensureFolder pPath & "assets/"
+   --
+   local tOldHash, tNewHash
+   put url ("binfile:" & pPath & tStackName & ".md5") into tOldHash
+   put messageDigest(url ("binfile:" & the filename of pStackLongId), "MD5") into tNewHash
+   if tOldHash is tNewHash then
+      --_log "Stack" && tStackName && "has not changed, skipping export"
+      exit exportStack
+   end if
+   --
+   getStackData tStackName, xDataA, pPath
+   repeat for each line tSubstack in xDataA[tStackName]["#substacks"]
+      getStackData tSubstack, xDataA, pPath
+   end repeat
+   --
+   encodeBinary xDataA, pPath
+   saveStackJson xDataA, pPath
+   put tNewHash into url ("binfile:" & pPath & tStackName & ".md5")
+end exportStack
+
+on saveStackJson xDataA, pPath
+   local tUsePhoton, tFileName, tJson
+   --
+   if the version begins with "11" then
+      put false into tUsePhoton
+   else
+      put true into tUsePhoton
+   end if
+   --
+   if tUsePhoton then
+      put JSONStringify(xDataA,,true) into tJson
+   else if the version begins with "11" then
+      put jsonEncodeForDisplay(xDataA) into tJson
+   else
+      put jsonEncode(xDataA) into tJson
+   end if
+   --
+   put pPath & xDataA["#mainstack"] & ".json" into tFileName
+   put textEncode(tJson, "UTF-8") into url ("binfile:" & tFilename)
+end saveStackJson
+
+command getStackData pStackName, @xDataA, pPath
+   local tStackLongID, tObjectID, tObjectLongID, tObjectLongName, tAddress
+   --
+   _log "getStackData" && pStackName
+   put "stack" && _q(pStackName) into tStackLongID
+   if pStackName is not xDataA["#mainstack"] then
+      put " of stack" && _q(xDataA["#mainstack"]) after tStackLongID
+   else
+      put the substacks of tStackLongID into \
+            xDataA[pStackName]["#substacks"]
+   end if
+   --
+   // ensure group-editing mode is disabled
+   // cardIDs are not properly returned if enabled
+   try
+      set the editBackground of stack pStackName to false
+   end try
+   --
+   put pStackName into tAddress[1]
+   getUniqueProps tStackLongID, xDataA, tAddress
+   getPropertySets tStackLongID, xDataA, tAddress
+   exportScript pStackName, tStackLongID, tStackLongID, pPath
+   put "childcontrols" into tAddress[2]
+   --
+   put tStackLongID into xDataA[pStackName]["longID"]
+   put the backgroundIDs of tStackLongID into xDataA[pStackName]["backgroundIDs"]
+   put the sharedGroupIDs of tStackLongID into xDataA[pStackName]["sharedGroupIDs"]
+   put the cardIDs of tStackLongID into xDataA[pStackName]["cardIDs"]
+   --
+   // Manually build all long IDs so that the short stack name is used
+   // and to ensure that references do not change based on whether a
+   // card has been visited and which card is currently selected
+   --
+   // save background and shared group scripts and objects
+   repeat for each line tObjectID in xDataA[pStackName]["sharedGroupIDs"]
+      // background/shared groups can provide inconsistent long IDs
+      // force a short version that does not use group/card
+      put "bkgnd id" && tObjectID && "of" && tStackLongID into tObjectLongID
+      put _longName(tObjectLongID, tStackLongID) into tObjectLongName
+      put "bkgnd" into word 1 of tObjectLongName
+      getUniqueProps tObjectLongID, xDataA, tAddress
+      getPropertySets tObjectLongID, xDataA, tAddress
+      exportScript pStackName, tObjectLongID, tObjectLongName, pPath
+      getChildControlData pStackName, xDataA, tObjectLongID, tObjectLongName, tAddress, pPath
+   end repeat
+   --
+   // save card scripts and objects
+   repeat for each line tObjectID in xDataA[pStackName]["cardIDs"]
+      put "card id" && tObjectID && "of" && tStackLongID into tObjectLongID
+      put _longName(tObjectLongID, tStackLongID) into tObjectLongName
+      getUniqueProps tObjectLongID, xDataA, tAddress
+      getPropertySets tObjectLongID, xDataA, tAddress
+      exportScript pStackName, tObjectLongID, tObjectLongName, pPath
+      getChildControlData pStackName, xDataA, tObjectLongID, tObjectLongName, tAddress, pPath
+   end repeat
+end getStackData
+
+command getChildControlData \
+      pStackName,      /* stack short name            */ \
+      @xDataA,         /* export data array           */ \
+      pObjectLongID,   /* long ID of parent control   */ \
+      pObjectLongName, /* long name of parent control */ \
+      pAddress         /* address in data array       */ \
+      pPath            /* path to export folder       */
+   local tChildControlIDs, tControlLongID, tControlLongName, tSharedGroupIDs
+   local tStackLongID, tIndex
+   --
+   try
+      if the dgProps["Control Type"] of pObjectLongID is "Data Grid" then
+         // do not export the automatically generated dgGrid groups and controls
+         exit getChildControlData
+      end if
+      --
+      put the childControlIDs of pObjectLongID into tChildControlIDs
+      if tChildControlIDs is empty then exit getChildControlData
+   catch tError
+      exit getChildControlData
+   end try
+   --
+   _log "getChildControlData" && pObjectLongID
+   put xDataA[pStackName]["longID"] into tStackLongID
+   put xDataA[pStackName]["sharedGroupIDs"] into tSharedGroupIDs
+   --
+   put item 2 of the extents of pAddress into tIndex
+   put word 3 of pObjectLongID into pAddress[tIndex + 1]
+   put "childcontrols" into pAddress[tIndex + 2]
+   --
+   repeat for each line tControlID in tChildControlIDs
+      if tControlID is among the lines of tSharedGroupIDs then
+         put "#shared group" into xDataA[pAddress][tControlID]
+         next repeat
+      end if
+      put the abbreviated id of control id tControlID of tStackLongID && "of" \
+            && pObjectLongID into tControlLongID
+      put _longName(tControlLongID, pObjectLongName) into tControlLongName
+      getUniqueProps tControlLongID, xDataA, pAddress
+      getPropertySets tControlLongID, xDataA, pAddress
+      exportScript pStackName, tControlLongID, tControlLongName, pPath
+      getChildControlData pStackName, xDataA, tControlLongID, tControlLongName, pAddress, pPath
+   end repeat
+end getChildControlData
+
+command exportScript pStackName, pObjectLongID, pObjectLongName, pPath
+   local tScript, tFileName, tHeader
+   --
+   try
+      if pObjectLongID is empty then exit exportScript
+      if the script of pObjectLongID is empty then exit exportScript
+   catch e
+      exit exportScript
+   end try
+   --
+   --_log "exportScript" && pObjectLongID
+   put the script of pObjectLongID into tScript
+   --
+   // generate file name
+   put "stack_" & replaceText(pStackName, space, "_") into tFileName
+   if word 1 of pObjectLongID is not "stack" then
+      put "_" & replaceText(word 1 to 3 of pObjectLongID, space, "_") after tFileName
+   end if
+   --
+   // build file header
+   put "Script" && _q(tFileName) & lf & lf into tHeader
+   put "/*" & lf after tHeader
+   put "# Name:" && pObjectLongName & lf after tHeader
+   put "# ID:" && pObjectLongID & lf after tHeader
+   put "# Hash:" && base64encode(messageDigest(tScript, "MD5")) & lf after tHeader
+   put "*/" & lf after tHeader
+   --
+   put tHeader & lf & lf before tScript
+   --
+   put pPath & "scripts/" & tFileName & kExtension into tFileName
+   put textEncode(tScript, "UTF-8") into url ("binfile:" & tFileName)
+end exportScript
+
+command getUniqueProps pObject, @xDataA, pAddress
+   local tKind, tProps, tControl, tIndex
+   --
+   _log "getUniqueProps" && pObject
+   put word 1 of pObject into tKind
+   if tKind is "stack" then
+      put the short name of pObject into tControl
+   else
+      put word 3 of pObject into tControl
+      put item 2 of the extents of pAddress into tIndex
+      put tControl into pAddress[tIndex + 1]
+   end if
+   --
+   // getting properties of a colorPalette crashes HyperXTalk
+   // using a try block does not prevent the crash, so we skip it entirely
+   if tKind is "colorPalette" then
+      put "%no properties%" into xDataA[pAddress]["properties"]
+   else
+      try
+         put the properties of pObject into xDataA[pAddress]["properties"]
+      catch e
+         put "%no properties%" into xDataA[pAddress]["properties"]
+      end try
+   end if
+   put sTemplatePropsA[tKind] into tProps
+   --
+   if tKind is "widget" then
+      put the kind of pObject into xDataA[pAddress]["$kind"]
+      _log "exporting widget" && pObject & lf & xDataA[pAddress]["$kind"]
+      // widgets without export code crash HyperXTalk, so we skip them
+      if xDataA[pAddress]["$kind"] is not among the items of \
+            "com.livecode.widget.colorSwatch,com.livecode.widget.gradientRampEditor," \
+            & "com.livecode.widget.tile" then
+         export pObject to array xDataA[pAddress]
+      end if
+      put the id of pObject into tProps["id"]
+      put the rect of pObject into tProps["rect"]
+      put the short name of pObject into tProps["name"]
+      put tProps into xDataA[pAddress]["properties"]
+      put empty into tProps
+   else if tKind is "field" and xDataA[pAddress]["properties"]["sharedText"] is false \
+         and pAddress[3] is in xDataA[pAddress[1]]["sharedGroupIDs"] then
+      getNonSharedText pObject, xDataA, pAddress
+   else if tProps is empty then
+      _log tKind && "does not have property template"
+      --breakpoint
+   end if
+   --
+   local tKeys
+   put the keys of xDataA[pAddress]["properties"] into tKeys
+   repeat for each line l in tKeys
+      if xDataA[pAddress]["properties"][l] is tProps[l] then
+         delete variable xDataA[pAddress]["properties"][l]
+      end if
+   end repeat
+   try
+      put the name of pObject into xDataA[pAddress]["#name"]
+   catch e
+      put tKind && tControl into xDataA[pAddress]["#name"]
+      _log "error getting name for" && pObject && ":" && e
+   end try
+end getUniqueProps
+
+command getNonSharedText pObject, @xDataA, pAddress
+   local tCardIds, tControl
+   --
+   put xDataA[pAddress[1]]["cardIDs"] into tCardIds
+   repeat for each line tCardId in tCardIds
+      put "control id" && word 3 of pObject && "of card id" && tCardId && \
+            "of stack" && _q(pAddress[1]) into tControl
+      put the htmltext of tControl into \
+            xDataA[pAddress]["properties"]["htmlText"][tCardId]
+   end repeat
+end getNonSharedText
+
+command getPropertySets pObject, @xDataA, pAddress
+   local tControl, tIndex
+   --_log "getPropertySets" && pObject
+   if word 1 of pObject is "stack" then
+      put the short name of pObject into tControl
+   else
+      put word 3 of pObject into tControl
+      put item 2 of the extents of pAddress into tIndex
+      put tControl into pAddress[tIndex + 1]
+   end if
+   --
+   try
+      repeat for each line l in the custompropertysets of pObject
+         if l is among the items of kSkipCustomProps then next repeat
+         put the customproperties[l] of pObject into \
+               xDataA[pAddress]["custompropertysets"][l]
+      end repeat
+      --
+      put the customproperties of pObject into xDataA[pAddress]["customproperties"]
+      if xDataA[pAddress]["customproperties"] is empty then
+         delete variable xDataA[pAddress]["customproperties"]
+      end if
+   catch e
+      _log "error getting customproperties for" && pObject & lf & e
+   end try
+end getPropertySets
+
+command encodeBinary @xDataA, pExportPath, pObject, pPath, pLevel
+   local tValue, tPath, tProp, tFileName
+   if pLevel is not an integer then put 0 into pLevel
+   add 1 to pLevel
+   repeat for each key l in xDataA
+      if xDataA[l] is an array then
+         put pPath into tPath
+         if pLevel mod 2 is 1 then 
+            put l & "_" after tPath
+            if pLevel is 1 or l is an integer then
+               put word 1 of xDataA[l]["#name"] into pObject
+            end if
+         end if
+         encodeBinary xDataA[l], pExportPath, pObject, tPath, pLevel
+      else if len(xDataA[l]) > 254 then
+         put pPath & l into tPath
+         set the itemdel to "_"
+         if l is a number then
+            put item -2 of tPath into tProp
+         else
+            put l into tProp
+         end if
+         set the itemdel to ","
+         if pObject is "image" then
+            put pExportPath & "assets/" & tPath & ".png" into tFileName
+            put xDataA[l] into url ("binfile:" & tFileName)
+         else if tProp is among the items of "htmltext,text,svg path" then
+            put pExportPath & "assets/" & tPath & ".txt" into tFileName
+            put textEncode(xDataA[l], "UTF-8") into url ("binfile:" & tFileName)
+         else
+            put pExportPath & "assets/" & tPath & ".bin" into tFileName
+            put xDataA[l] into url ("binfile:" & tFileName)
+         end if
+         put "%file%:" && tFileName into xDataA[l]
+      else if xDataA[l] is an ascii string or xDataA[l] is empty then
+         -- leave alone
+      else if xDataA[l] is strictly a binary string then
+         put base64encode(xDataA[l]) into tValue
+         if l is "htmlText" then put xDataA[l] into xDataA[l]["text"]
+         put tValue into xDataA[l]["%base64%"]
+      end if
+   end repeat
+end encodeBinary
+
+command getTemplateProps
+   -- commented out templates crash HyperXTalk
+   put the properties of the templateAudioClip into sTemplatePropsA["audioclip"]
+   put the properties of the templateButton into sTemplatePropsA["button"]
+   put the properties of the templateCard into sTemplatePropsA["card"]
+   --put the properties of the templateEPS into sTemplatePropsA["eps"]
+   put the properties of the templateField into sTemplatePropsA["field"]
+   put the properties of the templateGraphic into sTemplatePropsA["graphic"]
+   put the properties of the templateGroup into sTemplatePropsA["group"]
+   put the properties of the templateGroup into sTemplatePropsA["bkgnd"]
+   put the properties of the templateImage into sTemplatePropsA["image"]
+   --put the properties of the templatePlayer into sTemplatePropsA["player"]
+   put the properties of the templateScrollbar into sTemplatePropsA["scrollbar"]
+   put the properties of the templateStack into sTemplatePropsA["stack"]
+   --put the properties of the templateVideoClip into sTemplatePropsA["videoclip"]
+end getTemplateProps
+
+function _q pText
+   return quote & pText & quote
+end _q
+
+private function _longName pObjectLongID, pParentLongName
+   try
+      return (the abbreviated name of pObjectLongID) && "of" && pParentLongName
+   catch e
+      return pObjectLongID
+   end try
+end _longName
+
+function getIde
+   local tHome
+   --
+   try
+      put the long name of stack "home" into tHome
+   catch e
+      put the commandName into tHome
+   end try
+   --
+   if tHome contains "hyperx" then
+      return "HyperXTalk"
+   else if tHome contains "openx" then
+      return "OpenXTalk"
+   else if tHome contains "livecode" then
+      return "LiveCode"
+   else
+      return "unknown"
+   end if
+end getIde
+
+private command ensureFolder pFolder
+   set the itemDelimiter to slash
+   repeat with x = 2 to the number of items of pFolder
+      if there is no folder item 1 to x of pFolder then
+         create folder (item 1 to x of pFolder)
+      end if
+   end repeat
+end ensureFolder
+
+private command _log pText
+   if kDisableLog is true then exit _log
+   put the long time & " - " & pText & lf after url ("file:./bst.log")
+end _log
+
+/*****************************************************************************
+ * MARK: getCommandLineInfo
+ *****************************************************************************/
+
+ function getCommandLineInfo
+   local tRawArg, tSelfCommand, tSelfScript, tInArgs, tArgs
+   --
+   put false into tInArgs
+   --
+   // Treat everything up to & including the first
+   // ".hyperxtalkscript" file as the command for running the test
+   // runner, and everything after it as test runner arguments
+   put the commandName into tSelfCommand[1]
+   repeat for each element tRawArg in the commandArguments
+      --
+      if tInArgs then
+         put tRawArg into tArgs[1 + the number of elements in tArgs]
+      else
+         put tRawArg into tSelfCommand[1 + the number of elements in tSelfCommand]
+         if tRawArg ends with ".hyperxtalkscript" or \
+               tRawArg ends with ".livecodescript" then
+            put tRawArg into tSelfScript
+            put true into tInArgs
+         end if
+      end if
+      --
+   end repeat
+   --
+   local tInfo
+   put tSelfCommand into tInfo["self-command"]
+   put tSelfScript into tInfo["self-script"]
+   put tArgs into tInfo["args"]
+   --
+   return tInfo
+end getCommandLineInfo
+
+/*****************************************************************************
+ * MARK: PhotonJSON
+ *****************************************************************************/
+
+/*
+Code repository: https://github.com/DTByte-Ltd/PhotonJSON
+Web: https://dtbyte.com/
+License: https://opensource.org/licenses/MIT
+Date: Nov 2020
+Last Update: October 19, 2025
+Note: PhotonJSON follows JSON's standards presented
+in https://www.json.org/json-en.html
+*/
+
+/*
+This is a subset of the library focused on export.  The prettify function
+has been modified to always indent after { [ and , for a cleaner
+look.  Keys for non-numeric arrays are sorted.
+*/
+
+/* Declare script local variables */
+local sIndentSize, sMaxLength
+
+/* This flag is used to determine if the function is being called by itself.
+So you don't have to repeat some operations and only do them when you finish
+building the JSON. */
+local sRecursionCounter = 0
+
+/**
+Summary: Format a LC array into UTF-8 encoded json data.
+
+Parameters:
+pArray (Array): The array to be formatted
+pForceRootType (String): The type to force values to.
+pPretty (Boolean): Set to true to format the resulting JSON data nicely.
+
+Returns (String): JSON data.
+
+Description:
+Format a LC array into UTF-8 encoded json data.
+*/
+function JSONStringify pArray, pForceRootType, pPretty
+   local tJsonString = "[", tIsNumeric = true, tKeys = "", tEndChar = "]"
+   
+   add 1 to sRecursionCounter
+   
+   if pArray is not an array then return "{}"
+   
+   # The array's keys are all *numerical*, so the root element will be a JSON *array*
+   # Need to account for numerical keys that are not sequential starting at 0 or 1
+   local tExtents
+   put the extents of pArray into tExtents
+   if tExtents is not a point or item 1 of tExtents is not in "0,1" then
+      put false into tIsNumeric
+      put "{" into tJsonString
+      put "}" into tEndChar
+   end if
+   
+   set the caseSensitive to true
+   
+   local tOptions
+   put pForceRootType into tOptions["string"]
+   put pPretty into tOptions["pretty"]
+   # The values of the JSON keys will be formatted to their type.
+   _builderJSON pArray, tIsNumeric, tOptions, tJsonString
+   
+   put tEndChar into the char - 1 of tJsonString
+   
+   # Empty array and empty objects
+   if tJsonString is "[null]" then
+      put "[]" into tJsonString
+   else if tJsonString is "{" & quote & quote & ": null}" then
+      put "{}" into tJsonString
+   end if
+   
+   subtract 1 from sRecursionCounter
+   
+   if sRecursionCounter is 0 then
+      set the caseSensitive to false
+      if numToChar(8) is in tJsonString then replace numToChar(8) with "\b" in tJsonString
+      if numToChar(9) is in tJsonString then replace numToChar(9) with "\t" in tJsonString
+      if numToChar(10) is in tJsonString then replace numToChar(10) with "\n" in tJsonString
+      if numToChar(12) is in tJsonString then replace numToChar(12) with "\f" in tJsonString
+      if numToChar(13) is in tJsonString then replace numToChar(13) with "\r" in tJsonString
+      // non-printable characters to your unicode code (HEX)
+      put _cleaningNonPrintableChars(tJsonString) into tJsonString
+      
+      # Pretty
+      if pPretty then return _jsonPrettyCompact(tJsonString, 3, pForceRootType)
+   end if
+   
+   return tJsonString
+end JSONStringify
+
+private command _builderJSON pArray, pIsNumeric, pOptions, @xJsonString
+   local tString, tPretty, tKeys
+   if pOptions["string"] is "string" then
+      put "string" into tString
+   else
+      put "" into tString
+   end if
+
+   put pOptions["pretty"] is true into tPretty
+
+   local tValue
+   if pIsNumeric then
+      repeat for each element e in pArray
+         if e is an array then
+            put JSONStringify(e, tString, tPretty) & comma after xJsonString
+         else 
+            put _jsonValue(e) into tValue
+            if tString is "string" then
+               put quote & tValue & quote into tValue
+            end if
+            put tValue & comma after xJsonString
+         end if
+      end repeat
+   else
+      put the keys of pArray into tKeys
+      sort tKeys
+      repeat for each line k in tKeys
+         if pArray[k] is an array then
+            put _jsonString(k) & ": " &JSONStringify(pArray[k], tString, tPretty) & comma after xJsonString
+         else
+            put _jsonValue(pArray[k]) into tValue
+            if tString is "string" then
+               put quote & tValue & quote into tValue
+            end if            
+            put _jsonString(k) & ": " & tValue & comma after xJsonString
+         end if
+      end repeat
+   end if
+end _builderJSON
+
+private function _jsonString pValue
+   if pValue is not an ascii string then put textEncode(pValue, "UTF-8") into pValue
+
+   # So these characters escape in case they are there.
+   # https://www.json.org/img/string.png
+   # any other value is processed as a string.
+   # JSON strings require that certain characters be 'escaped' with a backslash:
+   # This makes the processing a bit slower. But it is necessary for it to comply with the ECMA-404 standard
+   if "\" is in pValue then replace "\" with "\\" in pValue
+   if quote is in pValue then replace quote with "\" & quote in pValue
+   return quote & pValue & quote
+end _jsonString
+
+
+private function _jsonValue pValue, pNoReplace
+   switch pValue
+      case "true"
+         return "true"
+         break
+         
+      case "false"
+         return "false"
+         break
+         
+      case ""; case "null"; case null
+         return "null"
+         break
+         
+      default
+         if pValue is strictly an integer or pValue is strictly a real then
+            if not(char 1 of pValue is 0 and char 2 of pValue is not "." and the length of pValue is not 1 or char 1 of pValue is not in "-0123456789") then
+               return pValue
+            end if
+         end if
+         
+         if pNoReplace is no true then
+            return _jsonString(pValue)
+         else
+            return quote & pValue & quote
+         end if
+   end switch
+end _jsonValue
+
+# json beautiful and compact
+private function _jsonPrettyCompact pJsonString, pIndentSize, pForceRootType
+   local tFormatted, tIndent, kSpace, tPrevToken = "", tIndex = 0, tOpenClose = "", tItems = "", tHyphenMinus = false
+   
+   if sMaxLength is not an integer then put 50 into sMaxLength
+   if pIndentSize is not a integer or pIndentSize > 10 then put 4 into pIndentSize
+   
+   repeat for pIndentSize
+      put space after kSpace
+   end repeat
+   
+   # escaped quotes < " > and reverse-solidus < \\ > will confuse the tokenizer
+   # so we replace them with "\u0022" and "\u005C" which we'll unescape
+   # with all the other unescapes when we parse
+   if "\\" is in pJsonString then replace "\\" with "\u005C" in pJsonString
+   if backSlash & quote is in pJsonString then replace backSlash & quote with "\u0022" in pJsonString
+   
+   put 0 into tIndex
+   put empty into tItems
+   
+   repeat for each token tToken in pJsonString
+      add 1 to tIndex
+      
+      switch tToken
+         case "{"; case "["
+            put kSpace after tIndent
+            put tToken & cr & tIndent after tFormatted
+            break
+            
+         case "}"; case "]"
+            delete char - pIndentSize to - 1 of tIndent
+            put cr & tIndent & tToken after tFormatted
+            break
+            
+         case ":"
+            put ": " after tFormatted
+            break
+            
+         case comma
+            put comma & cr & tIndent after tFormatted
+            break
+            
+         case "-"
+            put true into tHyphenMinus
+            next repeat
+            break
+            
+         default
+            if tHyphenMinus then
+               put "-" & tToken into tToken
+               put false into tHyphenMinus
+            end if
+            
+            if "\u00" is in tToken then
+               replace "\u005C" with "\\" in tToken
+               replace "\u0022" with "\" & quote in tToken
+            end if
+            
+            if pForceRootType is "string" then
+               put quote & tToken & quote after tFormatted
+            else
+               put _jsonValue(tToken, true) after tFormatted
+            end if
+      end switch
+      
+      put tToken into tPrevToken
+   end repeat
+   
+   return textDecode(tFormatted, "UTF8")
+end _jsonPrettyCompact
+
+// non-printable characters to your unicode code (HEX)
+constant kNonPrintableChars = "0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,159,8216,8217,8220,8221,8212,8213,8230"
+private function _cleaningNonPrintableChars pText
+   set the formSensitive to false
+
+   repeat for each item i in kNonPrintableChars
+      if numToChar(i) is in pText then
+         replace numToChar(i) with _convertAsciiToUnicodeNum(i) in pText
+      end if
+   end repeat
+
+   return pText
+end _cleaningNonPrintableChars
+
+private function _convertAsciiToUnicodeNum pNum
+   put baseConvert(pNum, 10, 16) into pNum
+   switch the length of pNum
+      case 1
+         return "\u000" & pNum
+         break
+      case 2
+         return "\u00" & pNum
+         break
+      case 3
+         return "\u0" & pNum
+         break
+      case 4
+         return "\u" & pNum
+         break
+   end switch
+end _convertAsciiToUnicodeNum
