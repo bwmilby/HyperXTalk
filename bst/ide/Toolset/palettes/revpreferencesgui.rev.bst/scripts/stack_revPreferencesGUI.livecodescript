@@ -3,14 +3,14 @@ Script "stack_revPreferencesGUI"
 /*
 # Name: stack "revPreferencesGUI"
 # ID: stack "revPreferencesGUI"
-# Hash: dP1VMESd3KqVo4jC5M0INw==
+# Hash: V0f/pqJyIqR1ct/p5n4tWQ==
 */
 
 
 local lAlreadyBeenOpened
 
-on preOpenStack
-   --   if the short name of the target is not the short name of me then
+on PreOpenStack
+   --   if the short name of the target is not "revPreferencesGUI" then
    --      exit preOpenStack
    --   end if
    
@@ -25,32 +25,58 @@ on preOpenStack
    local tScreenRect
    put revIDEStackScreenRect(tMenubarStack, true) into tScreenRect
    
-   if tLoc is empty or tLoc is not within tScreenRect then
-      set the loc of me to revIDEStackScreenLoc(tMenubarStack)
-      revIDESetPreference "cPreferencesLoc", the loc of me
-   else
-      set the loc of me to tLoc
-   end if
+   --   if tLoc is empty or tLoc is not within tScreenRect then
+   --      set the loc of me to revIDEStackScreenLoc(tMenubarStack)
+   --      revIDESetPreference "cPreferencesLoc", the loc of me
+   --   else
+   --      set the loc of me to tLoc
+   --   end if
    
-   if not lAlreadyBeenOpened then
-      set the textFont of fld "Menu" of cd 1 to empty
-      set the textHeight of fld "Menu" of cd 1 to 20
-      put true into lAlreadyBeenOpened
-   end if
+   --   local tTopLeft
+   --   put revIDEGetPreference("cPreferencesTopLeft") into tTopLeft
+   --   if (tTopLeft is not EMPTY) then
+   --      set the topLeft of me to tTopLeft  // HXT
+   --   end if
    
    ## Bug 17034
    ## Restore the fixed-font-and-size settings that the stack was originally designed for
    ## The theming changes in 8 make text too large to fit in available space
-   if the platform is "Linux" then
-      set the theme of this stack to "legacy"
+   --   if the platform is "Linux" then
+   --      set the theme of this stack to "legacy"
+   --   end if
+   
+   if not lAlreadyBeenOpened then
+      send "hxtGoToGeneralTab" to me in 1 millisecond
+      put true into lAlreadyBeenOpened
    end if
    
-   ## Bug 11173
-   ## Last opened pane is shown but item 1 in list selected.
-   set the hilitedLines of fld "Menu" to lineOffset(the short name of this card,the text of field "menu")
-   send "mouseUp" to fld "Menu"
-   pass preOpenStack
-end preOpenStack
+   set the backgroundColor of this stack to (the systemWindowColor)
+   set the foregroundColor of this stack to (the systemTextColor)
+   
+   pass PreOpenStack
+end PreOpenStack
+
+
+on hxtGoToGeneralTab
+   lock screen
+   set the menuHistory of button "Tab Menu" to 1  // HXT
+end hxtGoToGeneralTab
+
+
+on SystemAppearanceChanged pMode, pWindowColor, pTextColor
+   set the backgroundColor of this stack to pWindowColor
+   set the foregroundColor of this stack to pTextColor
+end SystemAppearanceChanged
+
+
+on CommandKeyDown pKey
+   if (pKey = "w") then
+      close this stack
+   else
+      pass CommandKeyDown
+   end if
+end CommandKeyDown
+
 
 on closeStack
    if the short name of the target is not the short name of me then
@@ -63,6 +89,7 @@ end closeStack
 # OK-2008-06-23 : Bug 6604 - Preferences GUI doesn't remember its location
 on moveStack
    revIDESetPreference "cPreferencesLoc", the loc of me
+   revIDESetPreference "cPreferencesTopLeft", the topLeft of me  // HXT
 end moveStack
 
 private command log pMsg
@@ -75,15 +102,16 @@ end log
 # Description
 #   Switches to the specified section, as if the user had clicked in the navigation field on the left
 command revPrefsGoSection pSection
-   local tLineNumber
-   put lineOffset(pSection, the text of field "Menu") into tLineNumber
-   if tLineNumber = 0 then
-      exit revPrefsGoSection
-   end if
+   // HXT
+   --   local tLineNumber
+   --   put lineOffset(pSection, the text of field "Menu") into tLineNumber
+   --   if tLineNumber = 0 then
+   --      exit revPrefsGoSection
+   --   end if
    
-   set the hilitedLines of field "Menu" to tLineNumber
-   --send "mouseUp" to field "Menu"
-   send "sectionChange" to field "Menu"
+   --   set the hilitedLines of field "Menu" to tLineNumber
+   --   --send "mouseUp" to field "Menu"
+   --   send "sectionChange" to field "Menu"
 end revPrefsGoSection
 
 on mousedown
@@ -120,16 +148,44 @@ end updateOpenScriptEditors
 -- General fallback handlers
 
 on closeField
-  local tName
-  put the short name of the target into tName
-  set the tName of stack "revPreferences" to the text of the target
+   local tName
+   put the short name of the target into tName
+   set the tName of stack "revPreferences" to the text of the target
 end closeField
 
 on enterInField
-  closeField
-  select the text of the target
+   closeField
+   select the text of the target
 end enterInField
 
 on returnInField
-  enterInField
+   enterInField
 end returnInField
+
+
+on hxtSetTheHeightOfThisStackTo pHeight
+   /*
+   windowAnimateResize pWindowID, pLeft, pTop, pWidth, pHeight, pDuration
+   
+   Smoothly resizes the window identified by pWindowID (the integer returned
+   by `the windowId of stack <name>` in LiveCode Script).
+   
+   pLeft, pTop   — new position in LiveCode screen coordinates (top-left origin)
+   pWidth        — new width  in pixels
+   pHeight       — new height in pixels
+   pDuration     — animation length in seconds, e.g. 0.3
+   */
+   
+   if (the platform = "macOS") then
+      lock screen
+      windowAnimateResize the windowID of stack "revPreferencesGUI", the left of this stack, the top of this stack, the width of this stack, pHeight, 0.5
+      unlock screen
+   else
+      lock screen
+      local tTopLeft
+      put the topLeft of this stack into tTopLeft
+      set the height of this stack to pHeight
+      set the topLeft of this stack to tTopLeft
+      unlock screen
+   end if
+end hxtSetTheHeightOfThisStackTo

@@ -96,7 +96,7 @@
                      "menuMode": "pulldown",
                      "name": "icon",
                      "opaque": false,
-                     "rect": "14,4,90,69",
+                     "rect": "14,18,90,83",
                      "sharedHilite": false,
                      "showBorder": false,
                      "showIcon": true,
@@ -131,7 +131,7 @@
             },
             "customproperties": {
                "cRTL": false,
-               "fieldmode": "plain"
+               "fieldmode": "password"
             },
             "custompropertysets": {
                "cAPKGeneral": {
@@ -164,6 +164,8 @@
                }
             },
             "properties": {
+               "backColor": "#ececec",
+               "foreColor": "#000000",
                "id": "1002",
                "name": "card id 1002"
             }
@@ -196,7 +198,7 @@
          "id": "1132",
          "liveResizing": false,
          "name": "Ask Dialog",
-         "rect": "415,3,865,116",
+         "rect": "495,180,945,293",
          "resizable": false,
          "shadowColor": "172,172,172",
          "textFont": "Lucida Grande",

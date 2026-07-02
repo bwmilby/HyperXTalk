@@ -225,6 +225,7 @@
                                  "fillRule": "non-zero",
                                  "flip vertically": false,
                                  "hilited": false,
+                                 "iconPresetName": "Star",
                                  "maintain aspect ratio": true,
                                  "svg path": "%file%: ./ide/Toolset/palettes/project browser/templates/revideprojectbrowsercontrolrowtemplate.livecode.bst/assets/revideprojectbrowsercontrolrowtemplate_1002_1003_1014_1015_svg path.txt"
                               },
@@ -241,7 +242,7 @@
                               "#name": "graphic \"line\"",
                               "properties": {
                                  "id": "1016",
-                                 "layer": "13",
+                                 "layer": "12",
                                  "name": "line",
                                  "points": "14,128\n14,144",
                                  "rect": "10,127,18,145",
@@ -268,6 +269,7 @@
                                  "fillRule": "non-zero",
                                  "flip vertically": false,
                                  "hilited": false,
+                                 "iconPresetName": "Star",
                                  "maintain aspect ratio": true,
                                  "svg path": "%file%: ./ide/Toolset/palettes/project browser/templates/revideprojectbrowsercontrolrowtemplate.livecode.bst/assets/revideprojectbrowsercontrolrowtemplate_1002_1003_1017_1018_svg path.txt"
                               },
@@ -284,7 +286,7 @@
                               "#name": "graphic \"line\"",
                               "properties": {
                                  "id": "1019",
-                                 "layer": "16",
+                                 "layer": "15",
                                  "name": "line",
                                  "points": "14,128\n14,144",
                                  "rect": "10,127,18,145",
@@ -311,6 +313,7 @@
                                  "fillRule": "non-zero",
                                  "flip vertically": false,
                                  "hilited": false,
+                                 "iconPresetName": "Star",
                                  "maintain aspect ratio": true,
                                  "svg path": "%file%: ./ide/Toolset/palettes/project browser/templates/revideprojectbrowsercontrolrowtemplate.livecode.bst/assets/revideprojectbrowsercontrolrowtemplate_1002_1003_1020_1021_svg path.txt"
                               },
@@ -327,7 +330,7 @@
                               "#name": "graphic \"line\"",
                               "properties": {
                                  "id": "1022",
-                                 "layer": "19",
+                                 "layer": "18",
                                  "name": "line",
                                  "points": "14,128\n14,144",
                                  "rect": "10,127,18,145",
@@ -354,6 +357,7 @@
                                  "fillRule": "non-zero",
                                  "flip vertically": false,
                                  "hilited": false,
+                                 "iconPresetName": "Star",
                                  "maintain aspect ratio": true,
                                  "svg path": "%file%: ./ide/Toolset/palettes/project browser/templates/revideprojectbrowsercontrolrowtemplate.livecode.bst/assets/revideprojectbrowsercontrolrowtemplate_1002_1003_1023_1024_svg path.txt"
                               },
@@ -370,7 +374,7 @@
                               "#name": "graphic \"line\"",
                               "properties": {
                                  "id": "1025",
-                                 "layer": "22",
+                                 "layer": "21",
                                  "name": "line",
                                  "points": "14,128\n14,144",
                                  "rect": "10,127,18,145",
@@ -397,6 +401,7 @@
                                  "fillRule": "non-zero",
                                  "flip vertically": false,
                                  "hilited": false,
+                                 "iconPresetName": "Star",
                                  "maintain aspect ratio": true,
                                  "svg path": "%file%: ./ide/Toolset/palettes/project browser/templates/revideprojectbrowsercontrolrowtemplate.livecode.bst/assets/revideprojectbrowsercontrolrowtemplate_1002_1003_1026_1027_svg path.txt"
                               },
@@ -413,7 +418,7 @@
                               "#name": "graphic \"line\"",
                               "properties": {
                                  "id": "1028",
-                                 "layer": "25",
+                                 "layer": "24",
                                  "name": "line",
                                  "points": "14,128\n14,144",
                                  "rect": "10,127,18,145",
@@ -440,6 +445,7 @@
                                  "fillRule": "non-zero",
                                  "flip vertically": false,
                                  "hilited": false,
+                                 "iconPresetName": "Star",
                                  "maintain aspect ratio": true,
                                  "svg path": "%file%: ./ide/Toolset/palettes/project browser/templates/revideprojectbrowsercontrolrowtemplate.livecode.bst/assets/revideprojectbrowsercontrolrowtemplate_1002_1003_1029_1030_svg path.txt"
                               },
@@ -456,7 +462,7 @@
                               "#name": "graphic \"line\"",
                               "properties": {
                                  "id": "1031",
-                                 "layer": "28",
+                                 "layer": "27",
                                  "name": "line",
                                  "points": "14,128\n14,144",
                                  "rect": "10,127,18,145",
@@ -483,6 +489,7 @@
                                  "fillRule": "non-zero",
                                  "flip vertically": false,
                                  "hilited": false,
+                                 "iconPresetName": "Star",
                                  "maintain aspect ratio": true,
                                  "svg path": "%file%: ./ide/Toolset/palettes/project browser/templates/revideprojectbrowsercontrolrowtemplate.livecode.bst/assets/revideprojectbrowsercontrolrowtemplate_1002_1003_1032_1033_svg path.txt"
                               },
@@ -499,7 +506,7 @@
                               "#name": "graphic \"line\"",
                               "properties": {
                                  "id": "1034",
-                                 "layer": "31",
+                                 "layer": "30",
                                  "name": "line",
                                  "points": "14,128\n14,144",
                                  "rect": "10,127,18,145",
@@ -526,6 +533,7 @@
                                  "fillRule": "non-zero",
                                  "flip vertically": false,
                                  "hilited": false,
+                                 "iconPresetName": "Star",
                                  "maintain aspect ratio": true,
                                  "svg path": "%file%: ./ide/Toolset/palettes/project browser/templates/revideprojectbrowsercontrolrowtemplate.livecode.bst/assets/revideprojectbrowsercontrolrowtemplate_1002_1003_1035_1036_svg path.txt"
                               },
@@ -542,7 +550,7 @@
                               "#name": "graphic \"line\"",
                               "properties": {
                                  "id": "1037",
-                                 "layer": "34",
+                                 "layer": "33",
                                  "name": "line",
                                  "points": "14,128\n14,144",
                                  "rect": "10,127,18,145",
@@ -569,6 +577,7 @@
                                  "fillRule": "non-zero",
                                  "flip vertically": false,
                                  "hilited": false,
+                                 "iconPresetName": "Star",
                                  "maintain aspect ratio": true,
                                  "svg path": "%file%: ./ide/Toolset/palettes/project browser/templates/revideprojectbrowsercontrolrowtemplate.livecode.bst/assets/revideprojectbrowsercontrolrowtemplate_1002_1003_1038_1039_svg path.txt"
                               },
@@ -585,7 +594,7 @@
                               "#name": "graphic \"line\"",
                               "properties": {
                                  "id": "1040",
-                                 "layer": "37",
+                                 "layer": "36",
                                  "name": "line",
                                  "points": "14,128\n14,144",
                                  "rect": "10,127,18,145",
@@ -612,6 +621,7 @@
                                  "fillRule": "non-zero",
                                  "flip vertically": false,
                                  "hilited": false,
+                                 "iconPresetName": "Star",
                                  "maintain aspect ratio": true,
                                  "svg path": "%file%: ./ide/Toolset/palettes/project browser/templates/revideprojectbrowsercontrolrowtemplate.livecode.bst/assets/revideprojectbrowsercontrolrowtemplate_1002_1003_1041_1042_svg path.txt"
                               },
@@ -628,7 +638,7 @@
                               "#name": "graphic \"line\"",
                               "properties": {
                                  "id": "1043",
-                                 "layer": "40",
+                                 "layer": "39",
                                  "name": "line",
                                  "points": "14,128\n14,144",
                                  "rect": "10,127,18,145",
@@ -868,6 +878,64 @@
                   }
                }
             },
+            "custompropertysets": {
+               "cREVGeometrycache": {
+                  "order": null,
+                  "total": "50"
+               },
+               "cREVGeometryCacheIDs": {
+                  "1459960288789": "1004",
+                  "1459960288790": "1005",
+                  "1459960288791": "1035",
+                  "1459960288794": "1003",
+                  "1479390778970": "1006",
+                  "1479390778971": "1007",
+                  "1479390778973": "1009",
+                  "1479390778974": "1010",
+                  "1479390778975": "1011",
+                  "1479390778976": "1012",
+                  "1479390778977": "1013",
+                  "1479390778978": "1014",
+                  "1479390778979": "1015",
+                  "1479390778980": "1016",
+                  "1479390778981": "1017",
+                  "1479390778982": "1018",
+                  "1479390778983": "1019",
+                  "1479390778984": "1020",
+                  "1479390778985": "1021",
+                  "1479390778986": "1022",
+                  "1479390778987": "1023",
+                  "1479390778988": "1024",
+                  "1479390778989": "1025",
+                  "1479390778990": "1026",
+                  "1479390778991": "1027",
+                  "1479390778992": "1028",
+                  "1479390778993": "1029",
+                  "1479390778994": "1030",
+                  "1479390778995": "1031",
+                  "1479390778996": "1032",
+                  "1479390778997": "1033",
+                  "1479390778998": "1034",
+                  "1479390778999": "1036",
+                  "1479390779000": "1037",
+                  "1479390779001": "1038",
+                  "1479390779002": "1039",
+                  "1479390779003": "1040",
+                  "1479390779004": "1041",
+                  "1479390779005": "1042",
+                  "1479390779006": "1043",
+                  "1479511389056": "1047",
+                  "1479511389057": "1048",
+                  "1479511389058": "1049",
+                  "1479511389059": "1050",
+                  "1479511389060": "1051",
+                  "1479511389061": "1052",
+                  "1479511389062": "1053",
+                  "1479511389063": "1054",
+                  "1479511389064": "1055",
+                  "1479511389065": "1056"
+               }
+            },
             "properties": {
                "id": "1002"
             }
@@ -875,7 +943,7 @@
       },
       "custompropertysets": {
          "cREVGeometryCache": {
-            "stackID": "1046"
+            "stackID": "1056"
          }
       },
       "longID": "stack \"revideprojectbrowsercontrolrowtemplate\"",
@@ -883,7 +951,8 @@
          "fileName": "/Users/milby/Developer/HyperXTalk/ide/Toolset/palettes/project browser/templates/revideprojectbrowsercontrolrowtemplate.livecode",
          "id": "1056",
          "name": "revideprojectbrowsercontrolrowtemplate",
-         "rect": "354,210,754,610"
+         "rect": "354,210,754,610",
+         "visible": false
       },
       "sharedGroupIDs": null
    }

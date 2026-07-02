@@ -13,12 +13,13 @@
                   "#name": "widget \"Dictionary\"",
                   "$kind": "com.livecode.widget.browser",
                   "$state": {
-                     "url": "file:///Applications/LiveCode%20Community%208.0%20(dp%2011).app/Contents/Tools/Documentation/html_viewer/viewer.html"
+                     "htmlText": null,
+                     "javaScriptHandlers": "linkClicked\nbrowserNavigateComplete"
                   },
                   "properties": {
                      "id": "1003",
                      "name": "Dictionary",
-                     "rect": "0,21,1000,1054"
+                     "rect": "0,0,1010,661"
                   }
                },
                "1004": "#shared group"
@@ -29,51 +30,25 @@
          },
          "1004": {
             "#name": "group \"background\"",
-            "childcontrols": {
-               "1006": {
-                  "#name": "widget \"header_background\"",
-                  "$kind": "com.livecode.widget.paletteActions",
-                  "$state": {
-                     "action data": null,
-                     "is header": true,
-                     "nav data": [
-                        {
-                           "icon": "f1b3",
-                           "label": "API",
-                           "name": "show_apis"
-                        },
-                        {
-                           "icon": "f1b3",
-                           "label": "Guide",
-                           "name": "show_guides"
-                        }
-                     ]
-                  },
-                  "properties": {
-                     "id": "1006",
-                     "name": "header_background",
-                     "rect": "0,0,1000,21"
-                  }
-               }
-            },
             "properties": {
                "backgroundBehavior": true,
                "id": "1004",
                "layer": "2",
                "name": "background",
-               "rect": "-4,-4,1004,25"
+               "rect": "-4,-4,4,4"
             }
          }
       },
       "longID": "stack \"revDictionary\"",
       "properties": {
+         "backColor": "#ececec",
          "behavior": "stack \"revDictionaryBehavior\"",
          "cantModify": true,
          "fileName": "/Users/milby/Developer/HyperXTalk/ide/Toolset/palettes/dictionary/revdictionary.livecode",
          "id": "1006",
-         "minWidth": "1000",
+         "minWidth": "1010",
          "name": "revDictionary",
-         "rect": "1456,119,2456,1173",
+         "rect": "273,110,1283,771",
          "title": "Dictionary"
       },
       "sharedGroupIDs": "1004"

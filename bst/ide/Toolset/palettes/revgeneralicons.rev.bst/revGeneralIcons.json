@@ -1270,7 +1270,7 @@
                      "id": "210092",
                      "layer": "85",
                      "name": "Error.png",
-                     "rect": "231,72,285,126",
+                     "rect": "228,69,288,129",
                      "repeatCount": "-1",
                      "text": "%file%: ./ide/Toolset/palettes/revgeneralicons.rev.bst/assets/revGeneralIcons_1002_210092_text.png"
                   }
@@ -1283,7 +1283,7 @@
                      "layer": "86",
                      "name": "Info.png",
                      "opaque": false,
-                     "rect": "230,8,287,65",
+                     "rect": "228,6,288,66",
                      "repeatCount": "-1",
                      "text": "%file%: ./ide/Toolset/palettes/revgeneralicons.rev.bst/assets/revGeneralIcons_1002_210093_text.png"
                   }
@@ -1296,7 +1296,7 @@
                      "layer": "87",
                      "name": "Warning.png",
                      "opaque": false,
-                     "rect": "229,135,285,195",
+                     "rect": "227,135,287,195",
                      "repeatCount": "-1",
                      "text": "%file%: ./ide/Toolset/palettes/revgeneralicons.rev.bst/assets/revGeneralIcons_1002_210094_text.png"
                   }
@@ -1305,10 +1305,11 @@
                   "#name": "image \"lc-32.png\"",
                   "properties": {
                      "alwaysBuffer": true,
+                     "borderWidth": "0",
                      "id": "210095",
-                     "layer": "93",
+                     "layer": "94",
                      "name": "lc-32.png",
-                     "rect": "328,102,360,134",
+                     "rect": "440,110,470,142",
                      "repeatCount": "-1",
                      "text": "%file%: ./ide/Toolset/palettes/revgeneralicons.rev.bst/assets/revGeneralIcons_1002_210095_text.png"
                   }
@@ -1317,10 +1318,11 @@
                   "#name": "image \"lc-64.png\"",
                   "properties": {
                      "alwaysBuffer": true,
+                     "borderWidth": "0",
                      "id": "210096",
-                     "layer": "94",
+                     "layer": "93",
                      "name": "lc-64.png",
-                     "rect": "416,20,479,84",
+                     "rect": "426,21,485,85",
                      "repeatCount": "-1",
                      "text": "%file%: ./ide/Toolset/palettes/revgeneralicons.rev.bst/assets/revGeneralIcons_1002_210096_text.png"
                   }
@@ -1332,7 +1334,7 @@
                      "id": "210097",
                      "layer": "88",
                      "name": "Answer Info.png",
-                     "rect": "225,201,289,265",
+                     "rect": "227,203,287,263",
                      "repeatCount": "-1",
                      "text": "%file%: ./ide/Toolset/palettes/revgeneralicons.rev.bst/assets/revGeneralIcons_1002_210097_text.png"
                   }
@@ -1367,7 +1369,6 @@
                   "1089833727448": "210004",
                   "1089833769063": "210011",
                   "1089833812606": "210005",
-                  "1284661967313": "210096",
                   "1284662015059": "210001",
                   "1284662015060": "210002",
                   "1284662015061": "202011",
@@ -1413,7 +1414,8 @@
                   "1284662015101": "200887",
                   "1284662015102": "200086",
                   "1284662015103": "200087",
-                  "1284662049992": "210095",
+                  "1778845740141": "210096",
+                  "1778845740142": "210095",
                   "963384350166": "200954",
                   "964313496965": "202249",
                   "965429760234": "210033",
@@ -1452,17 +1454,17 @@
       },
       "custompropertysets": {
          "cREVGeometryCache": {
-            "stackID": "210108"
+            "stackID": "210114"
          }
       },
       "longID": "stack \"revGeneralIcons\"",
       "properties": {
          "decorations": "default",
          "fileName": "/Users/milby/Developer/HyperXTalk/ide/Toolset/palettes/revgeneralicons.rev",
-         "id": "210110",
+         "id": "210114",
          "liveResizing": false,
          "name": "revGeneralIcons",
-         "rect": "1001,530,1545,1301",
+         "rect": "886,119,1430,890",
          "textFont": "geneva",
          "textSize": "10",
          "textStyle": "plain"

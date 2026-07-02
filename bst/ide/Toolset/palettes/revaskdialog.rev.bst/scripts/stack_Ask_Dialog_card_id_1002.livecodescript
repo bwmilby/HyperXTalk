@@ -3,7 +3,7 @@ Script "stack_Ask_Dialog_card_id_1002"
 /*
 # Name: card "card id 1002" of stack "Ask Dialog"
 # ID: card id 1002 of stack "Ask Dialog"
-# Hash: 3iaBzOzDWW697F1ITLx9aQ==
+# Hash: 6TGmxguYWcEmVSq/sLxFMw==
 */
 
 
@@ -42,8 +42,9 @@ on doresize
       set the left of field 2 to tIconEdge
    end if
    set the top of field 2 to the bottom of field 1 + 4
-   set the top of button 1 to the height of field 1 div 2 - 8
-   set the default of button "OK" to false
+   --   set the top of button 1 to 18 the height of field 1 div 2 - 8
+   set the top of button "icon" to 18
+   --   set the default of button "OK" to false
    
    local tFirstWidthOffset, tFirstBottomOffset, tSecondLeftOffset, tSecondBottomOffset
    local tFirst, tSecond, tFirstXOffset, tFirstYOffset, tSecondXOffset, tSecondYOffset
@@ -76,16 +77,20 @@ on doresize
    end if
 end doresize
 
-on star
-  local tstring
-  put empty into tstring
-  repeat with i = 1 to the number of characters in field 3
-    put "*" after tstring
-  end repeat
-  put tstring into field 2
-end star
+--on star
+--  local tstring
+--  put empty into tstring
+--  repeat with i = 1 to the number of characters in field 3
+--    put "*" after tstring
+--  end repeat
+--  put tstring into field 2
+--end star
 
 on preOpenStack
+   // HXT dark mode
+   set the backgroundColor of me to (the systemWindowColor)
+   set the foregroundColor of me to (the systemTextColor)
+   
    -- PM-2015-07-23: [[ Bug 14224 ]] Remove the (old) focus to allow typing into the input fld
    focus on nothing
    
@@ -204,9 +209,16 @@ on preOpenStack
    
    set the itemDel to numToChar(0)
    if the fieldmode of me is "password" or the fieldmode of me is "clear" then
-      put item 4 of the dialogData into field 3
-      star
-   else put item 4 of the dialogData into field 2
+      set the passwordfield of field 2 of me to TRUE
+      set the passwordToggle of field 2 of me to TRUE
+      put item 4 of the dialogData into field 2 of me
+      --      put item 4 of the dialogData into field 3
+      --      star
+   else 
+      set the passwordfield of field 2 of me to FALSE
+      set the passwordToggle of field 2 of me to FALSE
+      put item 4 of the dialogData into field 2
+   end if
    
    // AL-2014-05-21: [[ Bug 12074 ]] Support RTL layout for ask dialog
    local tRTL
@@ -259,111 +271,124 @@ on preOpenStack
    doresize
 end preOpenStack
 
-on keyDown which
-  local tpos
-  if the name of the target contains "field" and word 1 of the fieldmode of me is "password" or the fieldmode of me is "clear" then
-    put the selectedChunk into tpos
-    put which into character (word 2 of tpos) to (word 4 of tpos) of field 3
-    star
-    select after character (word 2 of tpos) of field 2
-  else pass keyDown
-end keyDown
+--on keyDown which
+--  local tpos
+--  if the name of the target contains "field" and word 1 of the fieldmode of me is "password" or the fieldmode of me is "clear" then
+--    put the selectedChunk into tpos
+--    put which into character (word 2 of tpos) to (word 4 of tpos) of field 3
+--    star
+--    select after character (word 2 of tpos) of field 2
+--  else pass keyDown
+--end keyDown
 
-on deleteKey
-   -- PM-2015-07-24: [[ Bug 3962 ]] Pass deleteKey when 'ask plain/question/information/warning/error ..'
-  if the fieldmode of me is "password" or the fieldmode of me is "clear" then
-      if word 2 of the selectedchunk > word 4 of the selectedchunk then
-         deleteone "forward"
-      else
-         # TH-2008-06-23 :: Bug 6491
-         local tChunk
-         put the selectedChunk into tChunk
-         deleteChunk tChunk
-      end if
-   else 
-      pass deleteKey
-   end if
-end deleteKey
+--on deleteKey
+--   -- PM-2015-07-24: [[ Bug 3962 ]] Pass deleteKey when 'ask plain/question/information/warning/error ..'
+--  if the fieldmode of me is "password" or the fieldmode of me is "clear" then
+--      if word 2 of the selectedchunk > word 4 of the selectedchunk then
+--         deleteone "forward"
+--      else
+--         # TH-2008-06-23 :: Bug 6491
+--         local tChunk
+--         put the selectedChunk into tChunk
+--         deleteChunk tChunk
+--      end if
+--   else 
+--      pass deleteKey
+--   end if
+--end deleteKey
 
 # OK-2007-11-05 : Bug 3956
 on escapeKey
   closeReject
 end escapeKey
 
-on backspaceKey
-   if the fieldmode of me is "password" or the fieldmode of me is "clear" then
-      if word 2 of the selectedchunk > word 4 of the selectedchunk then
-         deleteone "back"
-      else
-         # TH-2008-06-23 :: Bug 6491
-         local tChunk
-         put the selectedChunk into tChunk
-         deleteChunk tChunk
-      end if
-   else 
-      pass backSpaceKey
-   end if
-end backspaceKey
-  
+--on backspaceKey
+--   if the fieldmode of me is "password" or the fieldmode of me is "clear" then
+--      if word 2 of the selectedchunk > word 4 of the selectedchunk then
+--         deleteone "back"
+--      else
+--         # TH-2008-06-23 :: Bug 6491
+--         local tChunk
+--         put the selectedChunk into tChunk
+--         deleteChunk tChunk
+--      end if
+--   else 
+--      pass backSpaceKey
+--   end if
+--end backspaceKey
+
 
 # TH-2008-06-23 :: Bug 6491, make the delete and backspace keys delete
 # hilited text
-command deleteChunk pChunk
-   local tStartChar, tEndChar
-   put word 2 of pChunk into tStartChar
-   put word 4 of pChunk into tEndChar
-   put empty into char tStartChar to tEndChar of field 3
-   star
-   select before char tStartChar of field 2     
-end deleteChunk
-  
-on deleteone pDirection
-   local tpos
-   put word 2 of the selectedChunk into tpos
-   
-   if pDirection is "back" then    -- backSpace key is pressed
-      put empty into character (tpos - 1) of field 3
-      star
-      select before character (tpos - 1) of field 2
-   else if pDirection is "forward" then     -- delete key is pressed
-      put empty into character (tpos) of field 3
-      star
-      select before character (tpos) of field 2
-   end if
-end deleteone
+--command deleteChunk pChunk
+--   local tStartChar, tEndChar
+--   put word 2 of pChunk into tStartChar
+--   put word 4 of pChunk into tEndChar
+--   put empty into char tStartChar to tEndChar of field 3
+--   star
+--   select before char tStartChar of field 2     
+--end deleteChunk
+
+--on deleteone pDirection
+--   local tpos
+--   put word 2 of the selectedChunk into tpos
+
+--   if pDirection is "back" then    -- backSpace key is pressed
+--      put empty into character (tpos - 1) of field 3
+--      star
+--      select before character (tpos - 1) of field 2
+--   else if pDirection is "forward" then     -- delete key is pressed
+--      put empty into character (tpos) of field 3
+--      star
+--      select before character (tpos) of field 2
+--   end if
+--end deleteone
 
 on commandKeyDown which
-  if which is "." then
-    #click at the loc of button "Cancel"
-    closeReject
-    exit commandKeyDown
-  end if
-  if the fieldmode of me is not "plain"
-  then
-    local tpos
-    switch which
-    case "D"
-      put word 2 of the selectedChunk into tpos
-      put empty into character tpos of field 3
-      star
-      select before character tpos of field 1
-      break
-    case "H"
-      deleteone "back"
-      break
-    default
-      pass commandKeyDown
-    end switch
-  else pass commandKeyDown
+   if which is "." then
+      #click at the loc of button "Cancel"
+      closeReject
+      exit commandKeyDown
+   else if (which = "V") then
+      if the clipboard is "text" then
+         local tSelectedChunk
+         put the selectedChunk into tSelectedChunk
+         put the clipboardData["text"] \
+               into character (word 2 of tSelectedChunk) to (word 4 of tSelectedChunk) \
+               of field 2
+      else
+         pass commandKeyDown
+      end if
+   end if
+   --   if the fieldmode of me is not "plain" then
+   --      local tpos
+   --      switch which
+   --         case "D"
+   --            put word 2 of the selectedChunk into tpos
+   --            put empty into character tpos of field 3
+   --            star
+   --            select before character tpos of field 1
+   --            break
+   --         case "H"
+   --            deleteone "back"
+   --            break
+   --         default
+   --            pass commandKeyDown
+   --      end switch
+   --   else pass commandKeyDown
 end commandKeyDown
 
-on openField
-  select the text of the target
-end openField
+--on openField
+--  select the text of the target
+--end openField
 
 on resizeStack
   doresize
 end resizeStack
+
+on enterInField
+   closeAccept
+end enterInField
 
 on returnInField
   #click at the loc of button "OK"
@@ -397,12 +422,13 @@ command closeAccept
          put the text of field 2 of me into tResult
          break
       case "clear"
-         put the text of field 3 of me into tResult
-         break
+         --         put the text of field 3 of me into tResult
+         --         break
       case "password"
          --put mcencrypt(the text of field 3 of me) into tResult
          -- MM-2013-01-28: [[ Bug 10037 ]] No longer hash passwords.
-         put the text of field 3 of me into tResult
+         --         put the text of field 3 of me into tResult
+         put the text of field 2 of me into tResult
          break
    end switch
    
@@ -421,5 +447,7 @@ command closeReject
 end closeReject
 
 
-
-
+--on SystemAppearanceChanged pMode, pWindowColor, pTextColor
+--   set the backgroundColor of me to pWindowColor
+--   set the foregroundColor of me to pTextColor
+--end SystemAppearanceChanged

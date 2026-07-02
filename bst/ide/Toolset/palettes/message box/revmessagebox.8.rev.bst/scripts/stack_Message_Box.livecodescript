@@ -3,7 +3,7 @@ Script "stack_Message_Box"
 /*
 # Name: stack "Message Box"
 # ID: stack "Message Box"
-# Hash: yoRY/GifOrIhuzhMREOotA==
+# Hash: eJTpAPPL1U+KjFT0ZZh++w==
 */
 
 
@@ -16,3 +16,9 @@ on ideInitialiseMessageBox
    set the behavior of group "fields" of card "Multiple Lines" of me to the long id of stack revIDEScriptEditorBehavior("common editor")
    revIDESubscribe "ideMsgChanged"
 end ideInitialiseMessageBox
+
+
+on PreOpenStack
+   set the backgroundColor of me to (the systemWindowColor)
+   set the foregroundColor of me to (the systemTextColor)
+end PreOpenStack

@@ -588,8 +588,7 @@
                "layer": "57",
                "lockLoc": true,
                "name": "Item Insert",
-               "rect": "257,-1021,466,-1000",
-               "sharedBehavior": true
+               "rect": "257,-1021,466,-1000"
             }
          },
          "1200": {
@@ -673,8 +672,7 @@
                "layer": "62",
                "lockLoc": true,
                "name": "Menu Insert",
-               "rect": "13,-1021,178,-1000",
-               "sharedBehavior": true
+               "rect": "13,-1021,178,-1000"
             }
          },
          "3224": {
@@ -2195,8 +2193,7 @@
                "layer": "66",
                "lockLoc": true,
                "name": "Windows Preview",
-               "rect": "-5,-129,494,-100",
-               "sharedBehavior": true
+               "rect": "-5,-129,494,-100"
             }
          }
       },
