@@ -1,0 +1,2609 @@
+{
+   "#mainstack": "Message Box",
+   "Message Box": {
+      "#name": "stack \"Message Box\"",
+      "#substacks": null,
+      "backgroundIDs": "10669\n141786\n203985",
+      "cardIDs": "1002\n9525\n3461\n3462\n2525\n2526\n2960\n1198\n10773",
+      "childcontrols": {
+         "1002": {
+            "#name": "card \"Single Line\"",
+            "childcontrols": {
+               "1090": {
+                  "#name": "group \"fields\"",
+                  "childcontrols": {
+                     "1085": {
+                        "#name": "field \"auto complete\"",
+                        "customproperties": {
+                           "profile": null
+                        },
+                        "custompropertysets": {
+                           "cREVTable": {
+                              "currentview": null
+                           }
+                        },
+                        "properties": {
+                           "backColor": "36,36,38",
+                           "dontWrap": true,
+                           "foreColor": "230,230,230",
+                           "id": "1085",
+                           "layer": "5",
+                           "name": "auto complete",
+                           "rect": "0,21,658,45",
+                           "showBorder": false,
+                           "showFocusBorder": false,
+                           "style": "opaque",
+                           "textFont": "Source Code Pro",
+                           "textSize": "12",
+                           "traversalOn": false
+                        }
+                     },
+                     "1088": {
+                        "#name": "field \"results\"",
+                        "customproperties": {
+                           "profile": null
+                        },
+                        "properties": {
+                           "backColor": "36,36,38",
+                           "borderWidth": "0",
+                           "foreColor": "230,230,230",
+                           "htmlText": "<p>dark,#323232,#ffffff</p>",
+                           "id": "1088",
+                           "layer": "4",
+                           "name": "results",
+                           "rect": "0,45,658,168",
+                           "scrollbarWidth": "16",
+                           "showFocusBorder": false,
+                           "style": "scrolling",
+                           "textSize": "12",
+                           "vScrollbar": true
+                        }
+                     },
+                     "1128": {
+                        "#name": "field \"message\"",
+                        "customproperties": {
+                           "cTooltipTag": "Type a command or expression and press Return"
+                        },
+                        "properties": {
+                           "backColor": "36,36,38",
+                           "behavior": "stack \"revMessageBoxSingleLineMessageBehavior\"",
+                           "dontWrap": true,
+                           "foreColor": "230,230,230",
+                           "htmlText": "%file%: ./ide/Toolset/palettes/message box/revmessagebox.8.rev.bst/assets/Message Box_1002_1090_1128_htmlText.txt",
+                           "id": "1128",
+                           "layer": "6",
+                           "name": "message",
+                           "opaque": false,
+                           "rect": "0,21,658,45",
+                           "showBorder": false,
+                           "showFocusBorder": false,
+                           "style": "transparent",
+                           "textFont": "Source Code Pro",
+                           "textSize": "12",
+                           "toolTip": "Type a command or expression and press Return"
+                        }
+                     },
+                     "2697": {
+                        "#name": "graphic \"line\"",
+                        "properties": {
+                           "antialiased": false,
+                           "foreColor": "211,211,211",
+                           "id": "2697",
+                           "layer": "7",
+                           "name": "line",
+                           "points": "1,45\n657,45",
+                           "rect": "0,44,658,46",
+                           "style": "line"
+                        }
+                     }
+                  },
+                  "properties": {
+                     "cantSelect": true,
+                     "id": "1090",
+                     "layer": "3",
+                     "name": "fields",
+                     "rect": "-4,17,662,172"
+                  }
+               },
+               "1189": {
+                  "#name": "button \"compile test\"",
+                  "customproperties": {
+                     "profile": null
+                  },
+                  "properties": {
+                     "autoHilite": false,
+                     "disabled": true,
+                     "foreColor": "pink",
+                     "id": "1189",
+                     "layer": "8",
+                     "margins": "8",
+                     "name": "compile test",
+                     "opaque": false,
+                     "rect": "-6,304,76,327",
+                     "sharedHilite": false,
+                     "showFocusBorder": false,
+                     "showName": false,
+                     "style": "transparent",
+                     "traversalOn": false,
+                     "visible": false
+                  }
+               },
+               "141786": "#shared group",
+               "203985": "#shared group"
+            },
+            "customproperties": {
+               "cREVBottom": "405",
+               "cREVHeight": "214",
+               "cREVRight": "1316",
+               "cREVWidth": "589"
+            },
+            "custompropertysets": {
+               "cREVGeometrycache": {
+                  "order": "\n",
+                  "total": "14"
+               },
+               "cREVGeometryCacheIDs": {
+                  "1415797506987": "1085",
+                  "1415797724089": "1090",
+                  "1415797724090": "1088",
+                  "1415806677521": "1128",
+                  "1415896319260": "1189",
+                  "1416414749724": "2697",
+                  "1418655967455": "172079",
+                  "1418913978623": "141786",
+                  "1418913978624": "141785",
+                  "1419003116473": "172080",
+                  "1419003119476": "172081",
+                  "1420462741440": "196678",
+                  "1427708147177": "203985",
+                  "1434022017330": "203986"
+               }
+            },
+            "properties": {
+               "backColor": "36,36,38",
+               "behavior": "stack \"revMessageBoxSingleLineCardBehavior\"",
+               "id": "1002",
+               "name": "Single Line"
+            }
+         },
+         "10669": {
+            "#name": "group \"objectList\"",
+            "childcontrols": {
+               "10670": {
+                  "#name": "button \"dvEventCatcher\"",
+                  "custompropertysets": {
+                     "uVersion": {
+                        "ID": "624013",
+                        "UUID": "500909ca-230d-43ec-9294-7aaa49afe45d"
+                     }
+                  },
+                  "properties": {
+                     "autoHilite": false,
+                     "id": "10670",
+                     "layer": "14",
+                     "name": "dvEventCatcher",
+                     "opaque": false,
+                     "rect": "0,21,539,168",
+                     "sharedHilite": false,
+                     "showBorder": false,
+                     "showName": false,
+                     "style": "transparent",
+                     "traversalOn": false
+                  }
+               },
+               "10671": {
+                  "#name": "graphic \"dvBackground\"",
+                  "custompropertysets": {
+                     "uVersion": {
+                        "ID": "624014",
+                        "UUID": "ee036234-715f-488d-b194-17a24d8091ab"
+                     }
+                  },
+                  "properties": {
+                     "antialiased": false,
+                     "backColor": "36,36,38",
+                     "filled": true,
+                     "id": "10671",
+                     "layer": "14",
+                     "lineSize": "0",
+                     "name": "dvBackground",
+                     "opaque": true,
+                     "rect": "0,21,539,168",
+                     "traversalOn": true
+                  }
+               },
+               "10672": {
+                  "#name": "button \"dvTrackDragDrop\"",
+                  "custompropertysets": {
+                     "uVersion": {
+                        "ID": "624015",
+                        "UUID": "894a8a8e-e6c9-4efd-bcdf-5a31b56b9eea"
+                     }
+                  },
+                  "properties": {
+                     "behavior": "button id 1010 of stack \"revDataViewControl\"",
+                     "id": "10672",
+                     "layer": "14",
+                     "name": "dvTrackDragDrop",
+                     "rect": "106,-154,268,-131",
+                     "style": "rectangle",
+                     "traversalOn": false,
+                     "visible": false
+                  }
+               },
+               "10673": {
+                  "#name": "group \"dvListMask\"",
+                  "childcontrols": {
+                     "10674": {
+                        "#name": "group \"dvList\"",
+                        "childcontrols": {
+                           "213544": {
+                              "#name": "group \"stacksRow\"",
+                              "childcontrols": {
+                                 "213545": {
+                                    "#name": "graphic \"background\"",
+                                    "customproperties": {
+                                       "profile": null
+                                    },
+                                    "properties": {
+                                       "antialiased": false,
+                                       "backColor": "255,255,255",
+                                       "filled": true,
+                                       "id": "213545",
+                                       "layer": "14",
+                                       "lineSize": "0",
+                                       "name": "background",
+                                       "opaque": true,
+                                       "rect": "0,21,539,45"
+                                    }
+                                 },
+                                 "213546": {
+                                    "#name": "image \"stack.png\"",
+                                    "properties": {
+                                       "alwaysBuffer": true,
+                                       "id": "213546",
+                                       "layer": "14",
+                                       "name": "stack.png",
+                                       "rect": "12,25,28,41",
+                                       "repeatCount": "-1",
+                                       "text": {
+                                          "%base64%": "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9i\nZSBJbWFnZVJlYWR5ccllPAAAAFtJREFUeNpiTEtLi2VgYGgBYjkG0sB9IE5hARK9QCzKQDpQ\nBOK9LP///ydHMxyADGCg2IA5c+YwkqM5JSXlPxMlLgDpHQ4GMFAIRsOACmEAyo0MMTExZJsC\nEGAA9zhEDWkjtIYAAAAASUVORK5CYII="
+                                       },
+                                       "toolTip": "200083"
+                                    }
+                                 },
+                                 "213547": {
+                                    "#name": "field \"stack name\"",
+                                    "customproperties": {
+                                       "profile": null
+                                    },
+                                    "custompropertysets": {
+                                       "cREVTable": {
+                                          "currentview": "stack"
+                                       }
+                                    },
+                                    "properties": {
+                                       "autoHilite": false,
+                                       "autoTab": true,
+                                       "backColor": "36,36,38",
+                                       "dontWrap": true,
+                                       "foreColor": "230,230,230",
+                                       "htmlText": "<p>stack \"revDocsParser\"</p>",
+                                       "id": "213547",
+                                       "layer": "14",
+                                       "lockText": true,
+                                       "name": "stack name",
+                                       "opaque": false,
+                                       "rect": "26,23,161,43",
+                                       "sharedText": true,
+                                       "showBorder": false,
+                                       "style": "transparent",
+                                       "textHeight": "16",
+                                       "traversalOn": false
+                                    }
+                                 },
+                                 "213548": {
+                                    "#name": "field \"scriptLines\"",
+                                    "customproperties": {
+                                       "cTooltipTag": "Script lines",
+                                       "profile": null
+                                    },
+                                    "custompropertysets": {
+                                       "cREVTable": {
+                                          "bottomfieldloc": "51",
+                                          "cellxspacing": "75",
+                                          "cellyspacing": "15",
+                                          "currenthscroll": "0",
+                                          "currentview": "<p>script</p>",
+                                          "currentvscroll": "0",
+                                          "currentxmouseloc": "139",
+                                          "currentymouseloc": "22",
+                                          "leftfieldloc": "505",
+                                          "numbertabstops": "1",
+                                          "rightfieldloc": "557",
+                                          "scrollbarwidth": "20",
+                                          "topfieldloc": "33",
+                                          "viewablecolumns": "1",
+                                          "viewablerows": "2"
+                                       }
+                                    },
+                                    "properties": {
+                                       "autoHilite": false,
+                                       "backColor": "36,36,38",
+                                       "borderWidth": "1",
+                                       "dontWrap": true,
+                                       "foreColor": "230,230,230",
+                                       "htmlText": "<p>2936</p>",
+                                       "id": "213548",
+                                       "layer": "14",
+                                       "lockText": true,
+                                       "margins": "6,7,6,0",
+                                       "name": "scriptLines",
+                                       "rect": "474,24,512,42",
+                                       "sharedText": true,
+                                       "showBorder": false,
+                                       "style": "opaque",
+                                       "tabStops": "75",
+                                       "textAlign": "center",
+                                       "textHeight": "15",
+                                       "threeD": false,
+                                       "toolTip": "Script Lines",
+                                       "traversalOn": false
+                                    }
+                                 },
+                                 "213549": {
+                                    "#name": "field \"behaviorScriptLines\"",
+                                    "customproperties": {
+                                       "cTooltipTag": "Script lines",
+                                       "profile": null
+                                    },
+                                    "custompropertysets": {
+                                       "cREVTable": {
+                                          "currentview": "behavior"
+                                       }
+                                    },
+                                    "properties": {
+                                       "autoHilite": false,
+                                       "backColor": "36,36,38",
+                                       "borderWidth": "1",
+                                       "dontWrap": true,
+                                       "foreColor": "230,230,230",
+                                       "htmlText": "<p>-</p>",
+                                       "id": "213549",
+                                       "layer": "14",
+                                       "lockText": true,
+                                       "margins": "6,7,6,0",
+                                       "name": "behaviorScriptLines",
+                                       "rect": "456,23,472,43",
+                                       "sharedText": true,
+                                       "showBorder": false,
+                                       "style": "opaque",
+                                       "textAlign": "center",
+                                       "textHeight": "15",
+                                       "threeD": false,
+                                       "toolTip": "Script lines",
+                                       "traversalOn": false,
+                                       "visible": false
+                                    }
+                                 },
+                                 "213550": {
+                                    "#name": "button \"remove selected\"",
+                                    "customproperties": {
+                                       "profile": null
+                                    },
+                                    "properties": {
+                                       "hiliteBorder": false,
+                                       "icon": "205263",
+                                       "id": "213550",
+                                       "label": ,
+                                       "-layer": "14",
+                                       "margins": "8",
+                                       "name": "remove selected",
+                                       "opaque": false,
+                                       "rect": "512,23,533,43",
+                                       "showBorder": false,
+                                       "showIcon": true,
+                                       "showName": false,
+                                       "style": "rectangle",
+                                       "threeD": false,
+                                       "traversalOn": false
+                                    }
+                                 }
+                              },
+                              "customproperties": {
+                                 "dvDataCache": null,
+                                 "dvRow": "1",
+                                 "dvTemplateStyle": "stacksInUse",
+                                 "uTemplateStyle": "stacksInUse"
+                              },
+                              "properties": {
+                                 "behavior": "button id 10974 of stack \"Message Box\"",
+                                 "id": "213544",
+                                 "layer": "14",
+                                 "lockLoc": true,
+                                 "name": "stacksRow",
+                                 "rect": "0,21,539,45"
+                              }
+                           }
+                        },
+                        "custompropertysets": {
+                           "uVersion": {
+                              "ID": "624017",
+                              "UUID": "4a129b64-ea9b-4345-9fe1-480d47ad739d"
+                           }
+                        },
+                        "properties": {
+                           "id": "10674",
+                           "layer": "14",
+                           "lockLoc": true,
+                           "name": "dvList",
+                           "rect": "0,21,539,168"
+                        }
+                     },
+                     "10675": {
+                        "#name": "group \"dvDropIndicator\"",
+                        "customproperties": {
+                           "dvTargetControl": "group id 9898 of card id 1002 of stack \"/Users/trevordevore/Dropbox/Clarify/Application/components/program.dat\""
+                        },
+                        "custompropertysets": {
+                           "uVersion": {
+                              "ID": "624018",
+                              "UUID": "5f5c9018-126c-4f8b-ab7c-f32df80dbab2"
+                           }
+                        },
+                        "properties": {
+                           "behavior": "button id 1128 of stack \"revDataGridLibrary\"",
+                           "disabled": true,
+                           "id": "10675",
+                           "layer": "14",
+                           "margins": "0",
+                           "name": "dvDropIndicator",
+                           "rect": "465,245,465,245",
+                           "visible": false
+                        }
+                     }
+                  },
+                  "custompropertysets": {
+                     "uVersion": {
+                        "ID": "624016",
+                        "UUID": "c544689e-d5fd-4117-808c-d9ffaf3fa8b2"
+                     }
+                  },
+                  "properties": {
+                     "id": "10673",
+                     "layer": "14",
+                     "lockLoc": true,
+                     "margins": "0",
+                     "name": "dvListMask",
+                     "rect": "0,21,539,168"
+                  }
+               },
+               "10676": {
+                  "#name": "scrollbar \"dvVScrollbar\"",
+                  "custompropertysets": {
+                     "uVersion": {
+                        "ID": "624019",
+                        "UUID": "75927a4c-f3d7-467b-b711-3d751c396bd1"
+                     }
+                  },
+                  "properties": {
+                     "behavior": "button id 1005 of stack \"revDataViewControl\"",
+                     "endValue": "147",
+                     "id": "10676",
+                     "layer": "14",
+                     "lineInc": "23.998672",
+                     "name": "dvVScrollbar",
+                     "pageInc": "147",
+                     "rect": "524,21,539,168",
+                     "thumbSize": "147",
+                     "traversalOn": false,
+                     "visible": false
+                  }
+               }
+            },
+            "customproperties": {
+               "viewProp": "ef625c4f-44e4-41b9-8a89-b665b0cd3d43"
+            },
+            "custompropertysets": {
+               "uVersion": {
+                  "ID": "624012",
+                  "UUID": "eac8ebb6-00d4-477b-8982-93e9023ee59b"
+               },
+               "viewProp": {
+                  "alternate row color": "36,36,38",
+                  "animate selections": false,
+                  "autohide scrollbars": true,
+                  "cache": "none",
+                  "content height": "24",
+                  "dim on focusout": false,
+                  "dimmed hilite color": "80,94,100",
+                  "drop indicator template": null,
+                  "first working row": "1",
+                  "fixed row height": true,
+                  "hilite color": "10,95,175",
+                  "last working row": "1",
+                  "multiple lines": true,
+                  "resize controls": false,
+                  "row color": "36,36,38",
+                  "row height": "24",
+                  "row style templates": {
+                     "backScripts": "group id 26763 of card id 10773 of stack \"Message Box\"",
+                     "frontScripts": "group id 26763 of card id 10773 of stack \"Message Box\"",
+                     "pendingMessages": "group id 26870 of card id 10773 of stack \"Message Box\"",
+                     "stacksInUse": "group id 10802 of card id 10773 of stack \"Message Box\""
+                  },
+                  "scroll selections into view": true,
+                  "scrollbar corner offset": "0",
+                  "vscroll": "0"
+               }
+            },
+            "properties": {
+               "backColor": "36,36,38",
+               "backgroundBehavior": true,
+               "behavior": "button id 1003 of stack \"revDataViewControl\"",
+               "borderWidth": "0",
+               "id": "10669",
+               "layer": "14",
+               "margins": "0",
+               "name": "objectList",
+               "opaque": true,
+               "rect": "0,21,539,168",
+               "selectGroupedControls": false,
+               "showBorder": true,
+               "threeD": false
+            }
+         },
+         "10773": {
+            "#name": "card \"templates\"",
+            "childcontrols": {
+               "10802": {
+                  "#name": "group \"stacksRow\"",
+                  "childcontrols": {
+                     "10775": {
+                        "#name": "image \"stack.png\"",
+                        "properties": {
+                           "alwaysBuffer": true,
+                           "id": "10775",
+                           "layer": "3",
+                           "name": "stack.png",
+                           "rect": "6,80,22,96",
+                           "repeatCount": "-1",
+                           "text": {
+                              "%base64%": "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9i\nZSBJbWFnZVJlYWR5ccllPAAAAFtJREFUeNpiTEtLi2VgYGgBYjkG0sB9IE5hARK9QCzKQDpQ\nBOK9LP///ydHMxyADGCg2IA5c+YwkqM5JSXlPxMlLgDpHQ4GMFAIRsOACmEAyo0MMTExZJsC\nEGAA9zhEDWkjtIYAAAAASUVORK5CYII="
+                           },
+                           "toolTip": "200083"
+                        }
+                     },
+                     "10801": {
+                        "#name": "field \"stack name\"",
+                        "customproperties": {
+                           "profile": null
+                        },
+                        "custompropertysets": {
+                           "cREVTable": {
+                              "currentview": "stack"
+                           }
+                        },
+                        "properties": {
+                           "autoHilite": false,
+                           "autoTab": true,
+                           "backColor": "36,36,38",
+                           "dontWrap": true,
+                           "foreColor": "230,230,230",
+                           "htmlText": "<p>stack</p>",
+                           "id": "10801",
+                           "layer": "4",
+                           "lockText": true,
+                           "name": "stack name",
+                           "opaque": false,
+                           "rect": "48,80,168,100",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "transparent",
+                           "textHeight": "16",
+                           "traversalOn": false
+                        }
+                     },
+                     "11321": {
+                        "#name": "graphic \"background\"",
+                        "customproperties": {
+                           "profile": null
+                        },
+                        "properties": {
+                           "antialiased": false,
+                           "filled": true,
+                           "id": "11321",
+                           "layer": "2",
+                           "lineSize": "0",
+                           "name": "background",
+                           "opaque": true,
+                           "rect": "360,82,496,100"
+                        }
+                     },
+                     "11502": {
+                        "#name": "field \"scriptLines\"",
+                        "customproperties": {
+                           "cTooltipTag": "Script lines",
+                           "profile": null
+                        },
+                        "custompropertysets": {
+                           "cREVTable": {
+                              "bottomfieldloc": "51",
+                              "cellxspacing": "75",
+                              "cellyspacing": "15",
+                              "currenthscroll": "0",
+                              "currentview": "<p>script</p>",
+                              "currentvscroll": "0",
+                              "currentxmouseloc": "139",
+                              "currentymouseloc": "22",
+                              "leftfieldloc": "505",
+                              "numbertabstops": "1",
+                              "rightfieldloc": "557",
+                              "scrollbarwidth": "20",
+                              "topfieldloc": "33",
+                              "viewablecolumns": "1",
+                              "viewablerows": "2"
+                           }
+                        },
+                        "properties": {
+                           "autoHilite": false,
+                           "backColor": "36,36,38",
+                           "borderWidth": "1",
+                           "dontWrap": true,
+                           "foreColor": "230,230,230",
+                           "htmlText": "<p>script</p>",
+                           "id": "11502",
+                           "layer": "5",
+                           "lockText": true,
+                           "margins": "6,7,6,0",
+                           "name": "scriptLines",
+                           "rect": "505,33,557,51",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "opaque",
+                           "tabStops": "75",
+                           "textAlign": "center",
+                           "textHeight": "15",
+                           "threeD": false,
+                           "toolTip": "Script Lines",
+                           "traversalOn": false
+                        }
+                     },
+                     "11503": {
+                        "#name": "field \"behaviorScriptLines\"",
+                        "customproperties": {
+                           "cTooltipTag": "Script lines",
+                           "profile": null
+                        },
+                        "custompropertysets": {
+                           "cREVTable": {
+                              "currentview": "behavior"
+                           }
+                        },
+                        "properties": {
+                           "autoHilite": false,
+                           "backColor": "36,36,38",
+                           "borderWidth": "1",
+                           "dontWrap": true,
+                           "foreColor": "230,230,230",
+                           "htmlText": "<p>behavior</p>",
+                           "id": "11503",
+                           "layer": "6",
+                           "lockText": true,
+                           "margins": "6,7,6,0",
+                           "name": "behaviorScriptLines",
+                           "rect": "502,32,553,52",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "opaque",
+                           "textAlign": "center",
+                           "textHeight": "15",
+                           "threeD": false,
+                           "toolTip": "Script lines",
+                           "traversalOn": false
+                        }
+                     },
+                     "12664": {
+                        "#name": "button \"remove selected\"",
+                        "customproperties": {
+                           "profile": null
+                        },
+                        "properties": {
+                           "hiliteBorder": false,
+                           "icon": "205263",
+                           "id": "12664",
+                           "label": ,
+                           "-layer": "7",
+                           "margins": "8",
+                           "name": "remove selected",
+                           "opaque": false,
+                           "rect": "523,32,547,52",
+                           "showBorder": false,
+                           "showIcon": true,
+                           "showName": false,
+                           "style": "rectangle",
+                           "threeD": false,
+                           "traversalOn": false
+                        }
+                     }
+                  },
+                  "properties": {
+                     "behavior": "button id 10974 of stack \"Message Box\"",
+                     "id": "10802",
+                     "layer": "1",
+                     "name": "stacksRow",
+                     "rect": "2,28,561,104"
+                  }
+               },
+               "10974": {
+                  "#name": "button \"stacksRow Behavior Script\"",
+                  "customproperties": {
+                     "profile": null
+                  },
+                  "properties": {
+                     "id": "10974",
+                     "layer": "8",
+                     "margins": "8",
+                     "name": "stacksRow Behavior Script",
+                     "rect": "390,80,552,103",
+                     "style": "rectangle",
+                     "traversalOn": false
+                  }
+               },
+               "26750": {
+                  "#name": "button \"frontScriptsRow Behavior\"",
+                  "customproperties": {
+                     "profile": null
+                  },
+                  "properties": {
+                     "id": "26750",
+                     "layer": "15",
+                     "margins": "8",
+                     "name": "frontScriptsRow Behavior",
+                     "rect": "392,157,554,180",
+                     "style": "rectangle",
+                     "traversalOn": false
+                  }
+               },
+               "26763": {
+                  "#name": "group \"frontScriptsRow\"",
+                  "childcontrols": {
+                     "157763": {
+                        "#name": "image \"button.png\"",
+                        "properties": {
+                           "alwaysBuffer": true,
+                           "id": "157763",
+                           "layer": "24",
+                           "name": "button.png",
+                           "rect": "42,244,58,260",
+                           "repeatCount": "-1",
+                           "text": "%file%: ./ide/Toolset/palettes/message box/revmessagebox.8.rev.bst/assets/Message Box_10773_26763_157763_text.png",
+                           "toolTip": "201057"
+                        }
+                     },
+                     "158115": {
+                        "#name": "image \"group.png\"",
+                        "properties": {
+                           "alwaysBuffer": true,
+                           "id": "158115",
+                           "layer": "25",
+                           "name": "group.png",
+                           "rect": "60,244,76,260",
+                           "repeatCount": "-1",
+                           "text": "%file%: ./ide/Toolset/palettes/message box/revmessagebox.8.rev.bst/assets/Message Box_10773_26763_158115_text.png",
+                           "toolTip": "201060"
+                        }
+                     },
+                     "158117": {
+                        "#name": "image \"card.png\"",
+                        "properties": {
+                           "alwaysBuffer": true,
+                           "id": "158117",
+                           "layer": "26",
+                           "name": "card.png",
+                           "rect": "80,244,96,260",
+                           "repeatCount": "-1",
+                           "text": {
+                              "%base64%": "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9i\nZSBJbWFnZVJlYWR5ccllPAAAAE9JREFUeNpi/P//PwMlgImBQsCYnJxMjhMY58yZQ5kB6F74\nCBUkFmMNA34g/k8qpjgQRw1gYGBBihb+gUnKoMyUkpICc8EHsgwY0EAECDAA4PgfdCdxp6QA\nAAAASUVORK5CYII="
+                           },
+                           "toolTip": "201458"
+                        }
+                     },
+                     "158119": {
+                        "#name": "image \"graphic.png\"",
+                        "properties": {
+                           "alwaysBuffer": true,
+                           "id": "158119",
+                           "layer": "27",
+                           "name": "graphic.png",
+                           "rect": "100,244,116,260",
+                           "repeatCount": "-1",
+                           "text": "%file%: ./ide/Toolset/palettes/message box/revmessagebox.8.rev.bst/assets/Message Box_10773_26763_158119_text.png",
+                           "toolTip": "201059"
+                        }
+                     },
+                     "158121": {
+                        "#name": "image \"image.png\"",
+                        "properties": {
+                           "alwaysBuffer": true,
+                           "id": "158121",
+                           "layer": "28",
+                           "name": "image.png",
+                           "rect": "120,244,136,260",
+                           "repeatCount": "-1",
+                           "text": "%file%: ./ide/Toolset/palettes/message box/revmessagebox.8.rev.bst/assets/Message Box_10773_26763_158121_text.png",
+                           "toolTip": "201061"
+                        }
+                     },
+                     "158123": {
+                        "#name": "image \"field.png\"",
+                        "properties": {
+                           "alwaysBuffer": true,
+                           "id": "158123",
+                           "layer": "29",
+                           "name": "field.png",
+                           "rect": "22,262,38,278",
+                           "repeatCount": "-1",
+                           "text": "%file%: ./ide/Toolset/palettes/message box/revmessagebox.8.rev.bst/assets/Message Box_10773_26763_158123_text.png",
+                           "toolTip": "201058"
+                        }
+                     },
+                     "158125": {
+                        "#name": "image \"substack.png\"",
+                        "properties": {
+                           "alwaysBuffer": true,
+                           "id": "158125",
+                           "layer": "30",
+                           "name": "substack.png",
+                           "rect": "44,262,60,278",
+                           "repeatCount": "-1",
+                           "text": "%file%: ./ide/Toolset/palettes/message box/revmessagebox.8.rev.bst/assets/Message Box_10773_26763_158125_text.png",
+                           "toolTip": "200082"
+                        }
+                     },
+                     "26751": {
+                        "#name": "button \"remove selected\"",
+                        "customproperties": {
+                           "profile": null
+                        },
+                        "properties": {
+                           "hiliteBorder": false,
+                           "icon": "205263",
+                           "id": "26751",
+                           "label": ,
+                           "-layer": "18",
+                           "margins": "8",
+                           "name": "remove selected",
+                           "opaque": false,
+                           "rect": "374,232,398,255",
+                           "showBorder": false,
+                           "showIcon": true,
+                           "showName": false,
+                           "style": "rectangle",
+                           "threeD": false,
+                           "traversalOn": false
+                        }
+                     },
+                     "26756": {
+                        "#name": "field \"control name\"",
+                        "customproperties": {
+                           "profile": null
+                        },
+                        "properties": {
+                           "autoHilite": false,
+                           "autoTab": true,
+                           "backColor": "36,36,38",
+                           "dontWrap": true,
+                           "foreColor": "230,230,230",
+                           "htmlText": "<p>Label:</p>",
+                           "id": "26756",
+                           "layer": "19",
+                           "lockText": true,
+                           "name": "control name",
+                           "opaque": false,
+                           "rect": "110,232,210,253",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "transparent",
+                           "textAlign": "right",
+                           "textHeight": "16",
+                           "traversalOn": false
+                        }
+                     },
+                     "26757": {
+                        "#name": "field \"behaviorScriptLines\"",
+                        "customproperties": {
+                           "cTooltipTag": "Script lines",
+                           "profile": null
+                        },
+                        "properties": {
+                           "autoHilite": false,
+                           "backColor": "36,36,38",
+                           "borderWidth": "1",
+                           "dontWrap": true,
+                           "foreColor": "230,230,230",
+                           "htmlText": "<p>Label:</p>",
+                           "id": "26757",
+                           "layer": "20",
+                           "lockText": true,
+                           "margins": "6,7,6,0",
+                           "name": "behaviorScriptLines",
+                           "rect": "192,232,292,253",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "opaque",
+                           "textAlign": "center",
+                           "textHeight": "15",
+                           "threeD": false,
+                           "toolTip": "Script lines",
+                           "traversalOn": false
+                        }
+                     },
+                     "26758": {
+                        "#name": "field \"scriptLines\"",
+                        "customproperties": {
+                           "cTooltipTag": "Script lines",
+                           "profile": null
+                        },
+                        "properties": {
+                           "autoHilite": false,
+                           "backColor": "36,36,38",
+                           "borderWidth": "1",
+                           "dontWrap": true,
+                           "foreColor": "230,230,230",
+                           "htmlText": "<p>Label:</p>",
+                           "id": "26758",
+                           "layer": "21",
+                           "lockText": true,
+                           "margins": "6,7,6,0",
+                           "name": "scriptLines",
+                           "rect": "262,233,362,251",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "opaque",
+                           "textAlign": "center",
+                           "textHeight": "15",
+                           "threeD": false,
+                           "toolTip": "Script lines",
+                           "traversalOn": false
+                        }
+                     },
+                     "26760": {
+                        "#name": "graphic \"background\"",
+                        "customproperties": {
+                           "profile": null
+                        },
+                        "properties": {
+                           "antialiased": false,
+                           "filled": true,
+                           "id": "26760",
+                           "layer": "17",
+                           "lineSize": "0",
+                           "name": "background",
+                           "opaque": true,
+                           "rect": "228,260,388,285"
+                        }
+                     },
+                     "26762": {
+                        "#name": "image \"stack.png\"",
+                        "properties": {
+                           "alwaysBuffer": true,
+                           "id": "26762",
+                           "layer": "22",
+                           "name": "stack.png",
+                           "rect": "22,244,38,260",
+                           "repeatCount": "-1",
+                           "text": {
+                              "%base64%": "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9i\nZSBJbWFnZVJlYWR5ccllPAAAAFtJREFUeNpiTEtLi2VgYGgBYjkG0sB9IE5hARK9QCzKQDpQ\nBOK9LP///ydHMxyADGCg2IA5c+YwkqM5JSXlPxMlLgDpHQ4GMFAIRsOACmEAyo0MMTExZJsC\nEGAA9zhEDWkjtIYAAAAASUVORK5CYII="
+                           },
+                           "toolTip": "19249"
+                        }
+                     },
+                     "27166": {
+                        "#name": "field \"long id\"",
+                        "customproperties": {
+                           "profile": null
+                        },
+                        "properties": {
+                           "autoHilite": false,
+                           "autoTab": true,
+                           "backColor": "36,36,38",
+                           "dontWrap": true,
+                           "foreColor": "230,230,230",
+                           "htmlText": "<p>Label:</p>",
+                           "id": "27166",
+                           "layer": "23",
+                           "lockText": true,
+                           "name": "long id",
+                           "opaque": false,
+                           "rect": "167,296,267,317",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "transparent",
+                           "textAlign": "right",
+                           "textHeight": "16",
+                           "traversalOn": false,
+                           "visible": false
+                        }
+                     }
+                  },
+                  "properties": {
+                     "behavior": "button id 26750 of stack \"Message Box\"",
+                     "id": "26763",
+                     "layer": "16",
+                     "name": "frontScriptsRow",
+                     "rect": "18,228,402,289"
+                  }
+               },
+               "26870": {
+                  "#name": "group \"pendingMessagesRow\"",
+                  "childcontrols": {
+                     "29634": {
+                        "#name": "field \"message\"",
+                        "customproperties": {
+                           "profile": null
+                        },
+                        "properties": {
+                           "autoHilite": false,
+                           "autoTab": true,
+                           "backColor": "36,36,38",
+                           "dontWrap": true,
+                           "foreColor": "230,230,230",
+                           "htmlText": "<p>Label:</p>",
+                           "id": "29634",
+                           "layer": "11",
+                           "lockText": true,
+                           "name": "message",
+                           "opaque": false,
+                           "rect": "-45,334,55,355",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "transparent",
+                           "textHeight": "16",
+                           "traversalOn": false
+                        }
+                     },
+                     "29635": {
+                        "#name": "field \"scriptLines\"",
+                        "customproperties": {
+                           "cTooltipTag": "Script lines",
+                           "profile": null
+                        },
+                        "properties": {
+                           "autoHilite": false,
+                           "backColor": "36,36,38",
+                           "borderWidth": "1",
+                           "dontWrap": true,
+                           "foreColor": "230,230,230",
+                           "htmlText": "<p>Label:</p>",
+                           "id": "29635",
+                           "layer": "12",
+                           "lockText": true,
+                           "margins": "6,7,6,0",
+                           "name": "scriptLines",
+                           "rect": "21,336,121,354",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "opaque",
+                           "textAlign": "center",
+                           "textHeight": "15",
+                           "threeD": false,
+                           "toolTip": "Script lines",
+                           "traversalOn": false
+                        }
+                     },
+                     "29636": {
+                        "#name": "field \"behaviorScriptLines\"",
+                        "customproperties": {
+                           "cTooltipTag": "Script lines",
+                           "profile": null
+                        },
+                        "properties": {
+                           "autoHilite": false,
+                           "backColor": "36,36,38",
+                           "borderWidth": "1",
+                           "dontWrap": true,
+                           "foreColor": "230,230,230",
+                           "htmlText": "<p>Label:</p>",
+                           "id": "29636",
+                           "layer": "13",
+                           "lockText": true,
+                           "margins": "6,7,6,0",
+                           "name": "behaviorScriptLines",
+                           "rect": "71,334,171,355",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "opaque",
+                           "textAlign": "center",
+                           "textHeight": "15",
+                           "threeD": false,
+                           "toolTip": "Script lines",
+                           "traversalOn": false
+                        }
+                     },
+                     "29637": {
+                        "#name": "button \"remove selected\"",
+                        "customproperties": {
+                           "profile": null
+                        },
+                        "properties": {
+                           "hiliteBorder": false,
+                           "icon": "205263",
+                           "id": "29637",
+                           "label": ,
+                           "-layer": "14",
+                           "margins": "8",
+                           "name": "remove selected",
+                           "opaque": false,
+                           "rect": "191,333,273,356",
+                           "showBorder": false,
+                           "showIcon": true,
+                           "showName": false,
+                           "style": "rectangle",
+                           "threeD": false,
+                           "traversalOn": false
+                        }
+                     },
+                     "29794": {
+                        "#name": "graphic \"background\"",
+                        "customproperties": {
+                           "profile": null
+                        },
+                        "properties": {
+                           "antialiased": false,
+                           "filled": true,
+                           "id": "29794",
+                           "layer": "10",
+                           "lineSize": "0",
+                           "name": "background",
+                           "opaque": true,
+                           "rect": "246,334,462,358"
+                        }
+                     }
+                  },
+                  "customproperties": {
+                     "viewProp": "ef625c4f-44e4-41b9-8a89-b665b0cd3d43"
+                  },
+                  "custompropertysets": {
+                     "uVersion": {
+                        "ID": "624012",
+                        "UUID": "eac8ebb6-00d4-477b-8982-93e9023ee59b"
+                     },
+                     "viewProp": {
+                        "animate selections": false,
+                        "autohide scrollbars": true,
+                        "cache": "none",
+                        "content height": "0",
+                        "dim on focusout": false,
+                        "dimmed hilite color": "80,94,100",
+                        "drop indicator template": null,
+                        "first working row": "0",
+                        "fixed row height": true,
+                        "hilite color": "65,169,212",
+                        "last working row": "0",
+                        "multiple lines": true,
+                        "resize controls": false,
+                        "row color": "66,79,85",
+                        "row height": "28",
+                        "row style templates": {
+                           "default": null
+                        },
+                        "scroll selections into view": true,
+                        "scrollbar corner offset": "0",
+                        "vscroll": "0"
+                     }
+                  },
+                  "properties": {
+                     "behavior": "button id 29633 of stack \"Message Box\"",
+                     "borderWidth": "0",
+                     "id": "26870",
+                     "layer": "9",
+                     "margins": "0",
+                     "name": "pendingMessagesRow",
+                     "opaque": true,
+                     "rect": "-45,333,462,358",
+                     "selectGroupedControls": false,
+                     "showBorder": true,
+                     "threeD": false
+                  }
+               },
+               "29633": {
+                  "#name": "button \"pendingMessagesRow Behavior\"",
+                  "customproperties": {
+                     "profile": null
+                  },
+                  "properties": {
+                     "id": "29633",
+                     "layer": "31",
+                     "margins": "8",
+                     "name": "pendingMessagesRow Behavior",
+                     "rect": "392,187,556,210",
+                     "style": "rectangle",
+                     "traversalOn": false
+                  }
+               }
+            },
+            "custompropertysets": {
+               "cREVGeometrycache": {
+                  "order": null,
+                  "total": "31"
+               },
+               "cREVGeometryCacheIDs": {
+                  "1414692213275": "10775",
+                  "1418314407187": "10801",
+                  "1418378034950": "10802",
+                  "1418378034951": "10974",
+                  "1418384755665": "11321",
+                  "1418386626643": "11502",
+                  "1418386631773": "11503",
+                  "1418399387948": "12664",
+                  "1418727198642": "26750",
+                  "1418727244532": "26751",
+                  "1418727244537": "26756",
+                  "1418727244538": "26757",
+                  "1418727253848": "26758",
+                  "1418727273007": "26760",
+                  "1418727320611": "26762",
+                  "1418727569773": "26763",
+                  "1418728024785": "26870",
+                  "1418728622405": "27166",
+                  "1418729875298": "29633",
+                  "1418729898912": "29634",
+                  "1418729898913": "29635",
+                  "1418729898914": "29636",
+                  "1418729898915": "29637",
+                  "1418731107890": "29794",
+                  "1418984198836": "157763",
+                  "1418986123062": "158115",
+                  "1418986123063": "158117",
+                  "1418986123064": "158119",
+                  "1418986123065": "158121",
+                  "1418986123066": "158123",
+                  "1418986123067": "158125"
+               }
+            },
+            "properties": {
+               "backColor": "36,36,38",
+               "id": "10773",
+               "layer": "9",
+               "name": "templates"
+            }
+         },
+         "1198": {
+            "#name": "card \"Multiple Lines\"",
+            "childcontrols": {
+               "141786": "#shared group",
+               "1612": {
+                  "#name": "group \"fields\"",
+                  "childcontrols": {
+                     "10827": {
+                        "#name": "graphic \"line\"",
+                        "properties": {
+                           "antialiased": false,
+                           "foreColor": "204,204,204",
+                           "id": "10827",
+                           "layer": "4",
+                           "name": "line",
+                           "points": "1,75\n657,75",
+                           "rect": "0,74,658,76",
+                           "style": "line"
+                        }
+                     },
+                     "1609": {
+                        "#name": "field \"script\"",
+                        "customproperties": {
+                           "cREVMinHeight": "50",
+                           "cTooltipTag": "Type a command or expression and press Enter",
+                           "profile": null
+                        },
+                        "properties": {
+                           "backColor": "36,36,38",
+                           "behavior": "stack \"revMessageBoxMultipleLinesMessageBehavior\"",
+                           "dontWrap": true,
+                           "foreColor": "230,230,230",
+                           "htmlText": "<p><b>_internal</b> </p>",
+                           "id": "1609",
+                           "layer": "2",
+                           "name": "script",
+                           "rect": "0,21,658,74",
+                           "scrollbarWidth": "16",
+                           "showBorder": false,
+                           "showFocusBorder": false,
+                           "style": "scrolling",
+                           "textFont": "Source Code Pro",
+                           "textSize": "12",
+                           "toolTip": "Type a command or expression and press Enter",
+                           "vScrollbar": true
+                        }
+                     },
+                     "1610": {
+                        "#name": "field \"results\"",
+                        "customproperties": {
+                           "cREVMinHeight": "50",
+                           "profile": null
+                        },
+                        "properties": {
+                           "backColor": "36,36,38",
+                           "foreColor": "230,230,230",
+                           "id": "1610",
+                           "layer": "3",
+                           "name": "results",
+                           "rect": "0,76,658,168",
+                           "scrollbarWidth": "16",
+                           "showFocusBorder": false,
+                           "style": "scrolling",
+                           "textSize": "12",
+                           "vScrollbar": true
+                        }
+                     }
+                  },
+                  "properties": {
+                     "behavior": "stack \"com.livecode.scripteditor.behavior.editorcommon\"",
+                     "id": "1612",
+                     "layer": "1",
+                     "name": "fields",
+                     "rect": "-4,17,662,172"
+                  }
+               },
+               "203985": "#shared group"
+            },
+            "customproperties": {
+               "cREVBottom": "517",
+               "cREVHeight": "214",
+               "cREVLineLoc": "329,75",
+               "cREVMinHeight": null,
+               "cREVRight": "637",
+               "cREVWidth": "589"
+            },
+            "custompropertysets": {
+               "cREVGeometrycache": {
+                  "order": "\n",
+                  "total": "12"
+               },
+               "cREVGeometryCacheIDs": {
+                  "1416228001871": "1609",
+                  "1416228001872": "1610",
+                  "1416228712312": "1612",
+                  "1418315463805": "10827",
+                  "1418655967455": "172079",
+                  "1418913978623": "141786",
+                  "1418913978624": "141785",
+                  "1419003116473": "172080",
+                  "1419003119476": "172081",
+                  "1420462741440": "196678",
+                  "1427708147177": "203985",
+                  "1434022017330": "203986"
+               }
+            },
+            "properties": {
+               "backColor": "36,36,38",
+               "behavior": "stack \"revMessageBoxMultipleLinesCardBehavior\"",
+               "id": "1198",
+               "layer": "8",
+               "name": "Multiple Lines"
+            }
+         },
+         "141786": {
+            "#name": "group \"Stacks\"",
+            "childcontrols": {
+               "141785": {
+                  "#name": "button \"Open Stacks\"",
+                  "customproperties": {
+                     "profile": null
+                  },
+                  "properties": {
+                     "hiliteBorder": false,
+                     "icon": "172079",
+                     "id": "141785",
+                     "label": "revDictionary",
+                     "layer": "10",
+                     "menuMode": "popup",
+                     "name": "Open Stacks",
+                     "opaque": false,
+                     "rect": "178,0,192,21",
+                     "showIcon": true,
+                     "style": "menu",
+                     "text": "Message Box\nrevMenuBar\nrevPropertyInspector 1\nfindBrokenBehaviorsIDE\nrevInspector\nUntitled 1\nrevNewScriptEditor 1\nrevTools",
+                     "textAlign": "right",
+                     "textSize": "10",
+                     "threeD": false
+                  }
+               },
+               "172079": {
+                  "#name": "image \"stack.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "172079",
+                     "layer": "11",
+                     "lockLoc": true,
+                     "name": "stack.png",
+                     "rect": "7,137,17,147",
+                     "repeatCount": "-1",
+                     "text": {
+                        "%base64%": "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9i\nZSBJbWFnZVJlYWR5ccllPAAAAFtJREFUeNpiTEtLi2VgYGgBYjkG0sB9IE5hARK9QCzKQDpQ\nBOK9LP///ydHMxyADGCg2IA5c+YwkqM5JSXlPxMlLgDpHQ4GMFAIRsOACmEAyo0MMTExZJsC\nEGAA9zhEDWkjtIYAAAAASUVORK5CYII="
+                     },
+                     "toolTip": "19249",
+                     "visible": false
+                  }
+               },
+               "172080": {
+                  "#name": "image \"stack.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "172080",
+                     "layer": "12",
+                     "lockLoc": true,
+                     "name": "stack.png",
+                     "rect": "6,136,18,148",
+                     "repeatCount": "-1",
+                     "text": {
+                        "%base64%": "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9i\nZSBJbWFnZVJlYWR5ccllPAAAAFtJREFUeNpiTEtLi2VgYGgBYjkG0sB9IE5hARK9QCzKQDpQ\nBOK9LP///ydHMxyADGCg2IA5c+YwkqM5JSXlPxMlLgDpHQ4GMFAIRsOACmEAyo0MMTExZJsC\nEGAA9zhEDWkjtIYAAAAASUVORK5CYII="
+                     },
+                     "toolTip": "19249",
+                     "visible": false
+                  }
+               },
+               "172081": {
+                  "#name": "image \"stack.png\"",
+                  "properties": {
+                     "alwaysBuffer": true,
+                     "id": "172081",
+                     "layer": "13",
+                     "lockLoc": true,
+                     "name": "stack.png",
+                     "rect": "5,135,19,149",
+                     "repeatCount": "-1",
+                     "text": {
+                        "%base64%": "iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9i\nZSBJbWFnZVJlYWR5ccllPAAAAFtJREFUeNpiTEtLi2VgYGgBYjkG0sB9IE5hARK9QCzKQDpQ\nBOK9LP///ydHMxyADGCg2IA5c+YwkqM5JSXlPxMlLgDpHQ4GMFAIRsOACmEAyo0MMTExZJsC\nEGAA9zhEDWkjtIYAAAAASUVORK5CYII="
+                     },
+                     "toolTip": "19249",
+                     "visible": false
+                  }
+               },
+               "196678": {
+                  "#name": "graphic \"pipe\"",
+                  "properties": {
+                     "antialiased": false,
+                     "foreColor": "204,204,204",
+                     "id": "196678",
+                     "layer": "14",
+                     "name": "pipe",
+                     "points": "179,1\n179,20",
+                     "rect": "178,0,180,21",
+                     "style": "line"
+                  }
+               }
+            },
+            "properties": {
+               "backgroundBehavior": true,
+               "id": "141786",
+               "layer": "9",
+               "name": "Stacks",
+               "rect": "174,-4,196,25",
+               "sharedBehavior": true
+            }
+         },
+         "203985": {
+            "#name": "group \"background\"",
+            "childcontrols": {
+               "203986": {
+                  "#name": "widget \"header_background\"",
+                  "$kind": "com.livecode.widget.paletteActions",
+                  "$state": {
+                     "action data": [
+                        {
+                           "enabled": true,
+                           "icon": "cog",
+                           "label": "Preferences",
+                           "menu": [
+                              {
+                                 "label": "Header // Footer Size",
+                                 "menu": [
+                                    {
+                                       "checked": true,
+                                       "label": "small",
+                                       "name": "small"
+                                    },
+                                    {
+                                       "checked": false,
+                                       "label": "medium",
+                                       "name": "medium"
+                                    },
+                                    {
+                                       "checked": false,
+                                       "label": "large",
+                                       "name": "large"
+                                    },
+                                    {
+                                       "checked": false,
+                                       "label": "largest",
+                                       "name": "largest"
+                                    }
+                                 ],
+                                 "name": "revPaletteFrameSize"
+                              },
+                              {
+                                 "label": "Tab Display Style",
+                                 "menu": [
+                                    {
+                                       "checked": true,
+                                       "label": "Icons",
+                                       "name": "icons"
+                                    },
+                                    {
+                                       "checked": false,
+                                       "label": "Labels",
+                                       "name": "names"
+                                    }
+                                 ],
+                                 "name": "Message_Box_displayStyle"
+                              },
+                              {
+                                 "checked": false,
+                                 "label": "Auto Update Pending Messages",
+                                 "name": "ideMessageBox_autoupdate"
+                              },
+                              {
+                                 "label": "Select Intelligence Object",
+                                 "menu": [
+                                    {
+                                       "checked": true,
+                                       "label": "selectedObject",
+                                       "name": "selectedObject"
+                                    },
+                                    {
+                                       "checked": false,
+                                       "label": "mouseControl",
+                                       "name": "mouseControl"
+                                    }
+                                 ],
+                                 "name": "ideMessageBox_intelligenceobject"
+                              }
+                           ],
+                           "name": "preferences"
+                        }
+                     ],
+                     "is header": true,
+                     "nav data": [
+                        {
+                           "icon": "minus",
+                           "label": "Single Line",
+                           "name": "single line"
+                        },
+                        {
+                           "icon": "reorder",
+                           "label": "Multiple Lines",
+                           "name": "multiple lines"
+                        },
+                        {
+                           "icon": "file powerpoint alt",
+                           "label": "Global Properties",
+                           "name": "global properties"
+                        },
+                        {
+                           "icon": "file excel alt",
+                           "label": "Global Variables",
+                           "name": "global variables"
+                        },
+                        {
+                           "icon": "envelope alt",
+                           "label": "Pending Messages",
+                           "name": "pending messages"
+                        },
+                        {
+                           "icon": "file",
+                           "label": "Front Scripts",
+                           "name": "front scripts"
+                        },
+                        {
+                           "icon": "paste",
+                           "label": "Back Scripts",
+                           "name": "back scripts"
+                        },
+                        {
+                           "icon": "files alt",
+                           "label": "Stacks in Use",
+                           "name": "stacks in use"
+                        }
+                     ]
+                  },
+                  "customproperties": {
+                     "bordercolor": "178,178,178",
+                     "hilitecolor": "173,208,54"
+                  },
+                  "properties": {
+                     "id": "203986",
+                     "name": "header_background",
+                     "rect": "0,0,658,21"
+                  }
+               }
+            },
+            "properties": {
+               "backgroundBehavior": true,
+               "id": "203985",
+               "layer": "1",
+               "name": "background",
+               "rect": "-4,-4,662,25",
+               "sharedBehavior": true
+            }
+         },
+         "2525": {
+            "#name": "card \"Global Properties\"",
+            "childcontrols": {
+               "203985": "#shared group",
+               "2535": {
+                  "#name": "group \"controls\"",
+                  "childcontrols": {
+                     "2527": {
+                        "#name": "field \"filter label\"",
+                        "customproperties": {
+                           "profile": null
+                        },
+                        "custompropertysets": {
+                           "cREVTable": {
+                              "currentview": "Filter:"
+                           }
+                        },
+                        "properties": {
+                           "autoHilite": false,
+                           "autoTab": true,
+                           "backColor": "36,36,38",
+                           "dontWrap": true,
+                           "foreColor": "230,230,230",
+                           "htmlText": "<p>Filter:</p>",
+                           "id": "2527",
+                           "layer": "2",
+                           "lockText": true,
+                           "name": "filter label",
+                           "opaque": false,
+                           "rect": "0,26,50,46",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "transparent",
+                           "textAlign": "right",
+                           "textSize": "12",
+                           "traversalOn": false
+                        }
+                     },
+                     "2528": {
+                        "#name": "field \"filter\"",
+                        "customproperties": {
+                           "profile": null
+                        },
+                        "properties": {
+                           "backColor": "36,36,38",
+                           "foreColor": "230,230,230",
+                           "id": "2528",
+                           "layer": "3",
+                           "name": "filter",
+                           "rect": "45,26,165,46",
+                           "textSize": "12"
+                        }
+                     },
+                     "2529": {
+                        "#name": "field \"type\"",
+                        "customproperties": {
+                           "cREVFullText": "%file%: ./ide/Toolset/palettes/message box/revmessagebox.8.rev.bst/assets/Message Box_2525_2535_2529_cREVFullText.bin",
+                           "cREVHilitedProperty": null,
+                           "profile": null
+                        },
+                        "properties": {
+                           "backColor": "36,36,38",
+                           "borderWidth": "1",
+                           "dontWrap": true,
+                           "foreColor": "230,230,230",
+                           "htmlText": "%file%: ./ide/Toolset/palettes/message box/revmessagebox.8.rev.bst/assets/Message Box_2525_2535_2529_htmlText.txt",
+                           "id": "2529",
+                           "layer": "4",
+                           "listBehavior": true,
+                           "lockText": true,
+                           "name": "type",
+                           "rect": "0,51,200,168",
+                           "scrollbarWidth": "16",
+                           "showFocusBorder": false,
+                           "style": "scrolling",
+                           "textSize": "12",
+                           "vScrollbar": true
+                        }
+                     },
+                     "2531": {
+                        "#name": "field \"values range\"",
+                        "customproperties": {
+                           "profile": null
+                        },
+                        "properties": {
+                           "autoHilite": false,
+                           "autoTab": true,
+                           "backColor": "36,36,38",
+                           "dontWrap": true,
+                           "foreColor": "230,230,230",
+                           "id": "2531",
+                           "layer": "5",
+                           "lockText": true,
+                           "name": "values range",
+                           "opaque": false,
+                           "rect": "339,26,534,46",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "transparent",
+                           "textAlign": "right",
+                           "textSize": "12",
+                           "traversalOn": false
+                        }
+                     },
+                     "2532": {
+                        "#name": "field \"contents\"",
+                        "customproperties": {
+                           "profile": null
+                        },
+                        "properties": {
+                           "backColor": "36,36,38",
+                           "borderWidth": "1",
+                           "disabled": true,
+                           "dontWrap": true,
+                           "foreColor": "230,230,230",
+                           "id": "2532",
+                           "layer": "6",
+                           "listBehavior": true,
+                           "lockText": true,
+                           "name": "contents",
+                           "rect": "200,51,539,168",
+                           "scrollbarWidth": "12",
+                           "showFocusBorder": false,
+                           "style": "scrolling",
+                           "textSize": "12",
+                           "vScrollbar": true
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "2535",
+                     "layer": "1",
+                     "name": "controls",
+                     "rect": "-4,22,543,172"
+                  }
+               }
+            },
+            "customproperties": {
+               "cREVFieldStyle": "List",
+               "cREVheight": "200",
+               "cREVWidth": "500"
+            },
+            "custompropertysets": {
+               "cREVGeometrycache": {
+                  "order": "\n",
+                  "total": "8"
+               },
+               "cREVGeometryCacheIDs": {
+                  "1416394106705": "2527",
+                  "1416394106706": "2528",
+                  "1416394106707": "2529",
+                  "1416394106708": "2531",
+                  "1416394106709": "2532",
+                  "1416394671763": "2535",
+                  "1427708147177": "203985",
+                  "1434022017330": "203986"
+               },
+               "cREVRange": {
+                  "accentColor": "0,0,128",
+                  "activatePalettes": true,
+                  "address": "georgias-imac.lan:/Users/georgia/Documents/IDE Widgets/widgets/LiveCode 7.0.1 (rc 2).app/Contents/MacOS/LiveCode-Commercial",
+                  "allowInterrupts": true,
+                  "arcAngle": "360",
+                  "backDrop": "none",
+                  "backList": "Global Variables\nGlobal Properties\nGlobal Variables\nGlobal Properties\nGlobal Variables\nGlobal Properties\nSingle Line\nMain",
+                  "beepDuration": "500",
+                  "beepLoudness": "100",
+                  "beepPitch": "1440",
+                  "blindTyping": true,
+                  "blinkRate": "566",
+                  "brush": "8",
+                  "brushColor": "255,255,255",
+                  "brushPattern": "136",
+                  "bufferHiddenImages": false,
+                  "centered": false,
+                  "colormap": "fixed",
+                  "colorWorld": null,
+                  "cursor": "14",
+                  "dashes": null,
+                  "defaultFolder": "/Users/georgia/Documents/IDE Widgets/widgets",
+                  "defaultMenubar": "group \"revMenuBar\" of card \"card id 1002\" of stack \"/Users/georgia/Documents/IDE Widgets/widgets/Toolset/revmenubar.rev\"",
+                  "defaultStack": "stack \"message\"",
+                  "dialogData": null,
+                  "directory": "/Users/georgia/Documents/IDE Widgets/widgets",
+                  "dontUseNS": false,
+                  "dontUseQT": true,
+                  "doubleClickDelta": "4",
+                  "doubleClickInterval": "500",
+                  "dragSpeed": "0",
+                  "editBackground": false,
+                  "editScripts": null,
+                  "effectRate": "2000",
+                  "emacsKeyBindings": false,
+                  "eraser": "2",
+                  "explicitVariables": false,
+                  "explicitVars": false,
+                  "extendKey": "5",
+                  "fileType": "ttxtTEXT",
+                  "filled": false,
+                  "folder": "/Users/georgia/Documents/IDE Widgets/widgets",
+                  "ftpProxy": null,
+                  "grid": true,
+                  "gridSize": "2",
+                  "hideConsoleWindows": false,
+                  "hidePalettes": true,
+                  "hiliteColor": "167,202,255",
+                  "httpHeaders": null,
+                  "httpProxy": null,
+                  "idleRate": "200",
+                  "idleTicks": "12",
+                  "jpegQuality": "100",
+                  "libraries": null,
+                  "lineSize": "0",
+                  "linkColor": "0,0,239",
+                  "linkHiliteColor": "0,0,239",
+                  "linkVisitedColor": "81,24,128",
+                  "lockColormap": null,
+                  "lockCursor": false,
+                  "lockErrorDialogs": false,
+                  "lockMenus": false,
+                  "lockMoves": false,
+                  "lockRecent": false,
+                  "lockScreen": true,
+                  "lookAndFeel": "Appearance Manager",
+                  "lowResolutionTimers": false,
+                  "markerColor": "167,202,255",
+                  "moveSpeed": "200",
+                  "multiple": false,
+                  "navigationArrows": false,
+                  "paintCompression": "png",
+                  "pattern": "136",
+                  "penColor": "0,0,0",
+                  "penHeight": "0",
+                  "penPat": "136",
+                  "penPattern": "136",
+                  "penWidth": "0",
+                  "pixelScale": "1",
+                  "playDestination": "internal",
+                  "playLoudness": "6",
+                  "pointerFocus": true,
+                  "polySides": "4",
+                  "printCardBorders": false,
+                  "printColors": true,
+                  "printCommand": null,
+                  "printFontTable": null,
+                  "printGutters": "36,36",
+                  "printMargins": "72,72,72,72",
+                  "printPaperSize": "595,842",
+                  "printRotated": false,
+                  "printRowsFirst": true,
+                  "printScale": "1",
+                  "privateColors": null,
+                  "proportionalThumbs": true,
+                  "raiseMenus": true,
+                  "raisePalettes": true,
+                  "randomSeed": "1426794728",
+                  "recentCards": "%file%: ./ide/Toolset/palettes/message box/revmessagebox.8.rev.bst/assets/Message Box_2525_cREVRange_recentCards.bin",
+                  "recentNames": "Global Variables\nGlobal Properties\nGlobal Variables\nGlobal Properties\nGlobal Variables\nGlobal Properties\nSingle Line\nMain",
+                  "relayerGroupedControls": false,
+                  "repeatDelay": "250",
+                  "repeatRate": "50",
+                  "roundEnds": false,
+                  "roundHeight": "15",
+                  "roundRadius": "15",
+                  "roundWidth": "15",
+                  "screenGamma": "2.2",
+                  "screenMouseLoc": "507,139",
+                  "screenNoPixmaps": false,
+                  "screenSharedMemory": false,
+                  "screenVCSharedMemory": false,
+                  "scriptError": null,
+                  "scriptTextFont": null,
+                  "scriptTextSize": "0",
+                  "secureMode": false,
+                  "selectGroupedControls": false,
+                  "selectionHandleColor": "Gray50",
+                  "selectionMode": "intersect",
+                  "serialControlString": "baud=9600 parity=N data=8 stop=1",
+                  "shellCommand": "/bin/sh",
+                  "showFill": false,
+                  "showGroups": true,
+                  "showInvisibles": false,
+                  "slices": "16",
+                  "socketTimeoutInterval": "10000",
+                  "soundChannel": "0",
+                  "spray": "34",
+                  "stackFileType": "RevoRSTK",
+                  "stacksInUse": null,
+                  "startAngle": "0",
+                  "syncRate": "20",
+                  "systemFileSelector": true,
+                  "systemPixelScale": "1",
+                  "textArrows": true,
+                  "thirdColor": "167,202,255",
+                  "tool": "browse tool",
+                  "toolTipDelay": "500",
+                  "traceAbort": false,
+                  "traceDelay": "500",
+                  "traceReturn": true,
+                  "traceStack": null,
+                  "twelveHourTime": true,
+                  "typingRate": "100",
+                  "umask": "18",
+                  "underLineLinks": true,
+                  "userLevel": "8",
+                  "userModify": true,
+                  "vcPlayer": null,
+                  "videoClipPlayer": null,
+                  "windowBoundingRect": "0,74,2560,1351"
+               }
+            },
+            "properties": {
+               "backColor": "36,36,38",
+               "id": "2525",
+               "layer": "5",
+               "name": "Global Properties"
+            }
+         },
+         "2526": {
+            "#name": "card \"Global Variables\"",
+            "childcontrols": {
+               "203985": "#shared group",
+               "2704": {
+                  "#name": "group \"controls\"",
+                  "childcontrols": {
+                     "2700": {
+                        "#name": "field \"filter\"",
+                        "customproperties": {
+                           "profile": null
+                        },
+                        "properties": {
+                           "backColor": "36,36,38",
+                           "foreColor": "230,230,230",
+                           "id": "2700",
+                           "layer": "2",
+                           "name": "filter",
+                           "rect": "45,26,165,46",
+                           "textSize": "12"
+                        }
+                     },
+                     "2701": {
+                        "#name": "field \"filter label\"",
+                        "customproperties": {
+                           "profile": null
+                        },
+                        "custompropertysets": {
+                           "cREVTable": {
+                              "currentview": "Filter:"
+                           }
+                        },
+                        "properties": {
+                           "autoHilite": false,
+                           "autoTab": true,
+                           "backColor": "36,36,38",
+                           "dontWrap": true,
+                           "foreColor": "230,230,230",
+                           "htmlText": "<p>Filter:</p>",
+                           "id": "2701",
+                           "layer": "3",
+                           "lockText": true,
+                           "name": "filter label",
+                           "opaque": false,
+                           "rect": "0,26,50,46",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "transparent",
+                           "textAlign": "right",
+                           "textSize": "12",
+                           "traversalOn": false
+                        }
+                     },
+                     "2702": {
+                        "#name": "field \"type\"",
+                        "customproperties": {
+                           "cREVFullText": "%file%: ./ide/Toolset/palettes/message box/revmessagebox.8.rev.bst/assets/Message Box_2526_2704_2702_cREVFullText.bin",
+                           "cREVHilitedVariable": "4",
+                           "profile": null,
+                           "rREVFullText": "%file%: ./ide/Toolset/palettes/message box/revmessagebox.8.rev.bst/assets/Message Box_2526_2704_2702_rREVFullText.bin"
+                        },
+                        "properties": {
+                           "backColor": "36,36,38",
+                           "borderWidth": "1",
+                           "dontWrap": true,
+                           "foreColor": "230,230,230",
+                           "htmlText": "%file%: ./ide/Toolset/palettes/message box/revmessagebox.8.rev.bst/assets/Message Box_2526_2704_2702_htmlText.txt",
+                           "id": "2702",
+                           "layer": "4",
+                           "listBehavior": true,
+                           "lockText": true,
+                           "name": "type",
+                           "rect": "0,51,200,168",
+                           "scrollbarWidth": "16",
+                           "showFocusBorder": false,
+                           "style": "scrolling",
+                           "textSize": "12",
+                           "vScrollbar": true
+                        }
+                     },
+                     "2703": {
+                        "#name": "field \"contents\"",
+                        "customproperties": {
+                           "profile": null
+                        },
+                        "properties": {
+                           "backColor": "36,36,38",
+                           "borderWidth": "1",
+                           "foreColor": "230,230,230",
+                           "htmlText": "<p>com.hyperxtalk.hyperxtalk</p>",
+                           "id": "2703",
+                           "layer": "5",
+                           "name": "contents",
+                           "rect": "200,51,539,168",
+                           "scrollbarWidth": "12",
+                           "showFocusBorder": false,
+                           "style": "scrolling",
+                           "textSize": "12",
+                           "vScrollbar": true
+                        }
+                     }
+                  },
+                  "properties": {
+                     "id": "2704",
+                     "layer": "1",
+                     "name": "controls",
+                     "rect": "-4,22,543,172"
+                  }
+               }
+            },
+            "customproperties": {
+               "cREVFieldStyle": "Editable",
+               "cREVheight": "214",
+               "cREVWidth": "589"
+            },
+            "custompropertysets": {
+               "cREVGeometrycache": {
+                  "order": "\n",
+                  "total": "7"
+               },
+               "cREVGeometryCacheIDs": {
+                  "1416415754573": "2704",
+                  "1416415754576": "2700",
+                  "1416415754577": "2701",
+                  "1416415754578": "2702",
+                  "1416415754579": "2703",
+                  "1427708147177": "203985",
+                  "1434022017330": "203986"
+               }
+            },
+            "properties": {
+               "backColor": "36,36,38",
+               "id": "2526",
+               "layer": "6",
+               "name": "Global Variables"
+            }
+         },
+         "2960": {
+            "#name": "card \"Pending Messages\"",
+            "childcontrols": {
+               "10669": "#shared group",
+               "203985": "#shared group",
+               "207210": {
+                  "#name": "field \"status\"",
+                  "customproperties": {
+                     "basicTableObject": false,
+                     "cellFormatting": false,
+                     "maxEditableColumns": null
+                  },
+                  "properties": {
+                     "autoHilite": false,
+                     "backColor": "36,36,38",
+                     "dontWrap": true,
+                     "foreColor": "230,230,230",
+                     "htmlText": "<p>No pending messages to display.</p>",
+                     "id": "207210",
+                     "layer": "18",
+                     "lockText": true,
+                     "name": "status",
+                     "opaque": false,
+                     "rect": "4,24,348,45",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "traversalOn": false
+                  }
+               }
+            },
+            "customproperties": {
+               "cREVHeight": "277",
+               "cREVRefreshTimerID": "59",
+               "cREVWidth": "565"
+            },
+            "custompropertysets": {
+               "cREVGeometrycache": {
+                  "order": "\n",
+                  "total": "11"
+               },
+               "cREVGeometryCacheIDs": {
+                  "1417776991553": "10669",
+                  "1417777467416": "10671",
+                  "1417777467417": "10672",
+                  "1417777467418": "10673",
+                  "1417777467419": "10674",
+                  "1417777467420": "10675",
+                  "1417777467421": "10676",
+                  "1418902387957": "10670",
+                  "1427708147177": "203985",
+                  "1434022017330": "203986",
+                  "1458058861822": "207210"
+               }
+            },
+            "properties": {
+               "backColor": "36,36,38",
+               "id": "2960",
+               "layer": "7",
+               "name": "Pending Messages"
+            }
+         },
+         "3461": {
+            "#name": "card \"Front Scripts\"",
+            "childcontrols": {
+               "10669": "#shared group",
+               "203985": "#shared group",
+               "207631": {
+                  "#name": "field \"status\"",
+                  "customproperties": {
+                     "basicTableObject": false,
+                     "cellFormatting": false,
+                     "maxEditableColumns": null
+                  },
+                  "properties": {
+                     "autoHilite": false,
+                     "backColor": "36,36,38",
+                     "dontWrap": true,
+                     "foreColor": "230,230,230",
+                     "htmlText": "<p>No front scripts to display.</p>",
+                     "id": "207631",
+                     "layer": "18",
+                     "lockText": true,
+                     "name": "status",
+                     "opaque": false,
+                     "rect": "4,24,348,45",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "traversalOn": false,
+                     "visible": false
+                  }
+               }
+            },
+            "customproperties": {
+               "cREVHeight": "308",
+               "cREVHilitedLine": "3",
+               "cREVWidth": "527"
+            },
+            "custompropertysets": {
+               "cREVGeometrycache": {
+                  "order": "\n",
+                  "total": "101"
+               },
+               "cREVGeometryCacheIDs": {
+                  "1417776991553": "10669",
+                  "1417777467416": "10671",
+                  "1417777467417": "10672",
+                  "1417777467418": "10673",
+                  "1417777467419": "10674",
+                  "1417777467420": "10675",
+                  "1417777467421": "10676",
+                  "1418727244532": "213334",
+                  "1418727244537": "213335",
+                  "1418727244538": "213336",
+                  "1418727253848": "213337",
+                  "1418727273007": "213333",
+                  "1418727320611": "213338",
+                  "1418727569773": "213332",
+                  "1418728622405": "213339",
+                  "1418902387957": "10670",
+                  "1418984198836": "213340",
+                  "1418986123062": "213341",
+                  "1418986123063": "213342",
+                  "1418986123064": "213343",
+                  "1418986123065": "213344",
+                  "1418986123066": "213345",
+                  "1418986123067": "213346",
+                  "1427708147177": "203985",
+                  "1434022017330": "203986",
+                  "1458059103040": "207631",
+                  "1775785425128": "213347",
+                  "1775785425129": "213348",
+                  "1775785425130": "213349",
+                  "1775785425131": "213350",
+                  "1775785425132": "213351",
+                  "1775785425133": "213352",
+                  "1775785425134": "213353",
+                  "1775785425135": "213354",
+                  "1775785425136": "213355",
+                  "1775785425137": "213356",
+                  "1775785425138": "213357",
+                  "1775785425139": "213358",
+                  "1775785425140": "213359",
+                  "1775785425141": "213360",
+                  "1775785425142": "213361",
+                  "1775785425143": "213362",
+                  "1775785425144": "213363",
+                  "1775785425145": "213364",
+                  "1775785425146": "213365",
+                  "1775785425147": "213366",
+                  "1775785425148": "213367",
+                  "1775785425149": "213368",
+                  "1775785425150": "213369",
+                  "1775785425151": "213370",
+                  "1775785425152": "213371",
+                  "1775785425153": "213372",
+                  "1775785425154": "213373",
+                  "1775785425155": "213374",
+                  "1775785425156": "213375",
+                  "1775785425157": "213376",
+                  "1775785425158": "213377",
+                  "1775785425159": "213378",
+                  "1775785425160": "213379",
+                  "1775785425161": "213380",
+                  "1775785425162": "213381",
+                  "1775785425163": "213382",
+                  "1775785425164": "213383",
+                  "1775785425165": "213384",
+                  "1775785425166": "213385",
+                  "1775785425167": "213386",
+                  "1775785425168": "213387",
+                  "1775785425169": "213388",
+                  "1775785425170": "213389",
+                  "1775785425171": "213390",
+                  "1775785425172": "213391",
+                  "1775785425173": "213392",
+                  "1775785425174": "213393",
+                  "1775785425175": "213394",
+                  "1775785425176": "213395",
+                  "1775785425177": "213396",
+                  "1775785425178": "213397",
+                  "1775785425179": "213398",
+                  "1775785425180": "213399",
+                  "1775785425181": "213400",
+                  "1775785425182": "213401",
+                  "1775785425183": "213402",
+                  "1775785425184": "213403",
+                  "1775785425185": "213404",
+                  "1775785425186": "213405",
+                  "1775785425187": "213406",
+                  "1775785425188": "213407",
+                  "1775785425189": "213408",
+                  "1775785425190": "213409",
+                  "1775785425191": "213410",
+                  "1775785425192": "213411",
+                  "1775785425193": "213412",
+                  "1775785425194": "213413",
+                  "1775785425195": "213414",
+                  "1775785425196": "213415",
+                  "1775785425197": "213416",
+                  "1775785425198": "213417",
+                  "1775785425199": "213418",
+                  "1775785425200": "213419",
+                  "1775785425201": "213420",
+                  "1775785425202": "213421"
+               }
+            },
+            "properties": {
+               "backColor": "36,36,38",
+               "id": "3461",
+               "layer": "3",
+               "name": "Front Scripts"
+            }
+         },
+         "3462": {
+            "#name": "card \"Back Scripts\"",
+            "childcontrols": {
+               "10669": "#shared group",
+               "203985": "#shared group",
+               "208993": {
+                  "#name": "field \"status\"",
+                  "customproperties": {
+                     "basicTableObject": false,
+                     "cellFormatting": false,
+                     "maxEditableColumns": null
+                  },
+                  "properties": {
+                     "autoHilite": false,
+                     "backColor": "36,36,38",
+                     "dontWrap": true,
+                     "foreColor": "230,230,230",
+                     "htmlText": "<p>No back scripts to display.</p>",
+                     "id": "208993",
+                     "layer": "19",
+                     "lockText": true,
+                     "name": "status",
+                     "opaque": false,
+                     "rect": "4,24,348,45",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "traversalOn": false,
+                     "visible": false
+                  }
+               },
+               "7219": {
+                  "#name": "group \"contents\"",
+                  "properties": {
+                     "id": "7219",
+                     "layer": "1",
+                     "name": "contents",
+                     "rect": "205,88,213,96"
+                  }
+               }
+            },
+            "customproperties": {
+               "cREVHeight": "373",
+               "cREVHilitedLine": "3",
+               "cREVWidth": "669"
+            },
+            "custompropertysets": {
+               "cREVGeometrycache": {
+                  "order": "\n",
+                  "total": "132"
+               },
+               "cREVGeometryCacheIDs": {
+                  "1416998183135": "7219",
+                  "1417776991553": "10669",
+                  "1417777467416": "10671",
+                  "1417777467417": "10672",
+                  "1417777467418": "10673",
+                  "1417777467419": "10674",
+                  "1417777467420": "10675",
+                  "1417777467421": "10676",
+                  "1418727244532": "213425",
+                  "1418727244537": "213426",
+                  "1418727244538": "213427",
+                  "1418727253848": "213428",
+                  "1418727273007": "213424",
+                  "1418727320611": "213429",
+                  "1418727569773": "213423",
+                  "1418728622405": "213430",
+                  "1418902387957": "10670",
+                  "1418984198836": "213431",
+                  "1418986123062": "213432",
+                  "1418986123063": "213433",
+                  "1418986123064": "213434",
+                  "1418986123065": "213435",
+                  "1418986123066": "213436",
+                  "1418986123067": "213437",
+                  "1427708147177": "203985",
+                  "1434022017330": "203986",
+                  "1458059263844": "208993",
+                  "1775785436306": "213438",
+                  "1775785436307": "213439",
+                  "1775785436308": "213440",
+                  "1775785436309": "213441",
+                  "1775785436310": "213442",
+                  "1775785436311": "213443",
+                  "1775785436312": "213444",
+                  "1775785436313": "213445",
+                  "1775785436314": "213446",
+                  "1775785436315": "213447",
+                  "1775785436316": "213448",
+                  "1775785436317": "213449",
+                  "1775785436318": "213450",
+                  "1775785436319": "213451",
+                  "1775785436320": "213452",
+                  "1775785436321": "213453",
+                  "1775785436322": "213454",
+                  "1775785436323": "213455",
+                  "1775785436324": "213456",
+                  "1775785436325": "213457",
+                  "1775785436326": "213458",
+                  "1775785436327": "213459",
+                  "1775785436328": "213460",
+                  "1775785436329": "213461",
+                  "1775785436330": "213462",
+                  "1775785436331": "213463",
+                  "1775785436332": "213464",
+                  "1775785436333": "213465",
+                  "1775785436334": "213466",
+                  "1775785436335": "213467",
+                  "1775785436336": "213468",
+                  "1775785436337": "213469",
+                  "1775785436338": "213470",
+                  "1775785436339": "213471",
+                  "1775785436340": "213472",
+                  "1775785436341": "213473",
+                  "1775785436342": "213474",
+                  "1775785436343": "213475",
+                  "1775785436344": "213476",
+                  "1775785436345": "213477",
+                  "1775785436346": "213478",
+                  "1775785436347": "213479",
+                  "1775785436348": "213480",
+                  "1775785436349": "213481",
+                  "1775785436350": "213482",
+                  "1775785436351": "213483",
+                  "1775785436352": "213484",
+                  "1775785436353": "213485",
+                  "1775785436354": "213486",
+                  "1775785436355": "213487",
+                  "1775785436356": "213488",
+                  "1775785436357": "213489",
+                  "1775785436358": "213490",
+                  "1775785436359": "213491",
+                  "1775785436360": "213492",
+                  "1775785436361": "213493",
+                  "1775785436362": "213494",
+                  "1775785436363": "213495",
+                  "1775785436364": "213496",
+                  "1775785436365": "213497",
+                  "1775785436366": "213498",
+                  "1775785436367": "213499",
+                  "1775785436368": "213500",
+                  "1775785436369": "213501",
+                  "1775785436370": "213502",
+                  "1775785436371": "213503",
+                  "1775785436372": "213504",
+                  "1775785436373": "213505",
+                  "1775785436374": "213506",
+                  "1775785436375": "213507",
+                  "1775785436376": "213508",
+                  "1775785436377": "213509",
+                  "1775785436378": "213510",
+                  "1775785436379": "213511",
+                  "1775785436380": "213512",
+                  "1775785436381": "213513",
+                  "1775785436382": "213514",
+                  "1775785436383": "213515",
+                  "1775785436384": "213516",
+                  "1775785436385": "213517",
+                  "1775785436386": "213518",
+                  "1775785436387": "213519",
+                  "1775785436388": "213520",
+                  "1775785436389": "213521",
+                  "1775785436390": "213522",
+                  "1775785436391": "213523",
+                  "1775785436392": "213524",
+                  "1775785436393": "213525",
+                  "1775785436394": "213526",
+                  "1775785436395": "213527",
+                  "1775785436396": "213528",
+                  "1775785436397": "213529",
+                  "1775785436398": "213530",
+                  "1775785436399": "213531",
+                  "1775785436400": "213532",
+                  "1775785436401": "213533",
+                  "1775785436402": "213534",
+                  "1775785436403": "213535",
+                  "1775785436404": "213536",
+                  "1775785436405": "213537",
+                  "1775785436406": "213538",
+                  "1775785436407": "213539",
+                  "1775785436408": "213540",
+                  "1775785436409": "213541",
+                  "1775785436410": "213542"
+               }
+            },
+            "properties": {
+               "backColor": "36,36,38",
+               "id": "3462",
+               "layer": "4",
+               "name": "Back Scripts"
+            }
+         },
+         "9525": {
+            "#name": "card \"Stacks in Use\"",
+            "childcontrols": {
+               "10669": "#shared group",
+               "11286": {
+                  "#name": "group \"contents\"",
+                  "properties": {
+                     "id": "11286",
+                     "layer": "16",
+                     "name": "contents",
+                     "rect": "211,108,219,116"
+                  }
+               },
+               "203985": "#shared group",
+               "209891": {
+                  "#name": "field \"status\"",
+                  "customproperties": {
+                     "basicTableObject": false,
+                     "cellFormatting": false,
+                     "maxEditableColumns": null
+                  },
+                  "properties": {
+                     "autoHilite": false,
+                     "backColor": "36,36,38",
+                     "dontWrap": true,
+                     "foreColor": "230,230,230",
+                     "htmlText": "<p>No stacks in use to display.</p>",
+                     "id": "209891",
+                     "layer": "19",
+                     "lockText": true,
+                     "name": "status",
+                     "opaque": false,
+                     "rect": "4,24,348,45",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "traversalOn": false,
+                     "visible": false
+                  }
+               }
+            },
+            "customproperties": {
+               "cREVHeight": "227",
+               "cREVWidth": "547"
+            },
+            "custompropertysets": {
+               "cREVGeometrycache": {
+                  "order": "\n",
+                  "total": "19"
+               },
+               "cREVGeometryCacheIDs": {
+                  "1414692213275": "213546",
+                  "1417776991553": "10669",
+                  "1417777467416": "10671",
+                  "1417777467417": "10672",
+                  "1417777467418": "10673",
+                  "1417777467419": "10674",
+                  "1417777467420": "10675",
+                  "1417777467421": "10676",
+                  "1418314407187": "213547",
+                  "1418378034950": "213544",
+                  "1418384418272": "11286",
+                  "1418384755665": "213545",
+                  "1418386626643": "213548",
+                  "1418386631773": "213549",
+                  "1418399387948": "213550",
+                  "1418902387957": "10670",
+                  "1427708147177": "203985",
+                  "1434022017330": "203986",
+                  "1458059877989": "209891"
+               }
+            },
+            "properties": {
+               "backColor": "36,36,38",
+               "id": "9525",
+               "layer": "2",
+               "name": "Stacks in Use"
+            }
+         }
+      },
+      "customproperties": {
+         "cREVActiveStack": "Untitled 1",
+         "cREVBackScripts": "%file%: ./ide/Toolset/palettes/message box/revmessagebox.8.rev.bst/assets/Message Box_cREVBackScripts.bin",
+         "cREVFrontScripts": "%file%: ./ide/Toolset/palettes/message box/revmessagebox.8.rev.bst/assets/Message Box_cREVFrontScripts.bin",
+         "cREVIntelligenceObject": "selectedObject",
+         "cREVLeft": "222",
+         "cREVLinkedStack": null,
+         "cREVPendingMessages": null,
+         "cREVStacksInUse": null,
+         "cREVTop": "564",
+         "cREVTopLeft": "868,129",
+         "cUserOpen": true
+      },
+      "custompropertysets": {
+         "cREVGeometryCache": {
+            "stackID": "213569"
+         }
+      },
+      "longID": "stack \"Message Box\"",
+      "properties": {
+         "backColor": "#323232",
+         "behavior": "stack \"revMessageBoxBehavior\"",
+         "decorations": "title,menu,minimize,close",
+         "fileName": "/Users/milby/Developer/HyperXTalk/ide/Toolset/palettes/message box/revmessagebox.8.rev",
+         "foreColor": "#ffffff",
+         "id": "213569",
+         "minHeight": "92",
+         "minWidth": "110",
+         "name": "Message Box",
+         "rect": "222,564,880,753",
+         "style": "palette",
+         "textSize": "11",
+         "title": "Message Box (Single Line)"
+      },
+      "sharedGroupIDs": "10669\n141786\n203985"
+   }
+}

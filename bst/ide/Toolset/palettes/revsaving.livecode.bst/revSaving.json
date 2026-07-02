@@ -1,0 +1,58 @@
+{
+   "#mainstack": "revSaving",
+   "revSaving": {
+      "#name": "stack \"revSaving\"",
+      "#substacks": null,
+      "backgroundIDs": null,
+      "cardIDs": "1001",
+      "childcontrols": {
+         "1001": {
+            "#name": "card id 1001",
+            "childcontrols": {
+               "1005": {
+                  "#name": "field \"field id 1005\"",
+                  "properties": {
+                     "dontWrap": true,
+                     "htmlText": "<p>Saving...</p>\n<p></p>\n<p>Stack:\u2026#9;\u2026#9;revSaving</p>\n<p>Main stack:\u2026#9;\u2026#9;revSaving</p>\n<p>Sub stacks:</p>\n<p>File name:\u2026#9;\u2026#9;/Users/emily-elizabethhoward/Developer/HyperXTalk/ide/Toolset/palettes/revsaving.livecode</p>\n<p></p>\n<p>Please wait</p>",
+                     "id": "1005",
+                     "layer": "1",
+                     "lockText": true,
+                     "margins": "12",
+                     "name": "field id 1005",
+                     "opaque": false,
+                     "rect": "0,0,714,152",
+                     "showBorder": false,
+                     "style": "transparent",
+                     "tabStops": "31",
+                     "traversalOn": false
+                  }
+               }
+            },
+            "customproperties": {
+               "cSavingStack": "revLibrary"
+            },
+            "properties": {
+               "backColor": "#323232",
+               "id": "1001",
+               "showBorder": true
+            }
+         }
+      },
+      "customproperties": {
+         "cSaveStack": "revCardMenu",
+         "cSavingStack": "revIcons"
+      },
+      "longID": "stack \"revSaving\"",
+      "properties": {
+         "decorations": null,
+         "destroyWindow": true,
+         "fileName": "/Users/milby/Developer/HyperXTalk/ide/Toolset/palettes/revsaving.livecode",
+         "id": "1005",
+         "liveResizing": false,
+         "name": "revSaving",
+         "rect": "253,83,967,235",
+         "resizable": false
+      },
+      "sharedGroupIDs": null
+   }
+}

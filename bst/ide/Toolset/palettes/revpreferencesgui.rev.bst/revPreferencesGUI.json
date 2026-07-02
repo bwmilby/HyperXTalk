@@ -1,0 +1,3557 @@
+{
+   "#mainstack": "revPreferencesGUI",
+   "Data Grid Templates 1251408928068": {
+      "#name": "stack \"Data Grid Templates 1251408928068\"",
+      "backgroundIDs": "1003",
+      "cardIDs": "1002\n1005",
+      "childcontrols": {
+         "1002": {
+            "#name": "card id 1002",
+            "childcontrols": {
+               "1003": "#shared group"
+            },
+            "properties": {
+               "id": "1002"
+            }
+         },
+         "1003": {
+            "#name": "group \"_DataGridTemplateInstructions_\"",
+            "childcontrols": {
+               "1004": {
+                  "#name": "field \"_DataGridTemplateInstructions_\"",
+                  "custompropertysets": {
+                     "cGlx2TimeStamp": {
+                        "checksum": null
+                     },
+                     "cREVTable": {
+                        "currentview": "<p>You can edit the \u2026quot;Row Template\u2026quot; group on this card to customize the look and feel of your data grid form or table. To begin, select the \u2026quot;Row Template\u2026quot; group and choose Object \u2026gt; Edit Group menu item.</p>"
+                     }
+                  },
+                  "properties": {
+                     "autoHilite": false,
+                     "foreColor": "52,52,52",
+                     "htmlText": "<p>You can edit the \"Row Template\" group on this card to customize the look and feel of your data grid form or table. To begin, select the \"Row Template\" group and choose Object \u2026gt; Edit Group menu item.</p>",
+                     "id": "1004",
+                     "layer": "2",
+                     "lockText": true,
+                     "name": "_DataGridTemplateInstructions_",
+                     "opaque": false,
+                     "rect": "4,322,478,396",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "textFont": "Arial",
+                     "textHeight": "18",
+                     "textSize": "14",
+                     "textStyle": "plain",
+                     "traversalOn": false
+                  }
+               }
+            },
+            "custompropertysets": {
+               "cGlx2TimeStamp": {
+                  "checksum": null
+               }
+            },
+            "properties": {
+               "backgroundBehavior": true,
+               "id": "1003",
+               "layer": "1",
+               "name": "_DataGridTemplateInstructions_",
+               "rect": "0,318,482,400"
+            }
+         },
+         "1005": {
+            "#name": "card id 1005",
+            "childcontrols": {
+               "1003": "#shared group",
+               "1006": {
+                  "#name": "group \"Row Template\"",
+                  "childcontrols": {
+                     "1007": {
+                        "#name": "graphic \"Background\"",
+                        "custompropertysets": {
+                           "cGlx2TimeStamp": {
+                              "checksum": null
+                           }
+                        },
+                        "properties": {
+                           "backColor": "225,225,225",
+                           "filled": true,
+                           "id": "1007",
+                           "layer": "4",
+                           "lineSize": "0",
+                           "name": "Background",
+                           "opaque": true,
+                           "rect": "0,0,400,21"
+                        }
+                     },
+                     "1008": {
+                        "#name": "field \"Label\"",
+                        "custompropertysets": {
+                           "cGlx2TimeStamp": {
+                              "checksum": null
+                           }
+                        },
+                        "properties": {
+                           "autoTab": true,
+                           "dontWrap": true,
+                           "id": "1008",
+                           "layer": "5",
+                           "lockText": true,
+                           "name": "Label",
+                           "opaque": false,
+                           "rect": "0,0,390,21",
+                           "showBorder": false,
+                           "style": "transparent",
+                           "traversalOn": false
+                        }
+                     }
+                  },
+                  "custompropertysets": {
+                     "cGlx2TimeStamp": {
+                        "checksum": null
+                     }
+                  },
+                  "properties": {
+                     "behavior": "button id 1009 of stack \"Data Grid Templates 1251408928068\"",
+                     "borderWidth": "0",
+                     "id": "1006",
+                     "layer": "3",
+                     "margins": "0",
+                     "name": "Row Template",
+                     "rect": "0,0,400,21"
+                  }
+               },
+               "1009": {
+                  "#name": "button \"Behavior Script\"",
+                  "properties": {
+                     "behavior": "button id 1174 of stack \"revDataGridLibrary\"",
+                     "id": "1009",
+                     "layer": "6",
+                     "name": "Behavior Script",
+                     "rect": "22,3,104,26",
+                     "visible": false
+                  }
+               }
+            },
+            "properties": {
+               "id": "1005",
+               "layer": "2"
+            }
+         }
+      },
+      "longID": "stack \"Data Grid Templates 1251408928068\" of stack \"revPreferencesGUI\"",
+      "properties": {
+         "decorations": "default",
+         "id": "1009",
+         "liveResizing": false,
+         "name": "Data Grid Templates 1251408928068",
+         "rect": "180,180,780,580"
+      },
+      "sharedGroupIDs": "1003"
+   },
+   "revPreferencesGUI": {
+      "#name": "stack \"revPreferencesGUI\"",
+      "#substacks": "revScriptColourEditor\nData Grid Templates 1251408928068",
+      "backgroundIDs": "1004",
+      "cardIDs": "1002\n1005\n1006\n1007\n1008\n1009\n1010",
+      "childcontrols": {
+         "1002": {
+            "#name": "card \"General\"",
+            "childcontrols": {
+               "1004": "#shared group",
+               "1011": {
+                  "#name": "button \"Show Revolution Stacks\"",
+                  "customproperties": {
+                     "revButton": true
+                  },
+                  "properties": {
+                     "hiliteBorder": false,
+                     "hilited": true,
+                     "id": "1011",
+                     "label": "HyperXTalk UI elements appear in lists of stacks",
+                     "layer": "3",
+                     "lockLoc": true,
+                     "name": "Show Revolution Stacks",
+                     "opaque": false,
+                     "rect": "126,114,486,134",
+                     "showBorder": false,
+                     "style": "checkbox",
+                     "textAlign": "left",
+                     "toolTip": "Display and manipulate HyperXTalk's own windows in the Project Browser."
+                  }
+               },
+               "1012": {
+                  "#name": "field \"Property Labels Are\"",
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "htmlText": "<p>Property labels are:</p>",
+                     "id": "1012",
+                     "layer": "4",
+                     "lockText": true,
+                     "name": "Property Labels Are",
+                     "opaque": false,
+                     "rect": "140,53,278,73",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "textAlign": "right",
+                     "traversalOn": false
+                  }
+               },
+               "1013": {
+                  "#name": "button \"Context menus work on Rev dev stacks\"",
+                  "properties": {
+                     "hiliteBorder": false,
+                     "id": "1013",
+                     "label": "Contextual menus work in HyperXTalk windows",
+                     "layer": "5",
+                     "name": "Context menus work on Rev dev stacks",
+                     "opaque": false,
+                     "rect": "125,220,533,240",
+                     "showBorder": false,
+                     "style": "checkbox",
+                     "textAlign": "left",
+                     "toolTip": "Command-Control-Shift-click to display contextual menus in HyperXTalk's own windows."
+                  }
+               },
+               "1014": {
+                  "#name": "button \"navigation arrows\"",
+                  "properties": {
+                     "hiliteBorder": false,
+                     "id": "1014",
+                     "label": "Arrow keys navigate through cards",
+                     "layer": "16",
+                     "name": "navigation arrows",
+                     "opaque": false,
+                     "rect": "125,152,533,172",
+                     "showBorder": false,
+                     "style": "checkbox",
+                     "textAlign": "left",
+                     "toolTip": "Right and left arrows go to next and previous cards (navigationArrows property)"
+                  }
+               },
+               "1015": {
+                  "#name": "button \"UI edit script\"",
+                  "properties": {
+                     "hiliteBorder": false,
+                     "id": "1015",
+                     "label": "In HyperXTalk UI windows",
+                     "layer": "17",
+                     "name": "UI edit script",
+                     "opaque": false,
+                     "rect": "144,196,533,216",
+                     "showBorder": false,
+                     "style": "checkbox",
+                     "textAlign": "left",
+                     "toolTip": "Script keypress also works in HyperXTalk's own windows."
+                  }
+               },
+               "1016": {
+                  "#name": "button \"opt edit script shortcut\"",
+                  "properties": {
+                     "hiliteBorder": false,
+                     "hilited": true,
+                     "id": "1016",
+                     "label": "Command-Option or Control-Alt click edits script",
+                     "layer": "18",
+                     "name": "opt edit script shortcut",
+                     "opaque": false,
+                     "rect": "125,176,533,196",
+                     "showBorder": false,
+                     "style": "checkbox",
+                     "textAlign": "left",
+                     "toolTip": "Press the keys while the pointer is over an object to open the object's script."
+                  }
+               },
+               "1017": {
+                  "#name": "group \"Options in Properties palettes are labeled with:\"",
+                  "childcontrols": {
+                     "1018": {
+                        "#name": "button \"Language names on properties\"",
+                        "properties": {
+                           "hiliteBorder": false,
+                           "id": "1018",
+                           "label": "Name of HyperXTalk property",
+                           "layer": "7",
+                           "lockLoc": true,
+                           "name": "Language names on properties",
+                           "opaque": false,
+                           "rect": "275,77,515,97",
+                           "sharedHilite": false,
+                           "showBorder": false,
+                           "style": "radiobutton",
+                           "textAlign": "left",
+                           "toolTip": "Programmer-friendly, easier to adjust in a script."
+                        }
+                     },
+                     "1019": {
+                        "#name": "button \"Descriptions on properties\"",
+                        "properties": {
+                           "hiliteBorder": false,
+                           "hilited": true,
+                           "id": "1019",
+                           "label": "Description of option",
+                           "layer": "8",
+                           "lockLoc": true,
+                           "name": "Descriptions on properties",
+                           "opaque": false,
+                           "rect": "275,55,535,75",
+                           "sharedHilite": false,
+                           "showBorder": false,
+                           "style": "radiobutton",
+                           "textAlign": "left",
+                           "toolTip": "Beginner-friendly, easier to read."
+                        }
+                     }
+                  },
+                  "properties": {
+                     "hilitedButton": "2",
+                     "id": "1017",
+                     "layer": "6",
+                     "name": "Options in Properties palettes are labeled with:",
+                     "rect": "271,51,539,101"
+                  }
+               },
+               "1021": {
+                  "#name": "field \"external editor\"",
+                  "properties": {
+                     "borderWidth": "1",
+                     "dontWrap": true,
+                     "id": "1021",
+                     "layer": "9",
+                     "lockText": true,
+                     "name": "external editor",
+                     "opaque": false,
+                     "rect": "240,269,387,290",
+                     "style": "transparent",
+                     "threeD": false,
+                     "traversalOn": false
+                  }
+               },
+               "1022": {
+                  "#name": "button \"Image Editor...\"",
+                  "properties": {
+                     "id": "1022",
+                     "label": "Choose...",
+                     "layer": "10",
+                     "name": "Image Editor...",
+                     "rect": "394,268,476,291",
+                     "toolTip": "Choose an application to open images in when you click \"Launch Editor\" in the image's Properties palette"
+                  }
+               },
+               "1023": {
+                  "#name": "field \"http proxy\"",
+                  "properties": {
+                     "id": "1023",
+                     "layer": "11",
+                     "name": "http proxy",
+                     "rect": "240,297,427,318",
+                     "toolTip": "IP address that HTTP requests are transmitted through (leave empty to send requests directly to the host system)"
+                  }
+               },
+               "1024": {
+                  "#name": "field \"New Field 8\"",
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "htmlText": "<p>HTTP proxy:</p>",
+                     "id": "1024",
+                     "layer": "12",
+                     "lockText": true,
+                     "name": "New Field 8",
+                     "opaque": false,
+                     "rect": "145,297,241,318",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "textAlign": "right",
+                     "traversalOn": false
+                  }
+               },
+               "1025": {
+                  "#name": "field \"New Field 8\"",
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "htmlText": "<p>Image editor:</p>",
+                     "id": "1025",
+                     "layer": "13",
+                     "lockText": true,
+                     "name": "New Field 8",
+                     "opaque": false,
+                     "rect": "148,269,241,290",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "textAlign": "right",
+                     "traversalOn": false
+                  }
+               },
+               "1026": {
+                  "#name": "field \"XP Crash Report Label\"",
+                  "custompropertysets": {
+                     "cREVTable": {
+                        "currentview": "Crash reporting on Windows XP:"
+                     }
+                  },
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "htmlText": "<p>Crash reporting on Windows:</p>",
+                     "id": "1026",
+                     "layer": "14",
+                     "lockText": true,
+                     "name": "XP Crash Report Label",
+                     "opaque": false,
+                     "rect": "139,324,359,345",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "textAlign": "right",
+                     "traversalOn": false
+                  }
+               },
+               "1027": {
+                  "#name": "button \"Crash Report Style\"",
+                  "properties": {
+                     "armBorder": false,
+                     "autoHilite": false,
+                     "id": "1027",
+                     "label": "Small",
+                     "layer": "15",
+                     "menuMode": "option",
+                     "name": "Crash Report Style",
+                     "opaque": false,
+                     "rect": "365,325,508,347",
+                     "style": "menu",
+                     "text": "None\nSmall\nMedium",
+                     "traversalOn": false
+                  }
+               }
+            },
+            "properties": {
+               "id": "1002",
+               "name": "General"
+            }
+         },
+         "1004": {
+            "#name": "group \"Navigation\"",
+            "childcontrols": {
+               "1003": {
+                  "#name": "button \"Tab Menu\"",
+                  "properties": {
+                     "id": "1003",
+                     "layer": "2",
+                     "lockLoc": true,
+                     "menuHistory": "5",
+                     "menuMode": "tabbed",
+                     "name": "Tab Menu",
+                     "rect": "-1,6,601,606",
+                     "showName": false,
+                     "style": "menu",
+                     "text": "General\nFiles\nAppearance\nSizes\nEditor\nProfiles\nBrowser"
+                  }
+               }
+            },
+            "properties": {
+               "backgroundBehavior": true,
+               "id": "1004",
+               "layer": "1",
+               "lockLoc": true,
+               "name": "Navigation",
+               "rect": "-5,2,605,610"
+            }
+         },
+         "1005": {
+            "#name": "card \"Files\"",
+            "childcontrols": {
+               "1004": "#shared group",
+               "1034": {
+                  "#name": "button \"add extension\"",
+                  "properties": {
+                     "hiliteBorder": false,
+                     "hilited": true,
+                     "id": "1034",
+                     "label": "Add .hyperxtalk extension when saving files on MacOS",
+                     "layer": "3",
+                     "lockLoc": true,
+                     "name": "add extension",
+                     "opaque": false,
+                     "rect": "135,185,515,205",
+                     "showBorder": false,
+                     "style": "checkbox",
+                     "textAlign": "left"
+                  }
+               },
+               "1035": {
+                  "#name": "button \"destroyStack\"",
+                  "properties": {
+                     "hiliteBorder": false,
+                     "id": "1035",
+                     "label": "destroyStack property is set to true for new stacks",
+                     "layer": "4",
+                     "name": "destroyStack",
+                     "opaque": false,
+                     "rect": "135,143,526,163",
+                     "showBorder": false,
+                     "style": "checkbox",
+                     "textAlign": "left",
+                     "toolTip": "The destroyStack property closes a file when all its stack windows are closed"
+                  }
+               },
+               "1036": {
+                  "#name": "field \"New Field 4\"",
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "htmlText": "<p>If destroyStack is false, when closing last stack in file:</p>",
+                     "id": "1036",
+                     "layer": "5",
+                     "lockText": true,
+                     "name": "New Field 4",
+                     "opaque": false,
+                     "rect": "129,46,482,66",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "traversalOn": false
+                  }
+               },
+               "1037": {
+                  "#name": "group id 1037",
+                  "childcontrols": {
+                     "1038": {
+                        "#name": "button \"Remove from memory\"",
+                        "properties": {
+                           "hiliteBorder": false,
+                           "id": "1038",
+                           "label": "Close the file",
+                           "layer": "7",
+                           "name": "Remove from memory",
+                           "opaque": false,
+                           "rect": "155,95,261,113",
+                           "sharedHilite": false,
+                           "showBorder": false,
+                           "style": "radiobutton",
+                           "textAlign": "left",
+                           "toolTip": "Override normal behavior and close the file anyway"
+                        }
+                     },
+                     "1039": {
+                        "#name": "button \"Ask\"",
+                        "properties": {
+                           "hiliteBorder": false,
+                           "id": "1039",
+                           "label": "Ask",
+                           "layer": "8",
+                           "name": "Ask",
+                           "opaque": false,
+                           "rect": "155,117,203,137",
+                           "sharedHilite": false,
+                           "showBorder": false,
+                           "style": "radiobutton",
+                           "textAlign": "left",
+                           "toolTip": "Ask whether to close the file, leave it open, or cancel"
+                        }
+                     },
+                     "1040": {
+                        "#name": "button \"Don't remove\"",
+                        "properties": {
+                           "hiliteBorder": false,
+                           "hilited": true,
+                           "id": "1040",
+                           "label": "Don't close the file",
+                           "layer": "9",
+                           "name": "Don't remove",
+                           "opaque": false,
+                           "rect": "155,71,297,91",
+                           "sharedHilite": false,
+                           "showBorder": false,
+                           "style": "radiobutton",
+                           "textAlign": "left",
+                           "toolTip": "Leave file open and available in Application Overview"
+                        }
+                     }
+                  },
+                  "properties": {
+                     "hilitedButton": "3",
+                     "id": "1037",
+                     "layer": "6",
+                     "rect": "151,67,301,141"
+                  }
+               },
+               "1041": {
+                  "#name": "field \"field id 1406\"",
+                  "customproperties": {
+                     "Tabs": false
+                  },
+                  "custompropertysets": {
+                     "cREVDatabase": {
+                        "databasename": null,
+                        "host": null,
+                        "pass": null,
+                        "user": null
+                     },
+                     "cREVTable": {
+                        "currentview": "Number of recent files to store:"
+                     }
+                  },
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "htmlText": "<p>Number of recent files to store:</p>",
+                     "id": "1041",
+                     "layer": "10",
+                     "lockText": true,
+                     "name": "field id 1406",
+                     "opaque": false,
+                     "rect": "129,226,340,246",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "traversalOn": false
+                  }
+               },
+               "1042": {
+                  "#name": "group \"Recent Files Sort\"",
+                  "childcontrols": {
+                     "1043": {
+                        "#name": "button \"alphabetically\"",
+                        "properties": {
+                           "hiliteBorder": false,
+                           "id": "1043",
+                           "label": "Sort items alphabetically",
+                           "layer": "12",
+                           "name": "alphabetically",
+                           "opaque": false,
+                           "rect": "155,271,333,300",
+                           "sharedHilite": false,
+                           "showBorder": false,
+                           "style": "radiobutton",
+                           "textAlign": "left"
+                        }
+                     },
+                     "1044": {
+                        "#name": "button \"modification date\"",
+                        "properties": {
+                           "hiliteBorder": false,
+                           "hilited": true,
+                           "id": "1044",
+                           "label": "Sort items by date last opened",
+                           "layer": "13",
+                           "name": "modification date",
+                           "opaque": false,
+                           "rect": "155,248,372,277",
+                           "sharedHilite": false,
+                           "showBorder": false,
+                           "style": "radiobutton",
+                           "textAlign": "left"
+                        }
+                     }
+                  },
+                  "customproperties": {
+                     "Tabs": false
+                  },
+                  "properties": {
+                     "hilitedButton": "2",
+                     "id": "1042",
+                     "layer": "11",
+                     "name": "Recent Files Sort",
+                     "rect": "151,244,376,304"
+                  }
+               },
+               "1045": {
+                  "#name": "field \"Num Recent Files\"",
+                  "properties": {
+                     "htmlText": "<p>30</p>",
+                     "id": "1045",
+                     "layer": "14",
+                     "name": "Num Recent Files",
+                     "rect": "337,226,367,248"
+                  }
+               },
+               "1046": {
+                  "#name": "button \"Preserve Stack Creator\"",
+                  "properties": {
+                     "hiliteBorder": false,
+                     "id": "1046",
+                     "label": "Preserve stack creator type",
+                     "layer": "15",
+                     "name": "Preserve Stack Creator",
+                     "opaque": false,
+                     "rect": "135,318,531,341",
+                     "showBorder": false,
+                     "style": "checkbox",
+                     "textAlign": "left"
+                  }
+               },
+               "1047": {
+                  "#name": "button \"Preserve Stack Version\"",
+                  "properties": {
+                     "hiliteBorder": false,
+                     "id": "1047",
+                     "label": "Preserve stack file version on stacks saved in legacy format",
+                     "layer": "16",
+                     "name": "Preserve Stack Version",
+                     "opaque": false,
+                     "rect": "135,344,532,367",
+                     "showBorder": false,
+                     "style": "checkbox",
+                     "textAlign": "left",
+                     "toolTip": "Preserves the stack file version of stacks that have been saved out in legacy format using Save As in the Revolution IDE"
+                  }
+               },
+               "1048": {
+                  "#name": "button \"absoluteImagePaths\"",
+                  "properties": {
+                     "hiliteBorder": false,
+                     "id": "1048",
+                     "label": "Always use absolute file paths for images",
+                     "layer": "17",
+                     "name": "absoluteImagePaths",
+                     "opaque": false,
+                     "rect": "135,387,532,410",
+                     "showBorder": false,
+                     "style": "checkbox",
+                     "textAlign": "left",
+                     "toolTip": "When importing a reference image, always use the absolute path to the image rather than the location relative to the stack file"
+                  }
+               },
+               "1049": {
+                  "#name": "button \"Choose Customization Path\"",
+                  "properties": {
+                     "id": "1049",
+                     "label": "...",
+                     "layer": "18",
+                     "name": "Choose Customization Path",
+                     "rect": "490,431,518,454",
+                     "toolTip": "Click to change the customization path. This is where user settings including externals and plugins are stored",
+                     "traversalOn": false
+                  }
+               },
+               "1050": {
+                  "#name": "field \"Customization Path\"",
+                  "properties": {
+                     "dontWrap": true,
+                     "htmlText": "<p>/Users/emily-elizabethhoward/Documents/HyperXTalk</p>",
+                     "id": "1050",
+                     "layer": "19",
+                     "lockText": true,
+                     "name": "Customization Path",
+                     "rect": "255,432,487,453"
+                  }
+               },
+               "1051": {
+                  "#name": "field \"Customization Path Label\"",
+                  "custompropertysets": {
+                     "cREVTable": {
+                        "currentview": "User Extensions:"
+                     }
+                  },
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "htmlText": "<p>User Extensions:</p>",
+                     "id": "1051",
+                     "layer": "20",
+                     "lockText": true,
+                     "name": "Customization Path Label",
+                     "opaque": false,
+                     "rect": "135,432,256,453",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "textAlign": "right",
+                     "traversalOn": false
+                  }
+               }
+            },
+            "properties": {
+               "id": "1005",
+               "layer": "2",
+               "name": "Files"
+            }
+         },
+         "1006": {
+            "#name": "card \"Appearance\"",
+            "childcontrols": {
+               "1004": "#shared group",
+               "1057": {
+                  "#name": "button \"Rulers\"",
+                  "customproperties": {
+                     "New Button 1": false
+                  },
+                  "properties": {
+                     "armBorder": false,
+                     "autoHilite": false,
+                     "id": "1057",
+                     "label": "Pixels",
+                     "layer": "3",
+                     "menuMode": "option",
+                     "name": "Rulers",
+                     "opaque": false,
+                     "rect": "312,52,425,74",
+                     "style": "menu",
+                     "text": "Centimeters\nInches\nPixels",
+                     "textAlign": "left",
+                     "toolTip": "Display of ruler units when you choose Rulers from the View menu",
+                     "traversalOn": false
+                  }
+               },
+               "1058": {
+                  "#name": "field \"New Field 2\"",
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "htmlText": "<p>Grid spacing (pixels):</p>",
+                     "id": "1058",
+                     "layer": "4",
+                     "lockText": true,
+                     "name": "New Field 2",
+                     "opaque": false,
+                     "rect": "165,84,313,104",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "textAlign": "right",
+                     "traversalOn": false
+                  }
+               },
+               "1059": {
+                  "#name": "field \"gridSize\"",
+                  "customproperties": {
+                     "cMaxValue": "20",
+                     "cMinValue": "0"
+                  },
+                  "properties": {
+                     "htmlText": "<p>2</p>",
+                     "id": "1059",
+                     "layer": "5",
+                     "name": "gridSize",
+                     "rect": "312,84,344,105",
+                     "textAlign": "right",
+                     "toolTip": "Increment for moving and resizing objects when Grid is turned on (gridSize property)"
+                  }
+               },
+               "1060": {
+                  "#name": "field \"New Field 2\"",
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "htmlText": "<p>Ruler units:</p>",
+                     "id": "1060",
+                     "layer": "6",
+                     "lockText": true,
+                     "name": "New Field 2",
+                     "opaque": false,
+                     "rect": "226,52,313,72",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "textAlign": "right",
+                     "traversalOn": false
+                  }
+               },
+               "1061": {
+                  "#name": "field \"New Field 3\"",
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "htmlText": "<p>Backdrop:</p>",
+                     "id": "1061",
+                     "layer": "7",
+                     "lockText": true,
+                     "name": "New Field 3",
+                     "opaque": false,
+                     "rect": "205,135,313,156",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "textAlign": "right",
+                     "traversalOn": false
+                  }
+               },
+               "1062": {
+                  "#name": "button \"backdrop color\"",
+                  "customproperties": {
+                     "cRevSetting": "White"
+                  },
+                  "properties": {
+                     "accelMods": "command",
+                     "autoHilite": false,
+                     "id": "1062",
+                     "label": "Gray88",
+                     "layer": "8",
+                     "menuLines": "8",
+                     "menuMode": "option",
+                     "name": "backdrop color",
+                     "opaque": false,
+                     "rect": "308,134,428,156",
+                     "style": "menu",
+                     "text": "Black\nWhite\nRed\nYellow\nBlue\nGreen\n(-\nOther...",
+                     "textAlign": "left",
+                     "toolTip": "Color for backdrop when turned on (backdrop property)"
+                  }
+               },
+               "1063": {
+                  "#name": "button \"selectionhandle color\"",
+                  "customproperties": {
+                     "cRevSetting": "Gray50"
+                  },
+                  "properties": {
+                     "accelMods": "command",
+                     "autoHilite": false,
+                     "id": "1063",
+                     "label": "Red",
+                     "layer": "9",
+                     "menuHistory": "4",
+                     "menuLines": "9",
+                     "menuMode": "option",
+                     "name": "selectionhandle color",
+                     "opaque": false,
+                     "rect": "308,165,428,187",
+                     "style": "menu",
+                     "text": "White\nGray50\nBlack\nRed\nYellow\nBlue\nGreen\n(-\nOther...",
+                     "textAlign": "left",
+                     "toolTip": "Color for square \"handles\" on selected objects (selectionHandleColor property)"
+                  }
+               },
+               "1064": {
+                  "#name": "field id 1064",
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "htmlText": "<p>Selection handles:</p>",
+                     "id": "1064",
+                     "layer": "10",
+                     "lockText": true,
+                     "opaque": false,
+                     "rect": "168,165,313,186",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "textAlign": "right",
+                     "traversalOn": false
+                  }
+               },
+               "1065": {
+                  "#name": "graphic \"Backdrop Swatch\"",
+                  "properties": {
+                     "antialiased": false,
+                     "backColor": "Gray88",
+                     "filled": true,
+                     "foreColor": "128,128,128",
+                     "id": "1065",
+                     "layer": "11",
+                     "name": "Backdrop Swatch",
+                     "opaque": true,
+                     "rect": "434,135,466,155"
+                  }
+               },
+               "1066": {
+                  "#name": "graphic \"Selection Handle Swatch\"",
+                  "properties": {
+                     "antialiased": false,
+                     "backColor": "Red",
+                     "filled": true,
+                     "foreColor": "128,128,128",
+                     "id": "1066",
+                     "layer": "12",
+                     "name": "Selection Handle Swatch",
+                     "opaque": true,
+                     "rect": "434,165,466,185"
+                  }
+               },
+               "1067": {
+                  "#name": "scrollbar \"grid\"",
+                  "customproperties": {
+                     "cTargetField": "GridSize",
+                     "Tabs": false
+                  },
+                  "properties": {
+                     "endValue": "20",
+                     "id": "1067",
+                     "layer": "13",
+                     "lineInc": "0.999771",
+                     "name": "grid",
+                     "pageInc": "0.999771",
+                     "rect": "347,85,362,103",
+                     "startValue": "0",
+                     "thumbPosition": "2",
+                     "thumbSize": "0.999771"
+                  }
+               },
+               "1071": {
+                  "#name": "field \"tooltip delay\"",
+                  "properties": {
+                     "htmlText": "<p>500</p>",
+                     "id": "1071",
+                     "layer": "14",
+                     "name": "tooltip delay",
+                     "rect": "309,249,361,270"
+                  }
+               },
+               "1072": {
+                  "#name": "field \"Label Field\"",
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "htmlText": "<p>Display tool tips after:</p>",
+                     "id": "1072",
+                     "layer": "15",
+                     "lockText": true,
+                     "name": "Label Field",
+                     "opaque": false,
+                     "rect": "167,248,313,269",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "textAlign": "right",
+                     "traversalOn": false
+                  }
+               }
+            },
+            "properties": {
+               "id": "1006",
+               "layer": "3",
+               "name": "Appearance"
+            }
+         },
+         "1007": {
+            "#name": "card \"Sizes\"",
+            "childcontrols": {
+               "1004": "#shared group",
+               "1075": {
+                  "#name": "field \"New Field 1\"",
+                  "customproperties": {
+                     "Selection Description": false
+                  },
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "htmlText": "<p>Button:</p>",
+                     "id": "1075",
+                     "layer": "3",
+                     "name": "New Field 1",
+                     "opaque": false,
+                     "rect": "123,87,305,108",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "textAlign": "right",
+                     "traversalOn": false
+                  }
+               },
+               "1076": {
+                  "#name": "field \"New Field 1\"",
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "htmlText": "<p>Tabbed button:</p>",
+                     "id": "1076",
+                     "layer": "4",
+                     "name": "New Field 1",
+                     "opaque": false,
+                     "rect": "123,108,305,129",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "textAlign": "right",
+                     "traversalOn": false
+                  }
+               },
+               "1077": {
+                  "#name": "field \"New Field 1\"",
+                  "customproperties": {
+                     "revfield": false
+                  },
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "htmlText": "<p>Width</p>",
+                     "id": "1077",
+                     "layer": "5",
+                     "name": "New Field 1",
+                     "opaque": false,
+                     "rect": "321,65,389,86",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "traversalOn": false
+                  }
+               },
+               "1078": {
+                  "#name": "field \"New Field 1\"",
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "htmlText": "<p>Height</p>",
+                     "id": "1078",
+                     "layer": "6",
+                     "name": "New Field 1",
+                     "opaque": false,
+                     "rect": "396,65,464,86",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "traversalOn": false
+                  }
+               },
+               "1079": {
+                  "#name": "field \"New Field 1\"",
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "htmlText": "<p>Menu or menu item:</p>",
+                     "id": "1079",
+                     "layer": "7",
+                     "name": "New Field 1",
+                     "opaque": false,
+                     "rect": "123,129,305,150",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "textAlign": "right",
+                     "traversalOn": false
+                  }
+               },
+               "1080": {
+                  "#name": "field \"New Field 1\"",
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "htmlText": "<p>Field:</p>",
+                     "id": "1080",
+                     "layer": "8",
+                     "name": "New Field 1",
+                     "opaque": false,
+                     "rect": "123,150,305,171",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "textAlign": "right",
+                     "traversalOn": false
+                  }
+               },
+               "1081": {
+                  "#name": "field \"New Field 1\"",
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "htmlText": "<p>Label field:</p>",
+                     "id": "1081",
+                     "layer": "9",
+                     "name": "New Field 1",
+                     "opaque": false,
+                     "rect": "123,171,305,192",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "textAlign": "right",
+                     "traversalOn": false
+                  }
+               },
+               "1082": {
+                  "#name": "field id 1082",
+                  "customproperties": {
+                     "revfield": false
+                  },
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "htmlText": "<p>Scrollbar (MacOS):</p>",
+                     "id": "1082",
+                     "layer": "10",
+                     "opaque": false,
+                     "rect": "123,302,305,323",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "textAlign": "right",
+                     "traversalOn": false
+                  }
+               },
+               "1083": {
+                  "#name": "field \"New Field 1\"",
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "htmlText": "<p>Progress bar (MacOS):</p>",
+                     "id": "1083",
+                     "layer": "11",
+                     "lockLoc": true,
+                     "name": "New Field 1",
+                     "opaque": false,
+                     "rect": "123,322,305,343",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "textAlign": "right",
+                     "traversalOn": false
+                  }
+               },
+               "1084": {
+                  "#name": "field \"New Field 1\"",
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "htmlText": "<p>Scrollbar (Unix/Windows):</p>",
+                     "id": "1084",
+                     "layer": "12",
+                     "name": "New Field 1",
+                     "opaque": false,
+                     "rect": "123,343,305,364",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "textAlign": "right",
+                     "traversalOn": false
+                  }
+               },
+               "1085": {
+                  "#name": "field \"New Field 1\"",
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "htmlText": "<p>Graphic:</p>",
+                     "id": "1085",
+                     "layer": "13",
+                     "name": "New Field 1",
+                     "opaque": false,
+                     "rect": "123,192,305,213",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "textAlign": "right",
+                     "traversalOn": false
+                  }
+               },
+               "1086": {
+                  "#name": "field \"New Field 1\"",
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "htmlText": "<p>Image:</p>",
+                     "id": "1086",
+                     "layer": "14",
+                     "name": "New Field 1",
+                     "opaque": false,
+                     "rect": "123,213,305,234",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "textAlign": "right",
+                     "traversalOn": false
+                  }
+               },
+               "1090": {
+                  "#name": "field \"New Field 1\"",
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "htmlText": "<p>Player:</p>",
+                     "id": "1090",
+                     "layer": "15",
+                     "name": "New Field 1",
+                     "opaque": false,
+                     "rect": "123,234,305,255",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "textAlign": "right",
+                     "traversalOn": false
+                  }
+               },
+               "1091": {
+                  "#name": "field \"cButtonWidth\"",
+                  "customproperties": {
+                     "cMaxValue": "10000",
+                     "cMinValue": "1",
+                     "revbasic": false
+                  },
+                  "properties": {
+                     "htmlText": "<p>82</p>",
+                     "id": "1091",
+                     "layer": "16",
+                     "name": "cButtonWidth",
+                     "rect": "322,86,374,107",
+                     "textAlign": "right"
+                  }
+               },
+               "1092": {
+                  "#name": "field \"cButtonHeight\"",
+                  "customproperties": {
+                     "cMaxValue": "10000",
+                     "cMinValue": "1"
+                  },
+                  "properties": {
+                     "htmlText": "<p>23</p>",
+                     "id": "1092",
+                     "layer": "17",
+                     "name": "cButtonHeight",
+                     "rect": "397,86,449,107",
+                     "textAlign": "right"
+                  }
+               },
+               "1093": {
+                  "#name": "field \"cTabButtonwidth\"",
+                  "customproperties": {
+                     "cMaxValue": "10000",
+                     "cMinValue": "1"
+                  },
+                  "properties": {
+                     "htmlText": "<p>250</p>",
+                     "id": "1093",
+                     "layer": "18",
+                     "name": "cTabButtonwidth",
+                     "rect": "322,107,374,128",
+                     "textAlign": "right"
+                  }
+               },
+               "1094": {
+                  "#name": "field \"cTabButtonHeight\"",
+                  "customproperties": {
+                     "cMaxValue": "10000",
+                     "cMinValue": "1"
+                  },
+                  "properties": {
+                     "htmlText": "<p>160</p>",
+                     "id": "1094",
+                     "layer": "19",
+                     "name": "cTabButtonHeight",
+                     "rect": "397,107,449,128",
+                     "textAlign": "right"
+                  }
+               },
+               "1095": {
+                  "#name": "field \"cMenuWidth\"",
+                  "customproperties": {
+                     "cMaxValue": "10000",
+                     "cMinValue": "1"
+                  },
+                  "properties": {
+                     "htmlText": "<p>102</p>",
+                     "id": "1095",
+                     "layer": "20",
+                     "name": "cMenuWidth",
+                     "rect": "322,128,374,149",
+                     "textAlign": "right"
+                  }
+               },
+               "1096": {
+                  "#name": "field \"cMenuHeight\"",
+                  "customproperties": {
+                     "cMaxValue": "10000",
+                     "cMinValue": "1"
+                  },
+                  "properties": {
+                     "htmlText": "<p>22</p>",
+                     "id": "1096",
+                     "layer": "21",
+                     "name": "cMenuHeight",
+                     "rect": "397,128,449,149",
+                     "textAlign": "right"
+                  }
+               },
+               "1097": {
+                  "#name": "field \"cFieldWidth\"",
+                  "customproperties": {
+                     "cMaxValue": "10000",
+                     "cMinValue": "1"
+                  },
+                  "properties": {
+                     "htmlText": "<p>250</p>",
+                     "id": "1097",
+                     "layer": "22",
+                     "name": "cFieldWidth",
+                     "rect": "322,149,374,170",
+                     "textAlign": "right"
+                  }
+               },
+               "1098": {
+                  "#name": "field \"cFieldHeight\"",
+                  "customproperties": {
+                     "cMaxValue": "10000",
+                     "cMinValue": "1"
+                  },
+                  "properties": {
+                     "htmlText": "<p>56</p>",
+                     "id": "1098",
+                     "layer": "23",
+                     "name": "cFieldHeight",
+                     "rect": "397,149,449,170",
+                     "textAlign": "right"
+                  }
+               },
+               "1099": {
+                  "#name": "field \"cLabelFieldWidth\"",
+                  "customproperties": {
+                     "cMaxValue": "10000",
+                     "cMinValue": "1"
+                  },
+                  "properties": {
+                     "htmlText": "<p>100</p>",
+                     "id": "1099",
+                     "layer": "24",
+                     "name": "cLabelFieldWidth",
+                     "rect": "322,170,374,191",
+                     "textAlign": "right"
+                  }
+               },
+               "1100": {
+                  "#name": "field \"cLabelFieldHeight\"",
+                  "customproperties": {
+                     "cMaxValue": "10000",
+                     "cMinValue": "1"
+                  },
+                  "properties": {
+                     "htmlText": "<p>21</p>",
+                     "id": "1100",
+                     "layer": "25",
+                     "name": "cLabelFieldHeight",
+                     "rect": "397,170,449,191",
+                     "textAlign": "right"
+                  }
+               },
+               "1101": {
+                  "#name": "field \"cREVGraphicWidth\"",
+                  "customproperties": {
+                     "cMaxValue": "10000",
+                     "cMinValue": "1"
+                  },
+                  "properties": {
+                     "htmlText": "<p>120</p>",
+                     "id": "1101",
+                     "layer": "26",
+                     "name": "cREVGraphicWidth",
+                     "rect": "322,191,374,212",
+                     "textAlign": "right"
+                  }
+               },
+               "1102": {
+                  "#name": "field \"cREVGraphicHeight\"",
+                  "customproperties": {
+                     "cMaxValue": "10000",
+                     "cMinValue": "1"
+                  },
+                  "properties": {
+                     "htmlText": "<p>120</p>",
+                     "id": "1102",
+                     "layer": "27",
+                     "name": "cREVGraphicHeight",
+                     "rect": "397,191,449,212",
+                     "textAlign": "right"
+                  }
+               },
+               "1103": {
+                  "#name": "field \"cREVImageWidth\"",
+                  "customproperties": {
+                     "cMaxValue": "10000",
+                     "cMinValue": "1"
+                  },
+                  "properties": {
+                     "htmlText": "<p>120</p>",
+                     "id": "1103",
+                     "layer": "28",
+                     "name": "cREVImageWidth",
+                     "rect": "322,212,374,233",
+                     "textAlign": "right"
+                  }
+               },
+               "1104": {
+                  "#name": "field \"cREVImageHeight\"",
+                  "customproperties": {
+                     "cMaxValue": "10000",
+                     "cMinValue": "1"
+                  },
+                  "properties": {
+                     "htmlText": "<p>120</p>",
+                     "id": "1104",
+                     "layer": "29",
+                     "name": "cREVImageHeight",
+                     "rect": "397,212,449,233",
+                     "textAlign": "right"
+                  }
+               },
+               "1105": {
+                  "#name": "field \"cREVPlayerWidth\"",
+                  "customproperties": {
+                     "cMaxValue": "10000",
+                     "cMinValue": "1"
+                  },
+                  "properties": {
+                     "htmlText": "<p>155</p>",
+                     "id": "1105",
+                     "layer": "30",
+                     "name": "cREVPlayerWidth",
+                     "rect": "322,233,374,254",
+                     "textAlign": "right"
+                  }
+               },
+               "1106": {
+                  "#name": "field \"cREVPlayerHeight\"",
+                  "customproperties": {
+                     "cMaxValue": "10000",
+                     "cMinValue": "1"
+                  },
+                  "properties": {
+                     "htmlText": "<p>118</p>",
+                     "id": "1106",
+                     "layer": "31",
+                     "name": "cREVPlayerHeight",
+                     "rect": "397,233,449,254",
+                     "textAlign": "right"
+                  }
+               },
+               "1107": {
+                  "#name": "field \"cScrollbarWidth\"",
+                  "customproperties": {
+                     "cMaxValue": "10000",
+                     "cMinValue": "1"
+                  },
+                  "properties": {
+                     "htmlText": "<p>200</p>",
+                     "id": "1107",
+                     "layer": "32",
+                     "name": "cScrollbarWidth",
+                     "rect": "322,280,374,301",
+                     "textAlign": "right",
+                     "toolTip": "Width of scrollbars on all systems, in pixels"
+                  }
+               },
+               "1108": {
+                  "#name": "field \"cMacOSScrollbarHeight\"",
+                  "customproperties": {
+                     "cMaxValue": "10000",
+                     "cMinValue": "1"
+                  },
+                  "properties": {
+                     "htmlText": "<p>16</p>",
+                     "id": "1108",
+                     "layer": "33",
+                     "name": "cMacOSScrollbarHeight",
+                     "rect": "397,300,449,321",
+                     "textAlign": "right",
+                     "toolTip": "Height of scrollbars on MacOS systems, in pixels"
+                  }
+               },
+               "1109": {
+                  "#name": "field \"cMacOSProgressScrollbarHeight\"",
+                  "customproperties": {
+                     "cMaxValue": "10000",
+                     "cMinValue": "1"
+                  },
+                  "properties": {
+                     "htmlText": "<p>14</p>",
+                     "id": "1109",
+                     "layer": "34",
+                     "name": "cMacOSProgressScrollbarHeight",
+                     "rect": "397,321,449,342",
+                     "textAlign": "right",
+                     "toolTip": "Height of progress bars on MacOS systems, in pixels"
+                  }
+               },
+               "1110": {
+                  "#name": "field \"cScrollbarHeight\"",
+                  "customproperties": {
+                     "cMaxValue": "10000",
+                     "cMinValue": "1"
+                  },
+                  "properties": {
+                     "htmlText": "<p>16</p>",
+                     "id": "1110",
+                     "layer": "35",
+                     "name": "cScrollbarHeight",
+                     "rect": "397,342,449,363",
+                     "textAlign": "right",
+                     "toolTip": "Height of scrollbars on Unix and Windows systems, in pixels"
+                  }
+               },
+               "1111": {
+                  "#name": "field \"New Field 6\"",
+                  "properties": {
+                     "autoHilite": false,
+                     "htmlText": "<p>Use the following sizes when creating a new object:</p>",
+                     "id": "1111",
+                     "layer": "36",
+                     "lockText": true,
+                     "name": "New Field 6",
+                     "opaque": false,
+                     "rect": "163,43,528,69",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "traversalOn": false
+                  }
+               },
+               "1112": {
+                  "#name": "field \"New Field 1\"",
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "htmlText": "<p>Scrollbar:</p>",
+                     "id": "1112",
+                     "layer": "37",
+                     "name": "New Field 1",
+                     "opaque": false,
+                     "rect": "123,280,305,301",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "textAlign": "right",
+                     "traversalOn": false
+                  }
+               }
+            },
+            "properties": {
+               "id": "1007",
+               "layer": "4",
+               "name": "Sizes"
+            }
+         },
+         "1008": {
+            "#name": "card \"Editor\"",
+            "childcontrols": {
+               "1004": "#shared group",
+               "1114": {
+                  "#name": "group \"Script Editor\"",
+                  "childcontrols": {
+                     "1115": {
+                        "#name": "graphic \"Message Catcher\"",
+                        "properties": {
+                           "antialiased": false,
+                           "backColor": "0,0,0",
+                           "filled": true,
+                           "foreColor": "0,0,0",
+                           "id": "1115",
+                           "ink": "blendDstOver",
+                           "layer": "4",
+                           "lockLoc": true,
+                           "name": "Message Catcher",
+                           "opaque": true,
+                           "rect": "107,44,577,400"
+                        }
+                     },
+                     "1116": {
+                        "#name": "field \"Label Field\"",
+                        "custompropertysets": {
+                           "cREVTable": {
+                              "currentview": "Font:"
+                           }
+                        },
+                        "properties": {
+                           "autoHilite": false,
+                           "dontWrap": true,
+                           "htmlText": "<p>Font:</p>",
+                           "id": "1116",
+                           "layer": "5",
+                           "lockText": true,
+                           "name": "Label Field",
+                           "opaque": false,
+                           "rect": "121,48,171,69",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "transparent",
+                           "textAlign": "right",
+                           "traversalOn": false
+                        }
+                     },
+                     "1117": {
+                        "#name": "button \"Font\"",
+                        "customproperties": {
+                           "cFont": "Source Code Pro",
+                           "cPref": "editor,font",
+                           "cProperty": "cFont"
+                        },
+                        "properties": {
+                           "armBorder": false,
+                           "autoHilite": false,
+                           "id": "1117",
+                           "label": "Source Code Pro",
+                           "layer": "6",
+                           "menuLines": "10",
+                           "menuMode": "option",
+                           "name": "Font",
+                           "opaque": false,
+                           "rect": "171,48,391,70",
+                           "style": "menu",
+                           "text": "%file%: ./ide/Toolset/palettes/revpreferencesgui.rev.bst/assets/revPreferencesGUI_1008_1114_1117_text.txt",
+                           "toolTip": "Font used in the editing field",
+                           "traversalOn": false
+                        }
+                     },
+                     "1118": {
+                        "#name": "field \"Label Field\"",
+                        "custompropertysets": {
+                           "cREVTable": {
+                              "currentview": "Size:"
+                           }
+                        },
+                        "properties": {
+                           "autoHilite": false,
+                           "dontWrap": true,
+                           "htmlText": "<p>Size:</p>",
+                           "id": "1118",
+                           "layer": "7",
+                           "lockText": true,
+                           "name": "Label Field",
+                           "opaque": false,
+                           "rect": "119,74,169,95",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "transparent",
+                           "textAlign": "right",
+                           "traversalOn": false
+                        }
+                     },
+                     "1119": {
+                        "#name": "button \"Font Size\"",
+                        "customproperties": {
+                           "cPref": "editor,fontsize",
+                           "cProperty": "cSize",
+                           "cSize": "12"
+                        },
+                        "properties": {
+                           "armBorder": false,
+                           "autoHilite": false,
+                           "id": "1119",
+                           "label": "12",
+                           "layer": "8",
+                           "menuHistory": "5",
+                           "menuLines": "6",
+                           "menuMode": "option",
+                           "name": "Font Size",
+                           "opaque": false,
+                           "rect": "171,76,245,98",
+                           "style": "menu",
+                           "text": "8\n9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n20",
+                           "toolTip": "Font size used in the editing field",
+                           "traversalOn": false
+                        }
+                     },
+                     "1120": {
+                        "#name": "button \"Auto Format\"",
+                        "customproperties": {
+                           "cPref": "editor,autoformat",
+                           "cProperty": "hilite"
+                        },
+                        "properties": {
+                           "hiliteBorder": false,
+                           "hilited": true,
+                           "id": "1120",
+                           "layer": "9",
+                           "name": "Auto Format",
+                           "opaque": false,
+                           "rect": "111,158,209,181",
+                           "showBorder": false,
+                           "style": "checkbox",
+                           "textAlign": "left",
+                           "toolTip": "The script editor will keep your code formatted as \nyou type."
+                        }
+                     },
+                     "1121": {
+                        "#name": "button \"Variable Checking\"",
+                        "customproperties": {
+                           "cPref": "explicitVariables",
+                           "cProperty": "hilite"
+                        },
+                        "properties": {
+                           "hiliteBorder": false,
+                           "id": "1121",
+                           "label": "Strict Compilation Mode",
+                           "layer": "10",
+                           "name": "Variable Checking",
+                           "opaque": false,
+                           "rect": "111,134,287,157",
+                           "showBorder": false,
+                           "style": "checkbox",
+                           "textAlign": "left",
+                           "toolTip": "The script editor will check that variables are declared and\nliterals are quoted when compiling."
+                        }
+                     },
+                     "1122": {
+                        "#name": "button \"Variable Preservation\"",
+                        "customproperties": {
+                           "cPref": "preserveVariables",
+                           "cProperty": "hilite"
+                        },
+                        "properties": {
+                           "hiliteBorder": false,
+                           "hilited": true,
+                           "id": "1122",
+                           "layer": "11",
+                           "name": "Variable Preservation",
+                           "opaque": false,
+                           "rect": "111,110,266,133",
+                           "showBorder": false,
+                           "style": "checkbox",
+                           "textAlign": "left",
+                           "toolTip": "Variables declared outside handlers (\"script-locals\") will\nkeep their values when scripts are edited and recompiled."
+                        }
+                     },
+                     "1123": {
+                        "#name": "group \"Comment character\"",
+                        "childcontrols": {
+                           "1124": {
+                              "#name": "button \"--\"",
+                              "customproperties": {
+                                 "cPref": "editor,commentchar",
+                                 "cProperty": "hilite"
+                              },
+                              "properties": {
+                                 "hiliteBorder": false,
+                                 "hilited": true,
+                                 "id": "1124",
+                                 "layer": "13",
+                                 "name": "--",
+                                 "opaque": false,
+                                 "rect": "111,399,193,422",
+                                 "sharedHilite": false,
+                                 "showBorder": false,
+                                 "style": "radiobutton",
+                                 "textAlign": "left"
+                              }
+                           },
+                           "1125": {
+                              "#name": "button \"#\"",
+                              "customproperties": {
+                                 "cPref": "editor,commentchar",
+                                 "cProperty": "hilite"
+                              },
+                              "properties": {
+                                 "hiliteBorder": false,
+                                 "id": "1125",
+                                 "layer": "14",
+                                 "name": "#",
+                                 "opaque": false,
+                                 "rect": "152,399,234,422",
+                                 "sharedHilite": false,
+                                 "showBorder": false,
+                                 "style": "radiobutton",
+                                 "textAlign": "left"
+                              }
+                           },
+                           "1126": {
+                              "#name": "button \"//\"",
+                              "customproperties": {
+                                 "cPref": "editor,commentchar",
+                                 "cProperty": "hilite"
+                              },
+                              "properties": {
+                                 "hiliteBorder": false,
+                                 "id": "1126",
+                                 "layer": "15",
+                                 "name": "//",
+                                 "opaque": false,
+                                 "rect": "193,399,275,422",
+                                 "sharedHilite": false,
+                                 "showBorder": false,
+                                 "style": "radiobutton",
+                                 "textAlign": "left"
+                              }
+                           }
+                        },
+                        "properties": {
+                           "hilitedButton": "1",
+                           "id": "1123",
+                           "label": "Comment using:",
+                           "layer": "12",
+                           "lockLoc": true,
+                           "name": "Comment character",
+                           "rect": "110,385,224,451",
+                           "showName": true
+                        }
+                     },
+                     "1127": {
+                        "#name": "field \"Label Field\"",
+                        "custompropertysets": {
+                           "cREVTable": {
+                              "currentview": "Colorization:"
+                           }
+                        },
+                        "properties": {
+                           "autoHilite": false,
+                           "dontWrap": true,
+                           "htmlText": "<p>Colorization:</p>",
+                           "id": "1127",
+                           "layer": "16",
+                           "lockText": true,
+                           "name": "Label Field",
+                           "opaque": false,
+                           "rect": "307,158,402,178",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "transparent",
+                           "traversalOn": false
+                        }
+                     },
+                     "1128": {
+                        "#name": "button \"Colorization Scheme\"",
+                        "customproperties": {
+                           "cPref": "colorization,scheme",
+                           "cProperty": "label"
+                        },
+                        "properties": {
+                           "armBorder": false,
+                           "autoHilite": false,
+                           "id": "1128",
+                           "label": "Default",
+                           "layer": "17",
+                           "menuMode": "option",
+                           "name": "Colorization Scheme",
+                           "opaque": false,
+                           "rect": "314,181,460,203",
+                           "style": "menu",
+                           "text": "Default\nRevolution Classic\nOne Dark Pro\nNo Colorization\n(-\nBlue\nOne Dark Pro\nRed\n(-\nCustom...",
+                           "traversalOn": false
+                        }
+                     },
+                     "1129": {
+                        "#name": "button \"Line Numbers\"",
+                        "customproperties": {
+                           "cPref": "gutter,linenumbers",
+                           "cProperty": "hilite"
+                        },
+                        "properties": {
+                           "hiliteBorder": false,
+                           "hilited": true,
+                           "id": "1129",
+                           "layer": "18",
+                           "name": "Line Numbers",
+                           "opaque": false,
+                           "rect": "111,182,222,205",
+                           "showBorder": false,
+                           "style": "checkbox",
+                           "textAlign": "left",
+                           "toolTip": "Show line numbers in the script editor"
+                        }
+                     },
+                     "1130": {
+                        "#name": "field \"Label Field\"",
+                        "custompropertysets": {
+                           "cREVTable": {
+                              "currentview": "Handler List:"
+                           }
+                        },
+                        "properties": {
+                           "autoHilite": false,
+                           "dontWrap": true,
+                           "htmlText": "<p>Handler List:</p>",
+                           "id": "1130",
+                           "layer": "19",
+                           "lockText": true,
+                           "name": "Label Field",
+                           "opaque": false,
+                           "rect": "307,110,403,130",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "transparent",
+                           "traversalOn": false
+                        }
+                     },
+                     "1131": {
+                        "#name": "button \"Handler List\"",
+                        "customproperties": {
+                           "cPref": "editor,sorthandlerlist",
+                           "cProperty": "label"
+                        },
+                        "properties": {
+                           "armBorder": false,
+                           "autoHilite": false,
+                           "id": "1131",
+                           "label": "alphabetical",
+                           "layer": "20",
+                           "menuLines": "3",
+                           "menuMode": "option",
+                           "name": "Handler List",
+                           "opaque": false,
+                           "rect": "314,132,460,154",
+                           "style": "menu",
+                           "text": "Alphabetical\nOrder-of-appearence\nBy type",
+                           "traversalOn": false
+                        }
+                     },
+                     "1132": {
+                        "#name": "button \"Background Color\"",
+                        "customproperties": {
+                           "cColor": "255,255,255",
+                           "cPref": "editor,backgroundcolor",
+                           "cProperty": "cColor"
+                        },
+                        "properties": {
+                           "armBorder": false,
+                           "autoHilite": false,
+                           "id": "1132",
+                           "label": "White",
+                           "layer": "21",
+                           "menuMode": "option",
+                           "name": "Background Color",
+                           "opaque": false,
+                           "rect": "314,234,427,256",
+                           "style": "menu",
+                           "text": "White\nCustard Yellow\nOther..",
+                           "traversalOn": false
+                        }
+                     },
+                     "1133": {
+                        "#name": "field \"Label Field\"",
+                        "custompropertysets": {
+                           "cREVTable": {
+                              "currentview": "Background color:"
+                           }
+                        },
+                        "properties": {
+                           "autoHilite": false,
+                           "dontWrap": true,
+                           "htmlText": "<p>Background color:</p>",
+                           "id": "1133",
+                           "layer": "22",
+                           "lockText": true,
+                           "name": "Label Field",
+                           "opaque": false,
+                           "rect": "307,211,433,231",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "transparent",
+                           "traversalOn": false
+                        }
+                     },
+                     "1134": {
+                        "#name": "button \"Horizontal scroll\"",
+                        "customproperties": {
+                           "cPref": "editor,hscrollbar",
+                           "cProperty": "hilite"
+                        },
+                        "properties": {
+                           "hiliteBorder": false,
+                           "hilited": true,
+                           "id": "1134",
+                           "layer": "23",
+                           "name": "Horizontal scroll",
+                           "opaque": false,
+                           "rect": "111,205,247,228",
+                           "showBorder": false,
+                           "style": "checkbox",
+                           "textAlign": "left",
+                           "toolTip": "Show a horizontal scrollbar for wide scripts"
+                        }
+                     },
+                     "1135": {
+                        "#name": "graphic \"Background Swatch\"",
+                        "properties": {
+                           "antialiased": false,
+                           "backColor": "255,255,255",
+                           "filled": true,
+                           "foreColor": "128,128,128",
+                           "id": "1135",
+                           "layer": "24",
+                           "name": "Background Swatch",
+                           "opaque": true,
+                           "rect": "430,235,462,255"
+                        }
+                     },
+                     "1136": {
+                        "#name": "field \"Label Field\"",
+                        "custompropertysets": {
+                           "cREVTable": {
+                              "currentview": "When editing scripts:"
+                           }
+                        },
+                        "properties": {
+                           "autoHilite": false,
+                           "dontWrap": true,
+                           "htmlText": "<p>When editing scripts:</p>",
+                           "id": "1136",
+                           "layer": "25",
+                           "lockText": true,
+                           "name": "Label Field",
+                           "opaque": false,
+                           "rect": "111,284,240,304",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "transparent",
+                           "traversalOn": false
+                        }
+                     },
+                     "1137": {
+                        "#name": "button \"Hide Palettes\"",
+                        "properties": {
+                           "hiliteBorder": false,
+                           "id": "1137",
+                           "layer": "26",
+                           "name": "Hide Palettes",
+                           "opaque": false,
+                           "rect": "111,304,247,327",
+                           "showBorder": false,
+                           "style": "checkbox",
+                           "textAlign": "left"
+                        }
+                     },
+                     "1138": {
+                        "#name": "button \"Hide Message Box\"",
+                        "properties": {
+                           "hiliteBorder": false,
+                           "id": "1138",
+                           "layer": "27",
+                           "name": "Hide Message Box",
+                           "opaque": false,
+                           "rect": "111,325,247,348",
+                           "showBorder": false,
+                           "style": "checkbox",
+                           "textAlign": "left"
+                        }
+                     },
+                     "1139": {
+                        "#name": "button \"Hide Errors\"",
+                        "properties": {
+                           "hiliteBorder": false,
+                           "id": "1139",
+                           "layer": "28",
+                           "name": "Hide Errors",
+                           "opaque": false,
+                           "rect": "111,347,247,370",
+                           "showBorder": false,
+                           "style": "checkbox",
+                           "textAlign": "left"
+                        }
+                     },
+                     "1140": {
+                        "#name": "field \"Label Field\"",
+                        "custompropertysets": {
+                           "cREVTable": {
+                              "currentview": "Scripts open in:"
+                           }
+                        },
+                        "properties": {
+                           "autoHilite": false,
+                           "dontWrap": true,
+                           "htmlText": "<p>Scripts open in:</p>",
+                           "id": "1140",
+                           "layer": "29",
+                           "lockText": true,
+                           "name": "Label Field",
+                           "opaque": false,
+                           "rect": "307,328,438,348",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "transparent",
+                           "traversalOn": false
+                        }
+                     },
+                     "1141": {
+                        "#name": "button \"Use Tabs\"",
+                        "customproperties": {
+                           "cPref": "usetabs",
+                           "cProperty": "cLabel"
+                        },
+                        "properties": {
+                           "armBorder": false,
+                           "autoHilite": false,
+                           "id": "1141",
+                           "label": "New tab",
+                           "layer": "30",
+                           "menuMode": "option",
+                           "name": "Use Tabs",
+                           "opaque": false,
+                           "rect": "314,351,460,373",
+                           "style": "menu",
+                           "text": "New tab\nNew window",
+                           "traversalOn": false
+                        }
+                     },
+                     "1142": {
+                        "#name": "button \"Interactive find\"",
+                        "customproperties": {
+                           "cPref": "editor,useInteractiveFind",
+                           "cProperty": "hilite"
+                        },
+                        "properties": {
+                           "hiliteBorder": false,
+                           "id": "1142",
+                           "layer": "31",
+                           "name": "Interactive find",
+                           "opaque": false,
+                           "rect": "111,229,247,252",
+                           "showBorder": false,
+                           "style": "checkbox",
+                           "textAlign": "left",
+                           "toolTip": "The script editor quick search will begin to find results as you are still typing"
+                        }
+                     },
+                     "1143": {
+                        "#name": "field \"Label Field\"",
+                        "custompropertysets": {
+                           "cREVTable": {
+                              "currentview": "Debug background color:"
+                           }
+                        },
+                        "properties": {
+                           "autoHilite": false,
+                           "dontWrap": true,
+                           "htmlText": "<p>Debug background color:</p>",
+                           "id": "1143",
+                           "layer": "32",
+                           "lockText": true,
+                           "name": "Label Field",
+                           "opaque": false,
+                           "rect": "307,268,477,288",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "transparent",
+                           "traversalOn": false
+                        }
+                     },
+                     "1144": {
+                        "#name": "button \"Debug Background Color\"",
+                        "customproperties": {
+                           "cColor": "255,247,215",
+                           "cPref": "editor,debugBackgroundcolor",
+                           "cProperty": "cColor"
+                        },
+                        "properties": {
+                           "armBorder": false,
+                           "autoHilite": false,
+                           "id": "1144",
+                           "label": "Custard Yellow",
+                           "layer": "33",
+                           "menuHistory": "2",
+                           "menuMode": "option",
+                           "name": "Debug Background Color",
+                           "opaque": false,
+                           "rect": "314,291,427,313",
+                           "style": "menu",
+                           "text": "White\nCustard Yellow\nOther..",
+                           "traversalOn": false
+                        }
+                     },
+                     "1145": {
+                        "#name": "graphic \"Debug Background Swatch\"",
+                        "properties": {
+                           "antialiased": false,
+                           "backColor": "255,247,215",
+                           "filled": true,
+                           "foreColor": "128,128,128",
+                           "id": "1145",
+                           "layer": "34",
+                           "name": "Debug Background Swatch",
+                           "opaque": true,
+                           "rect": "430,292,462,312"
+                        }
+                     },
+                     "1146": {
+                        "#name": "button \"Show globals\"",
+                        "customproperties": {
+                           "cPref": "variables,showglobals",
+                           "cProperty": "hilite"
+                        },
+                        "properties": {
+                           "hiliteBorder": false,
+                           "id": "1146",
+                           "layer": "35",
+                           "name": "Show globals",
+                           "opaque": false,
+                           "rect": "111,252,247,275",
+                           "showBorder": false,
+                           "style": "checkbox",
+                           "textAlign": "left",
+                           "toolTip": "Show the values of all global variables in the variable watcher while debugging"
+                        }
+                     },
+                     "1147": {
+                        "#name": "button \"Print Font Size\"",
+                        "customproperties": {
+                           "cPref": "print,textsize",
+                           "cProperty": "cSize",
+                           "cSize": "7"
+                        },
+                        "properties": {
+                           "armBorder": false,
+                           "autoHilite": false,
+                           "id": "1147",
+                           "label": "7",
+                           "layer": "36",
+                           "menuHistory": "3",
+                           "menuLines": "6",
+                           "menuMode": "option",
+                           "name": "Print Font Size",
+                           "opaque": false,
+                           "rect": "386,76,460,98",
+                           "style": "menu",
+                           "text": "5\n6\n7\n8\n9\n10\n11\n12\n14\n16\n18\n20",
+                           "toolTip": "Font size used when printing scripts",
+                           "traversalOn": false
+                        }
+                     },
+                     "1148": {
+                        "#name": "field \"Label Field\"",
+                        "custompropertysets": {
+                           "cREVTable": {
+                              "currentview": "Print size:"
+                           }
+                        },
+                        "properties": {
+                           "autoHilite": false,
+                           "dontWrap": true,
+                           "htmlText": "<p>Print size:</p>",
+                           "id": "1148",
+                           "layer": "37",
+                           "lockText": true,
+                           "name": "Label Field",
+                           "opaque": false,
+                           "rect": "297,74,384,95",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "transparent",
+                           "textAlign": "right",
+                           "traversalOn": false
+                        }
+                     },
+                     "1149": {
+                        "#name": "field \"Label Field\"",
+                        "custompropertysets": {
+                           "cREVTable": {
+                              "currentview": "Indentation:"
+                           }
+                        },
+                        "properties": {
+                           "autoHilite": false,
+                           "dontWrap": true,
+                           "htmlText": "<p>Indentation:</p>",
+                           "id": "1149",
+                           "layer": "38",
+                           "lockText": true,
+                           "name": "Label Field",
+                           "opaque": false,
+                           "rect": "297,400,384,421",
+                           "sharedText": true,
+                           "showBorder": false,
+                           "style": "transparent",
+                           "textAlign": "right",
+                           "traversalOn": false
+                        }
+                     },
+                     "1150": {
+                        "#name": "button \"Indentation\"",
+                        "customproperties": {
+                           "cPref": "editor,tabdepth",
+                           "cProperty": "cValue",
+                           "cValue": "3"
+                        },
+                        "properties": {
+                           "armBorder": false,
+                           "autoHilite": false,
+                           "id": "1150",
+                           "label": "3",
+                           "layer": "39",
+                           "menuHistory": "2",
+                           "menuLines": "6",
+                           "menuMode": "option",
+                           "name": "Indentation",
+                           "opaque": false,
+                           "rect": "386,401,460,423",
+                           "style": "menu",
+                           "text": "2\n3\n4\n5",
+                           "toolTip": "The number of spaces the script editor should use to indent lines of code",
+                           "traversalOn": false
+                        }
+                     }
+                  },
+                  "properties": {
+                     "cantDelete": true,
+                     "hilitedButton": "3",
+                     "id": "1114",
+                     "layer": "3",
+                     "name": "Script Editor",
+                     "rect": "103,40,581,455"
+                  }
+               }
+            },
+            "properties": {
+               "id": "1008",
+               "layer": "5",
+               "name": "Editor"
+            }
+         },
+         "1009": {
+            "#name": "card \"Profiles\"",
+            "childcontrols": {
+               "1004": "#shared group",
+               "1152": {
+                  "#name": "field \"New Field 8\"",
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "htmlText": "<p>Master profile name:</p>",
+                     "id": "1152",
+                     "layer": "3",
+                     "lockText": true,
+                     "name": "New Field 8",
+                     "opaque": false,
+                     "rect": "170,52,311,74",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "traversalOn": false
+                  }
+               },
+               "1153": {
+                  "#name": "field \"default profile name\"",
+                  "properties": {
+                     "id": "1153",
+                     "layer": "4",
+                     "name": "default profile name",
+                     "rect": "322,52,503,73",
+                     "toolTip": "Enter a name for the default profile"
+                  }
+               },
+               "1154": {
+                  "#name": "button \"Create profiles automatically\"",
+                  "custompropertysets": {
+                     "cREVDivergedtest_profile": {
+                        "rect": "159,8,457,28"
+                     },
+                     "cREVMaster": {
+                        "rect": "159,8,371,28"
+                     },
+                     "cREVTempMaster": {
+                        "accelKey": null,
+                        "accelMods": null,
+                        "accelText": null,
+                        "altId": "0",
+                        "arm": false,
+                        "armBorder": true,
+                        "armFill": false,
+                        "autoArm": false,
+                        "autoHilite": true,
+                        "borderWidth": "2",
+                        "cantSelect": false,
+                        "colors": "\n\n\n\n\n\n\n",
+                        "default": false,
+                        "disabled": false,
+                        "family": "0",
+                        "hilite": true,
+                        "hiliteBorder": false,
+                        "hiliteFill": true,
+                        "hiliteIcon": "0",
+                        "icon": "0",
+                        "id": "1007",
+                        "ink": "srcCopy",
+                        "label": null,
+                        "labelWidth": "0",
+                        "layer": "65",
+                        "lockLoc": false,
+                        "margins": "4",
+                        "menuHistory": "1",
+                        "menuLines": "5",
+                        "menuMode": null,
+                        "menuMouseButton": "1",
+                        "menuName": null,
+                        "mnemonic": "0",
+                        "name": "Create profiles automatically",
+                        "number": "24",
+                        "opaque": false,
+                        "patterns": "\n\n\n\n\n\n\n\n",
+                        "rect": "159,8,371,28",
+                        "shadow": false,
+                        "shadowOffset": "4",
+                        "sharedHilite": true,
+                        "showBorder": false,
+                        "showHilite": false,
+                        "showIcon": false,
+                        "showName": true,
+                        "style": "checkbox",
+                        "textAlign": "left",
+                        "textFont": null,
+                        "textSize": null,
+                        "textStyle": null,
+                        "threeD": true,
+                        "toolTip": null,
+                        "traversalOn": true,
+                        "visible": true
+                     }
+                  },
+                  "properties": {
+                     "hiliteBorder": false,
+                     "id": "1154",
+                     "label": "Create profiles automatically",
+                     "layer": "5",
+                     "name": "Create profiles automatically",
+                     "opaque": false,
+                     "rect": "182,84,433,104",
+                     "showBorder": false,
+                     "style": "checkbox",
+                     "textAlign": "left",
+                     "toolTip": "If you switch to a nonexistent profile, create that profile with current settings"
+                  }
+               },
+               "1155": {
+                  "#name": "button \"Don't save changes\"",
+                  "custompropertysets": {
+                     "cREVDivergedtest_profile": {
+                        "rect": "159,8,457,28"
+                     },
+                     "cREVMaster": {
+                        "rect": "159,8,371,28"
+                     },
+                     "cREVTempMaster": {
+                        "accelKey": null,
+                        "accelMods": null,
+                        "accelText": null,
+                        "altId": "0",
+                        "arm": false,
+                        "armBorder": true,
+                        "armFill": false,
+                        "autoArm": false,
+                        "autoHilite": true,
+                        "borderWidth": "2",
+                        "cantSelect": false,
+                        "colors": "\n\n\n\n\n\n\n",
+                        "default": false,
+                        "disabled": false,
+                        "family": "0",
+                        "hilite": true,
+                        "hiliteBorder": false,
+                        "hiliteFill": true,
+                        "hiliteIcon": "0",
+                        "icon": "0",
+                        "id": "1007",
+                        "ink": "srcCopy",
+                        "label": null,
+                        "labelWidth": "0",
+                        "layer": "65",
+                        "lockLoc": false,
+                        "margins": "4",
+                        "menuHistory": "1",
+                        "menuLines": "5",
+                        "menuMode": null,
+                        "menuMouseButton": "1",
+                        "menuName": null,
+                        "mnemonic": "0",
+                        "name": "Create profiles automatically",
+                        "number": "24",
+                        "opaque": false,
+                        "patterns": "\n\n\n\n\n\n\n\n",
+                        "rect": "159,8,371,28",
+                        "shadow": false,
+                        "shadowOffset": "4",
+                        "sharedHilite": true,
+                        "showBorder": false,
+                        "showHilite": false,
+                        "showIcon": false,
+                        "showName": true,
+                        "style": "checkbox",
+                        "textAlign": "left",
+                        "textFont": null,
+                        "textSize": null,
+                        "textStyle": null,
+                        "threeD": true,
+                        "toolTip": null,
+                        "traversalOn": true,
+                        "visible": true
+                     }
+                  },
+                  "properties": {
+                     "hiliteBorder": false,
+                     "id": "1155",
+                     "label": "Don't save settings when switching profiles",
+                     "layer": "6",
+                     "name": "Don't save changes",
+                     "opaque": false,
+                     "rect": "182,112,506,132",
+                     "showBorder": false,
+                     "style": "checkbox",
+                     "textAlign": "left",
+                     "toolTip": "Use this option to save time when changes to object properties don't need to be saved in the current profile"
+                  }
+               }
+            },
+            "properties": {
+               "id": "1009",
+               "layer": "6",
+               "name": "Profiles"
+            }
+         },
+         "1010": {
+            "#name": "card \"Browser\"",
+            "childcontrols": {
+               "1004": "#shared group",
+               "1156": {
+                  "#name": "button \"stackSortOrder\"",
+                  "properties": {
+                     "id": "1156",
+                     "label": "Ascending",
+                     "layer": "3",
+                     "menuMode": "option",
+                     "name": "stackSortOrder",
+                     "opaque": false,
+                     "rect": "394,202,506,224",
+                     "style": "menu",
+                     "text": "Ascending\nDescending"
+                  }
+               },
+               "1157": {
+                  "#name": "field \"objectIndicatorLabel\"",
+                  "custompropertysets": {
+                     "cREVTable": {
+                        "currentview": "Sort order for contols in the Project Browser"
+                     }
+                  },
+                  "properties": {
+                     "borderWidth": "0",
+                     "htmlText": "<p>Object type indicator:</p>",
+                     "id": "1157",
+                     "layer": "4",
+                     "lockText": true,
+                     "name": "objectIndicatorLabel",
+                     "opaque": false,
+                     "rect": "140,45,272,68",
+                     "showBorder": false,
+                     "showFocusBorder": false,
+                     "style": "transparent",
+                     "textAlign": "right",
+                     "threeD": false,
+                     "traversalOn": false
+                  }
+               },
+               "1158": {
+                  "#name": "group \"objectType\"",
+                  "childcontrols": {
+                     "1159": {
+                        "#name": "button \"Icon\"",
+                        "properties": {
+                           "hiliteBorder": false,
+                           "hilited": true,
+                           "id": "1159",
+                           "layer": "6",
+                           "name": "Icon",
+                           "opaque": false,
+                           "rect": "275,61,357,84",
+                           "sharedHilite": false,
+                           "showBorder": false,
+                           "style": "radiobutton",
+                           "textAlign": "left"
+                        }
+                     },
+                     "1160": {
+                        "#name": "button \"Text\"",
+                        "properties": {
+                           "hiliteBorder": false,
+                           "id": "1160",
+                           "layer": "7",
+                           "name": "Text",
+                           "opaque": false,
+                           "rect": "275,41,357,64",
+                           "sharedHilite": false,
+                           "showBorder": false,
+                           "style": "radiobutton",
+                           "textAlign": "left"
+                        }
+                     }
+                  },
+                  "properties": {
+                     "hilitedButton": "1",
+                     "id": "1158",
+                     "layer": "5",
+                     "name": "objectType",
+                     "rect": "271,37,361,88"
+                  }
+               },
+               "1161": {
+                  "#name": "field \"sectionsLabel\"",
+                  "custompropertysets": {
+                     "cREVTable": {
+                        "currentview": "Sort order for contols in the Project Browser"
+                     }
+                  },
+                  "properties": {
+                     "borderWidth": "0",
+                     "htmlText": "<p>Show sections:</p>",
+                     "id": "1161",
+                     "layer": "8",
+                     "lockText": true,
+                     "name": "sectionsLabel",
+                     "opaque": false,
+                     "rect": "140,105,272,128",
+                     "showBorder": false,
+                     "showFocusBorder": false,
+                     "style": "transparent",
+                     "textAlign": "right",
+                     "threeD": false,
+                     "traversalOn": false
+                  }
+               },
+               "1162": {
+                  "#name": "group \"sections\"",
+                  "childcontrols": {
+                     "1163": {
+                        "#name": "button \"Front scripts\"",
+                        "properties": {
+                           "hiliteBorder": false,
+                           "id": "1163",
+                           "layer": "10",
+                           "name": "Front scripts",
+                           "opaque": false,
+                           "rect": "275,97,457,120",
+                           "showBorder": false,
+                           "style": "checkbox",
+                           "textAlign": "left"
+                        }
+                     },
+                     "1164": {
+                        "#name": "button \"stacks\"",
+                        "properties": {
+                           "hiliteBorder": false,
+                           "hilited": true,
+                           "id": "1164",
+                           "label": "Stacks",
+                           "layer": "11",
+                           "name": "stacks",
+                           "opaque": false,
+                           "rect": "275,117,455,140",
+                           "showBorder": false,
+                           "style": "checkbox",
+                           "textAlign": "left"
+                        }
+                     },
+                     "1165": {
+                        "#name": "button \"Back scripts\"",
+                        "properties": {
+                           "hiliteBorder": false,
+                           "id": "1165",
+                           "layer": "12",
+                           "name": "Back scripts",
+                           "opaque": false,
+                           "rect": "275,137,467,160",
+                           "showBorder": false,
+                           "style": "checkbox",
+                           "textAlign": "left"
+                        }
+                     },
+                     "1166": {
+                        "#name": "button \"Stacks in use\"",
+                        "properties": {
+                           "hiliteBorder": false,
+                           "id": "1166",
+                           "layer": "13",
+                           "name": "Stacks in use",
+                           "opaque": false,
+                           "rect": "275,157,456,180",
+                           "showBorder": false,
+                           "style": "checkbox",
+                           "textAlign": "left"
+                        }
+                     }
+                  },
+                  "properties": {
+                     "hilitedButton": "2",
+                     "id": "1162",
+                     "layer": "9",
+                     "name": "sections",
+                     "rect": "271,93,471,184"
+                  }
+               },
+               "1167": {
+                  "#name": "field \"sortStacksLabel\"",
+                  "custompropertysets": {
+                     "cREVTable": {
+                        "currentview": "Sort order for contols in the Project Browser"
+                     }
+                  },
+                  "properties": {
+                     "borderWidth": "0",
+                     "htmlText": "<p>Sort stacks by:</p>",
+                     "id": "1167",
+                     "layer": "14",
+                     "lockText": true,
+                     "name": "sortStacksLabel",
+                     "opaque": false,
+                     "rect": "140,205,272,228",
+                     "showBorder": false,
+                     "showFocusBorder": false,
+                     "style": "transparent",
+                     "textAlign": "right",
+                     "threeD": false,
+                     "traversalOn": false
+                  }
+               },
+               "1168": {
+                  "#name": "button \"stackSortType\"",
+                  "properties": {
+                     "armBorder": false,
+                     "autoHilite": false,
+                     "id": "1168",
+                     "label": "Name",
+                     "layer": "15",
+                     "menuMode": "option",
+                     "name": "stackSortType",
+                     "opaque": false,
+                     "rect": "276,202,388,224",
+                     "style": "menu",
+                     "text": "Name\nLayer",
+                     "traversalOn": false
+                  }
+               },
+               "1169": {
+                  "#name": "field \"sortCardsLabel\"",
+                  "custompropertysets": {
+                     "cREVTable": {
+                        "currentview": "Sort order for contols in the Project Browser"
+                     }
+                  },
+                  "properties": {
+                     "borderWidth": "0",
+                     "htmlText": "<p>Sort cards by:</p>",
+                     "id": "1169",
+                     "layer": "16",
+                     "lockText": true,
+                     "name": "sortCardsLabel",
+                     "opaque": false,
+                     "rect": "140,235,272,258",
+                     "showBorder": false,
+                     "showFocusBorder": false,
+                     "style": "transparent",
+                     "textAlign": "right",
+                     "threeD": false,
+                     "traversalOn": false
+                  }
+               },
+               "1170": {
+                  "#name": "field \"sortControlsLabel\"",
+                  "custompropertysets": {
+                     "cREVTable": {
+                        "currentview": "Sort order for contols in the Project Browser"
+                     }
+                  },
+                  "properties": {
+                     "borderWidth": "0",
+                     "htmlText": "<p>Sort controls by:</p>",
+                     "id": "1170",
+                     "layer": "17",
+                     "lockText": true,
+                     "name": "sortControlsLabel",
+                     "opaque": false,
+                     "rect": "139,265,271,288",
+                     "showBorder": false,
+                     "showFocusBorder": false,
+                     "style": "transparent",
+                     "textAlign": "right",
+                     "threeD": false,
+                     "traversalOn": false
+                  }
+               },
+               "1171": {
+                  "#name": "button \"cardSortType\"",
+                  "properties": {
+                     "armBorder": false,
+                     "autoHilite": false,
+                     "id": "1171",
+                     "label": "Layer",
+                     "layer": "18",
+                     "menuMode": "option",
+                     "name": "cardSortType",
+                     "opaque": false,
+                     "rect": "276,232,388,254",
+                     "style": "menu",
+                     "text": "Name\nLayer",
+                     "traversalOn": false
+                  }
+               },
+               "1172": {
+                  "#name": "button \"cardSortOrder\"",
+                  "properties": {
+                     "id": "1172",
+                     "label": "Ascending",
+                     "layer": "19",
+                     "menuMode": "option",
+                     "name": "cardSortOrder",
+                     "opaque": false,
+                     "rect": "394,232,506,254",
+                     "style": "menu",
+                     "text": "Ascending\nDescending"
+                  }
+               },
+               "1173": {
+                  "#name": "button \"controlSortType\"",
+                  "properties": {
+                     "armBorder": false,
+                     "autoHilite": false,
+                     "id": "1173",
+                     "label": "Layer",
+                     "layer": "20",
+                     "menuMode": "option",
+                     "name": "controlSortType",
+                     "opaque": false,
+                     "rect": "276,262,388,284",
+                     "style": "menu",
+                     "text": "Name\nLayer",
+                     "traversalOn": false
+                  }
+               },
+               "1174": {
+                  "#name": "button \"controlSortOrder\"",
+                  "properties": {
+                     "id": "1174",
+                     "label": "Ascending",
+                     "layer": "21",
+                     "menuMode": "option",
+                     "name": "controlSortOrder",
+                     "opaque": false,
+                     "rect": "394,262,506,284",
+                     "style": "menu",
+                     "text": "Ascending\nDescending"
+                  }
+               },
+               "1175": {
+                  "#name": "field \"textSizeLabel\"",
+                  "custompropertysets": {
+                     "cREVTable": {
+                        "currentview": "Sort order for contols in the Project Browser"
+                     }
+                  },
+                  "properties": {
+                     "borderWidth": "0",
+                     "htmlText": "<p>Text size:</p>",
+                     "id": "1175",
+                     "layer": "22",
+                     "lockText": true,
+                     "name": "textSizeLabel",
+                     "opaque": false,
+                     "rect": "140,307,272,330",
+                     "showBorder": false,
+                     "showFocusBorder": false,
+                     "style": "transparent",
+                     "textAlign": "right",
+                     "threeD": false,
+                     "traversalOn": false
+                  }
+               },
+               "1176": {
+                  "#name": "button \"textSize\"",
+                  "properties": {
+                     "armBorder": false,
+                     "autoHilite": false,
+                     "id": "1176",
+                     "label": "default",
+                     "layer": "23",
+                     "menuMode": "combobox",
+                     "name": "textSize",
+                     "rect": "276,305,388,327",
+                     "style": "menu",
+                     "text": "default\n8\n10\n12\n14\n18\n24"
+                  }
+               }
+            },
+            "properties": {
+               "id": "1010",
+               "layer": "7",
+               "name": "Browser"
+            }
+         }
+      },
+      "longID": "stack \"revPreferencesGUI\"",
+      "properties": {
+         "backColor": "#323232",
+         "fileName": "/Users/milby/Developer/HyperXTalk/ide/Toolset/palettes/revpreferencesgui.rev",
+         "foreColor": "#ffffff",
+         "id": "1176",
+         "name": "revPreferencesGUI",
+         "rect": "297,118,895,564",
+         "title": "Settings"
+      },
+      "sharedGroupIDs": "1004"
+   },
+   "revScriptColourEditor": {
+      "#name": "stack \"revScriptColourEditor\"",
+      "backgroundIDs": null,
+      "cardIDs": "1002",
+      "childcontrols": {
+         "1002": {
+            "#name": "card id 1002",
+            "childcontrols": {
+               "1003": {
+                  "#name": "field \"script\"",
+                  "properties": {
+                     "htmlText": "%file%: ./ide/Toolset/palettes/revpreferencesgui.rev.bst/assets/revScriptColourEditor_1002_1003_htmlText.txt",
+                     "id": "1003",
+                     "layer": "2",
+                     "name": "script",
+                     "rect": "15,306,415,448",
+                     "scrollbarWidth": "16",
+                     "style": "scrolling",
+                     "visible": false,
+                     "vScrollbar": true
+                  }
+               },
+               "1006": {
+                  "#name": "button \"colourize\"",
+                  "properties": {
+                     "id": "1006",
+                     "label": "Colourize",
+                     "layer": "3",
+                     "name": "colourize",
+                     "rect": "331,252,413,275",
+                     "traversalOn": false
+                  }
+               },
+               "1009": {
+                  "#name": "group \"colours\"",
+                  "custompropertysets": {
+                     "cGlx2TimeStamp": {
+                        "checksum": "\u0080\u0098\u001DåŸè\u0000\u0089\u0004\u0088\u0084\tò\u008F¯B~"
+                     },
+                     "dgCache": {
+                        "data": [
+                           {
+                              "Attributes": "none",
+                              "Colour": "255,38,0",
+                              "Name": "commands",
+                              "Type": "group"
+                           },
+                           {
+                              "Attributes": "none",
+                              "Colour": "0,127,127",
+                              "Name": "properties",
+                              "Type": "group"
+                           },
+                           {
+                              "Attributes": "none",
+                              "Colour": "127,0,127",
+                              "Name": "functions",
+                              "Type": "group"
+                           },
+                           {
+                              "Attributes": "none",
+                              "Colour": "255,0,0",
+                              "Name": "error",
+                              "Type": "class"
+                           },
+                           {
+                              "Attributes": "bold",
+                              "Colour": "0,127,0",
+                              "Name": "singlecomment",
+                              "Type": "class"
+                           },
+                           {
+                              "Attributes": "italic",
+                              "Colour": "0,127,0",
+                              "Name": "multicomment",
+                              "Type": "class"
+                           },
+                           {
+                              "Attributes": "none",
+                              "Colour": "0,0,0",
+                              "Name": "identifier",
+                              "Type": "class"
+                           },
+                           {
+                              "Attributes": "none",
+                              "Colour": "0,0,127",
+                              "Name": "literal",
+                              "Type": "class"
+                           },
+                           {
+                              "Attributes": "none",
+                              "Colour": "0,0,127",
+                              "Name": "number",
+                              "Type": "class"
+                           },
+                           {
+                              "Attributes": "none",
+                              "Colour": "127,0,127",
+                              "Name": "keyword",
+                              "Type": "class"
+                           },
+                           {
+                              "Attributes": "none",
+                              "Colour": "0,0,0",
+                              "Name": "operator",
+                              "Type": "class"
+                           },
+                           {
+                              "Attributes": "bold",
+                              "Colour": "0,0,0",
+                              "Name": "command",
+                              "Type": "keyword"
+                           },
+                           {
+                              "Attributes": "bold",
+                              "Colour": "0,0,0",
+                              "Name": "private",
+                              "Type": "keyword"
+                           },
+                           {
+                              "Attributes": "bold",
+                              "Colour": "0,0,0",
+                              "Name": "on",
+                              "Type": "keyword"
+                           },
+                           {
+                              "Attributes": "bold",
+                              "Colour": "0,0,0",
+                              "Name": "end",
+                              "Type": "keyword"
+                           },
+                           {
+                              "Attributes": "bold",
+                              "Colour": "0,0,0",
+                              "Name": "if",
+                              "Type": "keyword"
+                           },
+                           {
+                              "Attributes": "bold",
+                              "Colour": "0,0,0",
+                              "Name": "then",
+                              "Type": "keyword"
+                           },
+                           {
+                              "Attributes": "bold",
+                              "Colour": "0,0,0",
+                              "Name": "else",
+                              "Type": "keyword"
+                           },
+                           {
+                              "Attributes": "bold",
+                              "Colour": "0,0,0",
+                              "Name": "function",
+                              "Type": "keyword"
+                           },
+                           {
+                              "Attributes": "bold",
+                              "Colour": "0,0,0",
+                              "Name": "setprop",
+                              "Type": "keyword"
+                           },
+                           {
+                              "Attributes": "bold",
+                              "Colour": "0,0,0",
+                              "Name": "getprop",
+                              "Type": "keyword"
+                           },
+                           {
+                              "Attributes": "bold",
+                              "Colour": "0,0,0",
+                              "Name": "repeat",
+                              "Type": "keyword"
+                           },
+                           {
+                              "Attributes": "bold",
+                              "Colour": "0,0,0",
+                              "Name": "switch",
+                              "Type": "keyword"
+                           },
+                           {
+                              "Attributes": "bold",
+                              "Colour": "0,0,0",
+                              "Name": "try",
+                              "Type": "keyword"
+                           },
+                           {
+                              "Attributes": "bold",
+                              "Colour": "0,0,0",
+                              "Name": "catch",
+                              "Type": "keyword"
+                           },
+                           {
+                              "Attributes": "bold",
+                              "Colour": "0,0,0",
+                              "Name": "case",
+                              "Type": "keyword"
+                           },
+                           {
+                              "Attributes": "bold",
+                              "Colour": "0,0,0",
+                              "Name": "default",
+                              "Type": "keyword"
+                           },
+                           {
+                              "Attributes": "bold",
+                              "Colour": "0,0,0",
+                              "Name": "finally",
+                              "Type": "keyword"
+                           },
+                           {
+                              "Attributes": "bold",
+                              "Colour": "0,0,0",
+                              "Name": "next",
+                              "Type": "keyword"
+                           },
+                           {
+                              "Attributes": "bold",
+                              "Colour": "0,0,0",
+                              "Name": "exit",
+                              "Type": "keyword"
+                           }
+                        ],
+                        "sequencing": "1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30"
+                     },
+                     "dgProps": {
+                        "allow column resizing": true,
+                        "allow editing": false,
+                        "alternate row color": null,
+                        "alternate row colors": true,
+                        "auto hilite": true,
+                        "background color": null,
+                        "cache controls": false,
+                        "column divider color": "217,217,217",
+                        "column margins": null,
+                        "column properties": {
+                           "Attributes": {
+                              "alignment": "left",
+                              "max width": "1000",
+                              "min width": "40",
+                              "resizable": false,
+                              "sort direction": "ascending",
+                              "sort is case sensitive": false,
+                              "sort type": "text",
+                              "visible": true,
+                              "width": "112"
+                           },
+                           "Colour": {
+                              "alignment": "left",
+                              "max width": "1000",
+                              "min width": "40",
+                              "resizable": false,
+                              "sort direction": "ascending",
+                              "sort is case sensitive": false,
+                              "sort type": "text",
+                              "visible": true,
+                              "width": "93"
+                           },
+                           "Name": {
+                              "alignment": "left",
+                              "max width": "1000",
+                              "min width": "40",
+                              "resizable": false,
+                              "sort direction": "ascending",
+                              "sort is case sensitive": false,
+                              "sort type": "text",
+                              "visible": true,
+                              "width": "107"
+                           },
+                           "Type": {
+                              "alignment": "left",
+                              "max width": "1000",
+                              "min width": "40",
+                              "resizable": false,
+                              "sort direction": "ascending",
+                              "sort is case sensitive": false,
+                              "sort type": "text",
+                              "visible": true,
+                              "width": "72"
+                           }
+                        },
+                        "column widths": null,
+                        "columns": "Type\nName\nAttributes\nColour",
+                        "control type": "Data Grid",
+                        "corner color": "232,232,232",
+                        "data can be represented as text": true,
+                        "dim on focusOut": true,
+                        "fixed row height": true,
+                        "header background color": "219,219,219\n188,188,188",
+                        "header background hilite color": "194,207,221\n125,147,148",
+                        "header divider color": "168,168,168",
+                        "header divider threeD color": "227,227,227",
+                        "header margins": null,
+                        "hilite color": null,
+                        "multiple lines": false,
+                        "persistent data": true,
+                        "row color": null,
+                        "row height": "21",
+                        "row template": "group id 1006 of card id 1005 of stack \"Data Grid Templates 1251408928068\"",
+                        "scroll selections into view": true,
+                        "scroll when hscrollbar is hidden": false,
+                        "scroll when vscrollbar is hidden": false,
+                        "scrollbar corner offset": "0",
+                        "scrollbar width": "auto",
+                        "show header": true,
+                        "show hscrollbar": false,
+                        "show vscrollbar": true,
+                        "style": "table"
+                     }
+                  },
+                  "properties": {
+                     "behavior": "button id 1005 of stack \"revDataGridLibrary\"",
+                     "borderColor": "64,64,64",
+                     "borderWidth": "1",
+                     "id": "1009",
+                     "layer": "4",
+                     "layerMode": "container",
+                     "lockLoc": true,
+                     "margins": "0",
+                     "name": "colours",
+                     "rect": "15,44,415,252",
+                     "selectGroupedControls": false,
+                     "showBorder": true,
+                     "threeD": false
+                  }
+               },
+               "1252": {
+                  "#name": "graphic \"Rectangle\"",
+                  "properties": {
+                     "id": "1252",
+                     "layer": "1",
+                     "name": "Rectangle",
+                     "rect": "15,251,415,276"
+                  }
+               },
+               "1253": {
+                  "#name": "button \"bold\"",
+                  "properties": {
+                     "hiliteBorder": false,
+                     "id": "1253",
+                     "label": "Bold",
+                     "layer": "104",
+                     "name": "bold",
+                     "opaque": false,
+                     "rect": "26,252,110,275",
+                     "showBorder": false,
+                     "style": "checkbox",
+                     "textAlign": "left"
+                  }
+               },
+               "1254": {
+                  "#name": "button \"italic\"",
+                  "properties": {
+                     "hiliteBorder": false,
+                     "id": "1254",
+                     "label": "Italic",
+                     "layer": "105",
+                     "name": "italic",
+                     "opaque": false,
+                     "rect": "100,252,188,275",
+                     "showBorder": false,
+                     "style": "checkbox",
+                     "textAlign": "left"
+                  }
+               },
+               "1255": {
+                  "#name": "button \"colourWell\"",
+                  "properties": {
+                     "backColor": "255,38,0",
+                     "id": "1255",
+                     "layer": "106",
+                     "name": "colourWell",
+                     "rect": "230,256,248,272",
+                     "showName": false,
+                     "style": "rectangle",
+                     "traversalOn": false
+                  }
+               },
+               "1256": {
+                  "#name": "field \"Label Field\"",
+                  "custompropertysets": {
+                     "cREVTable": {
+                        "currentview": "Colour:"
+                     }
+                  },
+                  "properties": {
+                     "autoHilite": false,
+                     "dontWrap": true,
+                     "htmlText": "<p>Colour:</p>",
+                     "id": "1256",
+                     "layer": "107",
+                     "lockText": true,
+                     "name": "Label Field",
+                     "opaque": false,
+                     "rect": "164,253,230,274",
+                     "sharedText": true,
+                     "showBorder": false,
+                     "style": "transparent",
+                     "textAlign": "right",
+                     "traversalOn": false
+                  }
+               },
+               "2516": {
+                  "#name": "button \"duplicate\"",
+                  "properties": {
+                     "id": "2516",
+                     "label": "Duplicate",
+                     "layer": "108",
+                     "name": "duplicate",
+                     "rect": "333,14,415,36",
+                     "style": "rectangle",
+                     "traversalOn": false,
+                     "visible": false
+                  }
+               },
+               "2638": {
+                  "#name": "button \"save\"",
+                  "properties": {
+                     "id": "2638",
+                     "label": "Save...",
+                     "layer": "109",
+                     "name": "save",
+                     "rect": "333,211,415,236",
+                     "style": "rectangle",
+                     "traversalOn": false,
+                     "visible": false
+                  }
+               },
+               "3023": {
+                  "#name": "button \"schemes\"",
+                  "properties": {
+                     "armBorder": false,
+                     "autoHilite": false,
+                     "id": "3023",
+                     "label": "Red",
+                     "layer": "110",
+                     "menuMode": "combobox",
+                     "name": "schemes",
+                     "rect": "15,12,415,34",
+                     "style": "menu",
+                     "text": "Default\nRevolution Classic\nNo Colorization"
+                  }
+               }
+            },
+            "customproperties": {
+               "schemeClassic": "%file%: ./ide/Toolset/palettes/revpreferencesgui.rev.bst/assets/revScriptColourEditor_1002_schemeClassic.bin",
+               "schemeDefault": "%file%: ./ide/Toolset/palettes/revpreferencesgui.rev.bst/assets/revScriptColourEditor_1002_schemeDefault.bin",
+               "schemeNone": "%file%: ./ide/Toolset/palettes/revpreferencesgui.rev.bst/assets/revScriptColourEditor_1002_schemeNone.bin"
+            },
+            "custompropertysets": {
+               "cREVGeometrycache": {
+                  "order": null,
+                  "total": "110"
+               },
+               "cREVGeometryCacheIDs": {
+                  "1213712288197": "1003",
+                  "1213712294297": "1006",
+                  "1219089374946": "1031",
+                  "1219089374947": "1018",
+                  "1221247573485": "1010",
+                  "1222830767146": "1021",
+                  "1222830767147": "1022",
+                  "1233280734223": "1013",
+                  "1233671464256": "1012",
+                  "1233978099140": "1011",
+                  "1234029519014": "1016",
+                  "1234030976122": "1023",
+                  "1234031453129": "1029",
+                  "1234032561990": "1030",
+                  "1234839325891": "1025",
+                  "1234839342224": "1027",
+                  "1234840826815": "1019",
+                  "1234841619761": "1024",
+                  "1234841676865": "1026",
+                  "1234997184798": "1015",
+                  "1234997234836": "1014",
+                  "1235498625974": "1020",
+                  "1235549794665": "1028",
+                  "1235616195900": "1017",
+                  "1251408928326": "1009",
+                  "1251409268705": "1252",
+                  "1251409315722": "1253",
+                  "1251409324355": "1254",
+                  "1251409334428": "1255",
+                  "1251409347488": "1256",
+                  "1251505406568": "2516",
+                  "1251506237053": "2638",
+                  "1775921749294": "3023",
+                  "1776215625211": "4175",
+                  "1776215625212": "4176",
+                  "1776215625213": "4177",
+                  "1776215625214": "4178",
+                  "1776215625215": "4179",
+                  "1776215625216": "4180",
+                  "1776215625217": "4181",
+                  "1776215625218": "4182",
+                  "1776215625219": "4183",
+                  "1776215625220": "4167",
+                  "1776215625221": "4184",
+                  "1776215625222": "4185",
+                  "1776215625223": "4186",
+                  "1776215625224": "4187",
+                  "1776215625225": "4188",
+                  "1776215625226": "4189",
+                  "1776215625227": "4190",
+                  "1776215625228": "4191",
+                  "1776215625229": "4192",
+                  "1776215625230": "4169",
+                  "1776215625231": "4193",
+                  "1776215625232": "4194",
+                  "1776215625233": "4195",
+                  "1776215625234": "4196",
+                  "1776215625235": "4197",
+                  "1776215625236": "4198",
+                  "1776215625237": "4199",
+                  "1776215625238": "4200",
+                  "1776215625239": "4201",
+                  "1776215625240": "4171",
+                  "1776215625241": "4202",
+                  "1776215625242": "4203",
+                  "1776215625243": "4204",
+                  "1776215625244": "4205",
+                  "1776215625245": "4206",
+                  "1776215625246": "4207",
+                  "1776215625247": "4208",
+                  "1776215625248": "4209",
+                  "1776215625249": "4210",
+                  "1776215625250": "4173",
+                  "1776215625251": "4211",
+                  "1776215625252": "4212",
+                  "1776215625253": "4213",
+                  "1776215625254": "4214",
+                  "1776215625255": "4215",
+                  "1776215625256": "4216",
+                  "1776215625257": "4217",
+                  "1776215625258": "4218",
+                  "1776215625259": "4219",
+                  "1776215625260": "4168",
+                  "1776215625261": "4170",
+                  "1776215625262": "4172",
+                  "1776215625263": "4174",
+                  "1776215625264": "4143",
+                  "1776215625265": "4144",
+                  "1776215625266": "4145",
+                  "1776215625267": "4146",
+                  "1776215625268": "4147",
+                  "1776215625269": "4148",
+                  "1776215625270": "4149",
+                  "1776215625271": "4150",
+                  "1776215625272": "4151",
+                  "1776215625273": "4152",
+                  "1776215625274": "4153",
+                  "1776215625275": "4154",
+                  "1776215625276": "4155",
+                  "1776215625277": "4156",
+                  "1776215625278": "4157",
+                  "1776215625279": "4158",
+                  "1776215625280": "4159",
+                  "1776215625281": "4160",
+                  "1776215625282": "4161",
+                  "1776215625283": "4162",
+                  "1776215625284": "4163",
+                  "1776215625285": "4164",
+                  "1776215625286": "4165",
+                  "1776215625287": "4166"
+               }
+            },
+            "properties": {
+               "id": "1002"
+            }
+         }
+      },
+      "custompropertysets": {
+         "cREVGeometryCache": {
+            "stackID": "4219"
+         }
+      },
+      "longID": "stack \"revScriptColourEditor\" of stack \"revPreferencesGUI\"",
+      "properties": {
+         "alwaysBuffer": true,
+         "backColor": "#ececec",
+         "decorations": "title,menu,close",
+         "foreColor": "#000000",
+         "id": "4219",
+         "liveResizing": false,
+         "name": "revScriptColourEditor",
+         "rect": "491,110,921,400",
+         "resizable": false,
+         "title": "Script Colour Editor"
+      },
+      "sharedGroupIDs": null
+   }
+}
