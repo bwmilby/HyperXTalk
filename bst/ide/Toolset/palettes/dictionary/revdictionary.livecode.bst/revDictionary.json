@@ -44,7 +44,7 @@
          "backColor": "#ececec",
          "behavior": "stack \"revDictionaryBehavior\"",
          "cantModify": true,
-         "fileName": "/Users/milby/Developer/HyperXTalk/ide/Toolset/palettes/dictionary/revdictionary.livecode",
+         "fileName": "ide/Toolset/palettes/dictionary/revdictionary.livecode",
          "id": "1006",
          "minWidth": "1010",
          "name": "revDictionary",

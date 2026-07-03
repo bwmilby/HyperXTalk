@@ -30675,7 +30675,7 @@
       "properties": {
          "bottomColor": "128,128,128",
          "decorations": "default",
-         "fileName": "/Users/milby/Developer/HyperXTalk/ide/Toolset/palettes/revicons.rev",
+         "fileName": "ide/Toolset/palettes/revicons.rev",
          "foreColor": "Black",
          "hiliteColor": "102,102,102",
          "icon": "205001",

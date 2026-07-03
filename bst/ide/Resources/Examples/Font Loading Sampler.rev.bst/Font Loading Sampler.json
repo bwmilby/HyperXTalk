@@ -534,7 +534,7 @@
          "destroyStack": true,
          "destroyWindow": true,
          "externals": "altFont.dll\naltFont.bundle",
-         "fileName": "/Users/milby/Developer/HyperXTalk/ide/Resources/Examples/Font Loading Sampler.rev",
+         "fileName": "ide/Resources/Examples/Font Loading Sampler.rev",
          "id": "1050",
          "liveResizing": false,
          "maxWidth": "266",

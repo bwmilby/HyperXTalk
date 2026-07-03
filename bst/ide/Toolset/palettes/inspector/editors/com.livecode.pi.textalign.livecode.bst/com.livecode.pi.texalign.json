@@ -86,7 +86,7 @@
       },
       "longID": "stack \"com.livecode.pi.texalign\"",
       "properties": {
-         "fileName": "/Users/milby/Developer/HyperXTalk/ide/Toolset/palettes/inspector/editors/com.livecode.pi.textalign.livecode",
+         "fileName": "ide/Toolset/palettes/inspector/editors/com.livecode.pi.textalign.livecode",
          "id": "1012",
          "name": "com.livecode.pi.texalign",
          "rect": "236,163,826,563"

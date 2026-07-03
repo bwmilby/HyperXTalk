@@ -63,7 +63,7 @@
       "longID": "stack \"revIDESnippetViewer\"",
       "properties": {
          "behavior": "stack \"revIDESnippetViewerBehavior\"",
-         "fileName": "/Users/milby/Developer/HyperXTalk/ide/Toolset/palettes/snippet viewer/revidesnippetviewer.livecode",
+         "fileName": "ide/Toolset/palettes/snippet viewer/revidesnippetviewer.livecode",
          "id": "1007",
          "name": "revIDESnippetViewer",
          "rect": "158,80,654,616"

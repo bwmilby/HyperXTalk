@@ -84,7 +84,7 @@
       },
       "longID": "stack \"com.livecode.pi.graphiceffect\"",
       "properties": {
-         "fileName": "/Users/milby/Developer/HyperXTalk/ide/Toolset/palettes/inspector/editors/com.livecode.pi.graphiceffect.livecode",
+         "fileName": "ide/Toolset/palettes/inspector/editors/com.livecode.pi.graphiceffect.livecode",
          "id": "1008",
          "name": "com.livecode.pi.graphiceffect",
          "rect": "607,316,1007,716"

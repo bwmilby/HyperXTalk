@@ -892,7 +892,7 @@
       "longID": "stack \"revObjectLibrary\"",
       "properties": {
          "decorations": "default",
-         "fileName": "/Users/milby/Developer/HyperXTalk/ide/Resources/Object Libraries/revObjectLibrary.rev",
+         "fileName": "ide/Resources/Object Libraries/revObjectLibrary.rev",
          "id": "1111",
          "liveResizing": false,
          "name": "revObjectLibrary",

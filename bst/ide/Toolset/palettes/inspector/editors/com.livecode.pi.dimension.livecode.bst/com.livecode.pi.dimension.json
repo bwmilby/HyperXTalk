@@ -81,7 +81,7 @@
       },
       "longID": "stack \"com.livecode.pi.dimension\"",
       "properties": {
-         "fileName": "/Users/milby/Developer/HyperXTalk/ide/Toolset/palettes/inspector/editors/com.livecode.pi.dimension.livecode",
+         "fileName": "ide/Toolset/palettes/inspector/editors/com.livecode.pi.dimension.livecode",
          "id": "1008",
          "name": "com.livecode.pi.dimension",
          "rect": "313,201,713,601"

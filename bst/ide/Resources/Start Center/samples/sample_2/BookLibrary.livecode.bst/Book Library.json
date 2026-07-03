@@ -116,8 +116,8 @@
                   "properties": {
                      "borderWidth": "1",
                      "id": "1016",
-                     "label": ,
-                     "-layer": "6",
+                     "label": "-",
+                     "layer": "6",
                      "name": "Delete Book",
                      "rect": "301,729,331,759",
                      "style": "rectangle",
@@ -531,7 +531,7 @@
       "properties": {
          "backColor": "255,255,255",
          "decorations": "default",
-         "fileName": "/Users/milby/Developer/HyperXTalk/ide/Resources/Start Center/samples/sample_2/BookLibrary.livecode",
+         "fileName": "ide/Resources/Start Center/samples/sample_2/BookLibrary.livecode",
          "id": "1051",
          "liveResizing": false,
          "minHeight": "200",

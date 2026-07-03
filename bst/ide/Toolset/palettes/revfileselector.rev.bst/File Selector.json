@@ -213,7 +213,7 @@
       },
       "longID": "stack \"File Selector\"",
       "properties": {
-         "fileName": "/Users/milby/Developer/HyperXTalk/ide/Toolset/palettes/revfileselector.rev",
+         "fileName": "ide/Toolset/palettes/revfileselector.rev",
          "id": "1016",
          "name": "File Selector",
          "rect": "628,412,1035,809",

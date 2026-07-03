@@ -63,8 +63,9 @@ command processFolderOrStack pPath
       put files(pPath) & lf & folders(pPath) into tFiles
       if char -1 of pPath is not "/" then put "/" after pPath
       repeat for each line tFile in tFiles
-         if tFile is empty then next repeat
-         if tFile begins with "." then next repeat
+         if tFile is empty then next repeat        // skip empty lines
+         if tFile begins with "." then next repeat // skip hidden files and folders
+         if tFile is "notes" then next repeat      // skip notes folder
          processFolderOrStack (pPath & tFile)
       end repeat
    else
@@ -75,7 +76,7 @@ end processFolderOrStack
 on exportStack pStackLongId, pPath
    local xDataA, tStackName, tSubstack
    --
-   _log pStackLongId
+   --_log pStackLongId
    set the itemdel to "/"
    repeat while pPath begins with "../"
       put the item 2 to -1 of pPath into pPath
@@ -98,7 +99,7 @@ on exportStack pStackLongId, pPath
    put messageDigest(url ("binfile:" & the filename of pStackLongId), "MD5") into tNewHash
    if tOldHash is tNewHash then
       --_log "Stack" && tStackName && "has not changed, skipping export"
-      exit exportStack
+      --exit exportStack
    end if
    --
    getStackData tStackName, xDataA, pPath
@@ -135,7 +136,7 @@ end saveStackJson
 command getStackData pStackName, @xDataA, pPath
    local tStackLongID, tObjectID, tObjectLongID, tObjectLongName, tAddress
    --
-   _log "getStackData" && pStackName
+   --_log "getStackData" && pStackName
    put "stack" && _q(pStackName) into tStackLongID
    if pStackName is not xDataA["#mainstack"] then
       put " of stack" && _q(xDataA["#mainstack"]) after tStackLongID
@@ -211,7 +212,7 @@ command getChildControlData \
       exit getChildControlData
    end try
    --
-   _log "getChildControlData" && pObjectLongID
+   --_log "getChildControlData" && pObjectLongID
    put xDataA[pStackName]["longID"] into tStackLongID
    put xDataA[pStackName]["sharedGroupIDs"] into tSharedGroupIDs
    --
@@ -270,7 +271,7 @@ end exportScript
 command getUniqueProps pObject, @xDataA, pAddress
    local tKind, tProps, tControl, tIndex
    --
-   _log "getUniqueProps" && pObject
+   --_log "getUniqueProps" && pObject
    put word 1 of pObject into tKind
    if tKind is "stack" then
       put the short name of pObject into tControl
@@ -295,7 +296,7 @@ command getUniqueProps pObject, @xDataA, pAddress
    --
    if tKind is "widget" then
       put the kind of pObject into xDataA[pAddress]["$kind"]
-      _log "exporting widget" && pObject & lf & xDataA[pAddress]["$kind"]
+      --_log "exporting widget" && pObject & lf & xDataA[pAddress]["$kind"]
       // widgets without export code crash HyperXTalk, so we skip them
       if xDataA[pAddress]["$kind"] is not among the items of \
             "com.livecode.widget.colorSwatch,com.livecode.widget.gradientRampEditor," \
@@ -312,7 +313,19 @@ command getUniqueProps pObject, @xDataA, pAddress
       getNonSharedText pObject, xDataA, pAddress
    else if tProps is empty then
       _log tKind && "does not have property template"
-      --breakpoint
+   end if
+   --
+   // record stack filename relative to repository root
+   if xDataA[pAddress]["properties"]["filename"] is not empty then
+      local tLeft, tRight
+      put xDataA[pAddress]["properties"]["filename"] into tLeft
+      put sBasePath into tRight
+      set the itemdel to "/"
+      repeat while item 1 of tLeft is item 1 of tRight
+         delete item 1 of tLeft
+         delete item 1 of tRight
+      end repeat
+      put tLeft into xDataA[pAddress]["properties"]["filename"]
    end if
    --
    local tKeys
@@ -322,6 +335,7 @@ command getUniqueProps pObject, @xDataA, pAddress
          delete variable xDataA[pAddress]["properties"][l]
       end if
    end repeat
+   --
    try
       put the name of pObject into xDataA[pAddress]["#name"]
    catch e
@@ -681,7 +695,7 @@ private function _jsonValue pValue, pNoReplace
             end if
          end if
          
-         if pNoReplace is no true then
+         if pNoReplace is not true then
             return _jsonString(pValue)
          else
             return quote & pValue & quote
@@ -728,6 +742,10 @@ private function _jsonPrettyCompact pJsonString, pIndentSize, pForceRootType
             break
             
          case comma
+            if tHyphenMinus then
+               put _jsonValue("-") after tFormatted
+               put false into tHyphenMinus
+            end if
             put comma & cr & tIndent after tFormatted
             break
             

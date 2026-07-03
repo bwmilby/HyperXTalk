@@ -108,7 +108,7 @@
       },
       "longID": "stack \"com.livecode.pi.textstyle\"",
       "properties": {
-         "fileName": "/Users/milby/Developer/HyperXTalk/ide/Toolset/palettes/inspector/editors/com.livecode.pi.textstyle.livecode",
+         "fileName": "ide/Toolset/palettes/inspector/editors/com.livecode.pi.textstyle.livecode",
          "id": "1012",
          "name": "com.livecode.pi.textstyle",
          "rect": "1320,105,1910,408"

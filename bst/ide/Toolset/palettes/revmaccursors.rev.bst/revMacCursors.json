@@ -718,7 +718,7 @@
       "properties": {
          "alwaysBuffer": true,
          "decorations": "default",
-         "fileName": "/Users/milby/Developer/HyperXTalk/ide/Toolset/palettes/revmaccursors.rev",
+         "fileName": "ide/Toolset/palettes/revmaccursors.rev",
          "id": "1063",
          "liveResizing": false,
          "name": "revMacCursors",

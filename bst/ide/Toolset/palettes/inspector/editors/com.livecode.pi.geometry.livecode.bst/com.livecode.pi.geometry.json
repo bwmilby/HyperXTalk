@@ -955,7 +955,7 @@
       },
       "longID": "stack \"com.livecode.pi.geometry\"",
       "properties": {
-         "fileName": "/Users/milby/Developer/HyperXTalk/ide/Toolset/palettes/inspector/editors/com.livecode.pi.geometry.livecode",
+         "fileName": "ide/Toolset/palettes/inspector/editors/com.livecode.pi.geometry.livecode",
          "id": "1080",
          "name": "com.livecode.pi.geometry",
          "rect": "1160,174,1438,778"

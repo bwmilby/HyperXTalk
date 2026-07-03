@@ -3221,7 +3221,7 @@
       "properties": {
          "alwaysBuffer": true,
          "decorations": "title,menu,minimize,maximize,close,metal",
-         "fileName": "/Users/milby/Developer/HyperXTalk/ide/Resources/Examples/Core Image Sampler.rev",
+         "fileName": "ide/Resources/Examples/Core Image Sampler.rev",
          "id": "5263",
          "liveResizing": false,
          "metal": true,

@@ -79,7 +79,7 @@
    "properties": {
       "alwaysBuffer": true,
       "decorations": "title",
-      "fileName": "/Users/milby/Developer/HyperXTalk/ide/Toolset/palettes/revrestore.livecode",
+      "fileName": "ide/Toolset/palettes/revrestore.livecode",
       "id": "1006",
       "liveResizing": false,
       "name": "revRestore",

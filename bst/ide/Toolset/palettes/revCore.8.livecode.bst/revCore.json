@@ -119,7 +119,7 @@
       "longID": "stack \"revCore\"",
       "properties": {
          "decorations": "default",
-         "fileName": "/Users/milby/Developer/HyperXTalk/ide/Toolset/palettes/revCore.8.livecode",
+         "fileName": "ide/Toolset/palettes/revCore.8.livecode",
          "id": "1022",
          "liveResizing": false,
          "name": "revCore",

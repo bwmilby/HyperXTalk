@@ -45,7 +45,7 @@
       },
       "longID": "stack \"com.livecode.pi.timezone\"",
       "properties": {
-         "fileName": "/Users/milby/Developer/HyperXTalk/ide/Toolset/palettes/inspector/editors/com.livecode.pi.timezone.livecode",
+         "fileName": "ide/Toolset/palettes/inspector/editors/com.livecode.pi.timezone.livecode",
          "id": "1014",
          "name": "com.livecode.pi.timezone",
          "rect": "882,155,1282,555"

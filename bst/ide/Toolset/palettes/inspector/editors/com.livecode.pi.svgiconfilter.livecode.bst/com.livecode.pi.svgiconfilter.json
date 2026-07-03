@@ -107,7 +107,7 @@
       },
       "longID": "stack \"com.livecode.pi.svgiconfilter\"",
       "properties": {
-         "fileName": "/Users/milby/Developer/HyperXTalk/ide/Toolset/palettes/inspector/editors/com.livecode.pi.svgiconfilter.livecode",
+         "fileName": "ide/Toolset/palettes/inspector/editors/com.livecode.pi.svgiconfilter.livecode",
          "id": "1014",
          "name": "com.livecode.pi.svgiconfilter",
          "rect": "256,113,556,447",

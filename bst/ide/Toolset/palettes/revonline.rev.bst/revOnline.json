@@ -9259,7 +9259,7 @@
                      "4012187": {
                         "#name": "image \"topBanner\"",
                         "properties": {
-                           "fileName": "/Users/panos/Desktop/github/livecode/ide/Toolset/resources/community/ideSkin/revOnline-top.png",
+                           "fileName": "panos/Desktop/github/livecode/ide/Toolset/resources/community/ideSkin/revOnline-top.png",
                            "id": "4012187",
                            "layer": "472",
                            "name": "topBanner",
@@ -12704,7 +12704,7 @@
       "properties": {
          "backColor": "255,255,255",
          "behavior": "stack \"revOnlineStackBehavior\"",
-         "fileName": "/Users/milby/Developer/HyperXTalk/ide/Toolset/palettes/revonline.rev",
+         "fileName": "ide/Toolset/palettes/revonline.rev",
          "foreColor": "50,50,50",
          "id": "4036871",
          "maxHeight": "1000",

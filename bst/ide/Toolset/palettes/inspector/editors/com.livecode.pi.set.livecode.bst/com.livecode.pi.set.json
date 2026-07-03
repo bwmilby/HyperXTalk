@@ -55,7 +55,7 @@
       },
       "longID": "stack \"com.livecode.pi.set\"",
       "properties": {
-         "fileName": "/Users/milby/Developer/HyperXTalk/ide/Toolset/palettes/inspector/editors/com.livecode.pi.set.livecode",
+         "fileName": "ide/Toolset/palettes/inspector/editors/com.livecode.pi.set.livecode",
          "id": "1016",
          "name": "com.livecode.pi.set",
          "rect": "669,378,1069,778"

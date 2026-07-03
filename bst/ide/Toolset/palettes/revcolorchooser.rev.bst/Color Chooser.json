@@ -765,7 +765,7 @@
       "properties": {
          "bottomColor": "172,172,172",
          "decorations": "default",
-         "fileName": "/Users/milby/Developer/HyperXTalk/ide/Toolset/palettes/revcolorchooser.rev",
+         "fileName": "ide/Toolset/palettes/revcolorchooser.rev",
          "id": "1209",
          "liveResizing": false,
          "name": "Color Chooser",

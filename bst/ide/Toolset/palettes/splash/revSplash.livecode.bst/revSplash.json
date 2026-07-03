@@ -204,7 +204,7 @@
          "backColor": "0,0,0",
          "behavior": "stack \"revSplashStackBehavior\"",
          "decorations": null,
-         "fileName": "/Users/milby/Developer/HyperXTalk/ide/Toolset/palettes/splash/revSplash.livecode",
+         "fileName": "ide/Toolset/palettes/splash/revSplash.livecode",
          "id": "225108",
          "liveResizing": false,
          "name": "revSplash",

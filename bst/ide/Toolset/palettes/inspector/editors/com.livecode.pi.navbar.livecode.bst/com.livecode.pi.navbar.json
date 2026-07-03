@@ -76,7 +76,7 @@
       },
       "longID": "stack \"com.livecode.pi.navbar\"",
       "properties": {
-         "fileName": "/Users/milby/Developer/HyperXTalk/ide/Toolset/palettes/inspector/editors/com.livecode.pi.navbar.livecode",
+         "fileName": "ide/Toolset/palettes/inspector/editors/com.livecode.pi.navbar.livecode",
          "id": "1005",
          "name": "com.livecode.pi.navbar",
          "rect": "1589,376,2051,890"

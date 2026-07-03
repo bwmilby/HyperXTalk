@@ -15852,7 +15852,7 @@
       "longID": "stack \"livecodeTestInterface\"",
       "properties": {
          "backColor": "255,255,255",
-         "fileName": "/Users/milby/Developer/HyperXTalk/ide/Plugins-removed/livecodeTestInterface.livecode",
+         "fileName": "ide/Plugins-removed/livecodeTestInterface.livecode",
          "id": "419212",
          "liveResizing": false,
          "minHeight": "750",

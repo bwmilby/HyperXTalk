@@ -557,7 +557,7 @@
       "properties": {
          "backColor": "lightblue",
          "decorations": "default",
-         "fileName": "/Users/milby/Developer/HyperXTalk/ide/Toolset/palettes/revcursors.rev",
+         "fileName": "ide/Toolset/palettes/revcursors.rev",
          "id": "1133",
          "liveResizing": false,
          "name": "revCursors",

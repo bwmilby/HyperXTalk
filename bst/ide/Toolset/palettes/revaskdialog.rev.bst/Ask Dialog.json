@@ -193,7 +193,7 @@
          "bottomColor": "128,128,128",
          "decorations": "default",
          "destroyWindow": true,
-         "fileName": "/Users/milby/Developer/HyperXTalk/ide/Toolset/palettes/revaskdialog.rev",
+         "fileName": "ide/Toolset/palettes/revaskdialog.rev",
          "foreColor": "0,0,0",
          "id": "1132",
          "liveResizing": false,

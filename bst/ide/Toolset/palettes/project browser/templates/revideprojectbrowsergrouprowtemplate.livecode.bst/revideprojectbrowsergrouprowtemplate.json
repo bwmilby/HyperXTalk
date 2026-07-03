@@ -879,7 +879,7 @@
       },
       "longID": "stack \"revideprojectbrowsergrouprowtemplate\"",
       "properties": {
-         "fileName": "/Users/milby/Developer/HyperXTalk/ide/Toolset/palettes/project browser/templates/revideprojectbrowsergrouprowtemplate.livecode",
+         "fileName": "ide/Toolset/palettes/project browser/templates/revideprojectbrowsergrouprowtemplate.livecode",
          "id": "1107",
          "name": "revideprojectbrowsergrouprowtemplate",
          "rect": "238,201,638,601",

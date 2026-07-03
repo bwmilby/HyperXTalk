@@ -2954,7 +2954,7 @@
       "longID": "stack \"revPreferencesGUI\"",
       "properties": {
          "backColor": "#323232",
-         "fileName": "/Users/milby/Developer/HyperXTalk/ide/Toolset/palettes/revpreferencesgui.rev",
+         "fileName": "ide/Toolset/palettes/revpreferencesgui.rev",
          "foreColor": "#ffffff",
          "id": "1176",
          "name": "revPreferencesGUI",

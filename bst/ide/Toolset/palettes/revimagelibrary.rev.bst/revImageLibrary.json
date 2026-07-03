@@ -1437,7 +1437,7 @@
       "properties": {
          "alwaysBuffer": true,
          "decorations": "default",
-         "fileName": "/Users/milby/Developer/HyperXTalk/ide/Toolset/palettes/revimagelibrary.rev",
+         "fileName": "ide/Toolset/palettes/revimagelibrary.rev",
          "id": "1566",
          "liveResizing": false,
          "maxWidth": "540",

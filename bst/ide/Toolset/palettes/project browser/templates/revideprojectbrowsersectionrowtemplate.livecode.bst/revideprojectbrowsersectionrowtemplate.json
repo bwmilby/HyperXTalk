@@ -242,7 +242,7 @@
       },
       "longID": "stack \"revideprojectbrowsersectionrowtemplate\"",
       "properties": {
-         "fileName": "/Users/milby/Developer/HyperXTalk/ide/Toolset/palettes/project browser/templates/revideprojectbrowsersectionrowtemplate.livecode",
+         "fileName": "ide/Toolset/palettes/project browser/templates/revideprojectbrowsersectionrowtemplate.livecode",
          "id": "1054",
          "name": "revideprojectbrowsersectionrowtemplate",
          "rect": "175,145,575,545",

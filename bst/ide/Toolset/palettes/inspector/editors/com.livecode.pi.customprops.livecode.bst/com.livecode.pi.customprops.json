@@ -269,7 +269,7 @@
       },
       "longID": "stack \"com.livecode.pi.customprops\"",
       "properties": {
-         "fileName": "/Users/milby/Developer/HyperXTalk/ide/Toolset/palettes/inspector/editors/com.livecode.pi.customprops.livecode",
+         "fileName": "ide/Toolset/palettes/inspector/editors/com.livecode.pi.customprops.livecode",
          "formatForPrinting": true,
          "id": "1021",
          "name": "com.livecode.pi.customprops",

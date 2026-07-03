@@ -946,7 +946,7 @@
       "properties": {
          "alwaysBuffer": true,
          "decorations": "default",
-         "fileName": "/Users/milby/Developer/HyperXTalk/ide/Toolset/palettes/revprintdialog.rev",
+         "fileName": "ide/Toolset/palettes/revprintdialog.rev",
          "id": "9395",
          "liveResizing": false,
          "name": "Print Dialog",

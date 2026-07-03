@@ -436,7 +436,7 @@
       "properties": {
          "alwaysBuffer": true,
          "decorations": "title,menu,minimize,close",
-         "fileName": "/Users/milby/Developer/HyperXTalk/ide/Toolset/palettes/revplugineditor.rev",
+         "fileName": "ide/Toolset/palettes/revplugineditor.rev",
          "id": "1098",
          "liveResizing": false,
          "name": "revPlugInEditor",

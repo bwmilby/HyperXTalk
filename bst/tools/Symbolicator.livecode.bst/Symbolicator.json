@@ -74,7 +74,7 @@
       },
       "longID": "stack \"Symbolicator\"",
       "properties": {
-         "fileName": "/Users/milby/Developer/HyperXTalk/tools/Symbolicator.livecode",
+         "fileName": "tools/Symbolicator.livecode",
          "id": "1006",
          "name": "Symbolicator",
          "rect": "170,141,570,541"

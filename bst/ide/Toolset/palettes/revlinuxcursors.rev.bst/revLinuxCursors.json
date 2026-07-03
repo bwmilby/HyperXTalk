@@ -512,7 +512,7 @@
       "properties": {
          "alwaysBuffer": true,
          "decorations": "default",
-         "fileName": "/Users/milby/Developer/HyperXTalk/ide/Toolset/palettes/revlinuxcursors.rev",
+         "fileName": "ide/Toolset/palettes/revlinuxcursors.rev",
          "id": "1067",
          "liveResizing": false,
          "name": "revLinuxCursors",

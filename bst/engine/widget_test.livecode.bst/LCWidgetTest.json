@@ -99,7 +99,7 @@
       },
       "longID": "stack \"LCWidgetTest\"",
       "properties": {
-         "fileName": "/Users/milby/Developer/HyperXTalk/engine/widget_test.livecode",
+         "fileName": "engine/widget_test.livecode",
          "id": "1022",
          "name": "LCWidgetTest",
          "rect": "103,102,908,794"

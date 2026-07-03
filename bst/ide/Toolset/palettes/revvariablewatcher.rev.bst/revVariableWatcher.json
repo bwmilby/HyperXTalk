@@ -386,7 +386,7 @@
          "bottomColor": "172,172,172",
          "decorations": "default",
          "destroyStack": true,
-         "fileName": "/Users/milby/Developer/HyperXTalk/ide/Toolset/palettes/revvariablewatcher.rev",
+         "fileName": "ide/Toolset/palettes/revvariablewatcher.rev",
          "id": "1108",
          "liveResizing": false,
          "minHeight": "160",

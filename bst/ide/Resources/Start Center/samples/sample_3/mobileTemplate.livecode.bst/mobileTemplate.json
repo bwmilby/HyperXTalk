@@ -797,7 +797,7 @@
       "longID": "stack \"mobileTemplate\"",
       "properties": {
          "backColor": "251,249,244",
-         "fileName": "/Users/milby/Developer/HyperXTalk/ide/Resources/Start Center/samples/sample_3/mobileTemplate.livecode",
+         "fileName": "ide/Resources/Start Center/samples/sample_3/mobileTemplate.livecode",
          "foreColor": "0,0,0",
          "id": "2314",
          "name": "mobileTemplate",

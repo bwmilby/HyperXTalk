@@ -1304,7 +1304,7 @@
       "longID": "stack \"Resources\"",
       "properties": {
          "decorations": "default",
-         "fileName": "/Users/milby/Developer/HyperXTalk/builder/tools_installer_resources.rev",
+         "fileName": "builder/tools_installer_resources.rev",
          "id": "1186",
          "liveResizing": false,
          "name": "Resources",

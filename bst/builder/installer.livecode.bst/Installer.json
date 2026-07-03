@@ -36,7 +36,7 @@
       "properties": {
          "behavior": "stack \"InstallerStackBehavior\"",
          "decorations": "default",
-         "fileName": "/Users/milby/Developer/HyperXTalk/builder/installer.livecode",
+         "fileName": "builder/installer.livecode",
          "id": "1183",
          "liveResizing": false,
          "name": "Installer",

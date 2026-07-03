@@ -46,7 +46,7 @@
       "properties": {
          "decorations": null,
          "destroyWindow": true,
-         "fileName": "/Users/milby/Developer/HyperXTalk/ide/Toolset/palettes/revsaving.livecode",
+         "fileName": "ide/Toolset/palettes/revsaving.livecode",
          "id": "1005",
          "liveResizing": false,
          "name": "revSaving",

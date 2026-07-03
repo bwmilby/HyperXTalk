@@ -641,7 +641,7 @@
       "properties": {
          "alwaysBuffer": true,
          "decorations": "default",
-         "fileName": "/Users/milby/Developer/HyperXTalk/ide/Toolset/palettes/revpagesetupdialog.rev",
+         "fileName": "ide/Toolset/palettes/revpagesetupdialog.rev",
          "id": "4926",
          "liveResizing": false,
          "name": "Page Setup Dialog",

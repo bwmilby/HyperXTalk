@@ -209,7 +209,7 @@
       },
       "longID": "stack \"com.livecode.pi.datagridcolumns\"",
       "properties": {
-         "fileName": "/Users/milby/Developer/HyperXTalk/ide/Toolset/palettes/inspector/editors/com.livecode.pi.datagridcolumns.livecode",
+         "fileName": "ide/Toolset/palettes/inspector/editors/com.livecode.pi.datagridcolumns.livecode",
          "id": "1078",
          "name": "com.livecode.pi.datagridcolumns",
          "rect": "1432,242,1997,879"

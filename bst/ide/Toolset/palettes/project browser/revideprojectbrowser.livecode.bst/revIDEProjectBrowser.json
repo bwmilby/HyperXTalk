@@ -18511,7 +18511,7 @@
                   "#name": "image \"trash-up.png\"",
                   "properties": {
                      "alwaysBuffer": true,
-                     "fileName": "/Users/emily-elizabethhoward/Developer/HyperXTalk/ide/Toolset/resources/supporting_files/images/trash-up.png",
+                     "fileName": "emily-elizabethhoward/Developer/HyperXTalk/ide/Toolset/resources/supporting_files/images/trash-up.png",
                      "id": "137867",
                      "layer": "1",
                      "name": "trash-up.png",
@@ -18523,7 +18523,7 @@
                   "#name": "image \"trash-off.png\"",
                   "properties": {
                      "alwaysBuffer": true,
-                     "fileName": "/Users/emily-elizabethhoward/Developer/HyperXTalk/ide/Toolset/resources/supporting_files/images/trash-off.png",
+                     "fileName": "emily-elizabethhoward/Developer/HyperXTalk/ide/Toolset/resources/supporting_files/images/trash-off.png",
                      "id": "137868",
                      "layer": "2",
                      "name": "trash-off.png",
@@ -18535,7 +18535,7 @@
                   "#name": "image \"new-off.png\"",
                   "properties": {
                      "alwaysBuffer": true,
-                     "fileName": "/Users/emily-elizabethhoward/Developer/HyperXTalk/ide/Toolset/resources/supporting_files/images/new-off.png",
+                     "fileName": "emily-elizabethhoward/Developer/HyperXTalk/ide/Toolset/resources/supporting_files/images/new-off.png",
                      "id": "137869",
                      "layer": "3",
                      "name": "new-off.png",
@@ -18547,7 +18547,7 @@
                   "#name": "image \"new_on.png\"",
                   "properties": {
                      "alwaysBuffer": true,
-                     "fileName": "/Users/emily-elizabethhoward/Developer/HyperXTalk/ide/Toolset/resources/supporting_files/images/new_on.png",
+                     "fileName": "emily-elizabethhoward/Developer/HyperXTalk/ide/Toolset/resources/supporting_files/images/new_on.png",
                      "id": "137870",
                      "layer": "4",
                      "name": "new_on.png",
@@ -18559,7 +18559,7 @@
                   "#name": "image \"clone.png\"",
                   "properties": {
                      "alwaysBuffer": true,
-                     "fileName": "/Users/emily-elizabethhoward/Developer/HyperXTalk/ide/Toolset/resources/supporting_files/images/clone.png.png",
+                     "fileName": "emily-elizabethhoward/Developer/HyperXTalk/ide/Toolset/resources/supporting_files/images/clone.png.png",
                      "id": "137871",
                      "layer": "5",
                      "name": "clone.png",
@@ -18571,7 +18571,7 @@
                   "#name": "image \"clone-off.png\"",
                   "properties": {
                      "alwaysBuffer": true,
-                     "fileName": "/Users/emily-elizabethhoward/Developer/HyperXTalk/ide/Toolset/resources/supporting_files/images/clone-off.png",
+                     "fileName": "emily-elizabethhoward/Developer/HyperXTalk/ide/Toolset/resources/supporting_files/images/clone-off.png",
                      "id": "137872",
                      "layer": "6",
                      "name": "clone-off.png",
@@ -18583,7 +18583,7 @@
                   "#name": "image \"group-off.png\"",
                   "properties": {
                      "alwaysBuffer": true,
-                     "fileName": "/Users/emily-elizabethhoward/Developer/HyperXTalk/ide/Toolset/resources/supporting_files/images/group-off.png",
+                     "fileName": "emily-elizabethhoward/Developer/HyperXTalk/ide/Toolset/resources/supporting_files/images/group-off.png",
                      "id": "137873",
                      "layer": "7",
                      "name": "group-off.png",
@@ -18595,7 +18595,7 @@
                   "#name": "image \"group-up.png\"",
                   "properties": {
                      "alwaysBuffer": true,
-                     "fileName": "/Users/emily-elizabethhoward/Developer/HyperXTalk/ide/Toolset/resources/supporting_files/images/group-up.png",
+                     "fileName": "emily-elizabethhoward/Developer/HyperXTalk/ide/Toolset/resources/supporting_files/images/group-up.png",
                      "id": "137874",
                      "layer": "8",
                      "name": "group-up.png",
@@ -18607,7 +18607,7 @@
                   "#name": "image \"cantSelect_off\"",
                   "properties": {
                      "alwaysBuffer": true,
-                     "fileName": "/Users/emily-elizabethhoward/Developer/HyperXTalk/ide/Toolset/resources/supporting_files/images/cantSelect_off.png",
+                     "fileName": "emily-elizabethhoward/Developer/HyperXTalk/ide/Toolset/resources/supporting_files/images/cantSelect_off.png",
                      "id": "137875",
                      "layer": "9",
                      "name": "cantSelect_off",
@@ -18619,7 +18619,7 @@
                   "#name": "image \"cantSelect_on\"",
                   "properties": {
                      "alwaysBuffer": true,
-                     "fileName": "/Users/emily-elizabethhoward/Developer/HyperXTalk/ide/Toolset/resources/supporting_files/images/cantSelect_on.png",
+                     "fileName": "emily-elizabethhoward/Developer/HyperXTalk/ide/Toolset/resources/supporting_files/images/cantSelect_on.png",
                      "id": "137876",
                      "layer": "10",
                      "name": "cantSelect_on",
@@ -18631,7 +18631,7 @@
                   "#name": "image \"visible_off\"",
                   "properties": {
                      "alwaysBuffer": true,
-                     "fileName": "/Users/emily-elizabethhoward/Developer/HyperXTalk/ide/Toolset/resources/supporting_files/images/visible_off.png",
+                     "fileName": "emily-elizabethhoward/Developer/HyperXTalk/ide/Toolset/resources/supporting_files/images/visible_off.png",
                      "id": "137877",
                      "layer": "11",
                      "name": "visible_off",
@@ -18643,7 +18643,7 @@
                   "#name": "image \"visible_on\"",
                   "properties": {
                      "alwaysBuffer": true,
-                     "fileName": "/Users/emily-elizabethhoward/Developer/HyperXTalk/ide/Toolset/resources/supporting_files/images/visible_on.png",
+                     "fileName": "emily-elizabethhoward/Developer/HyperXTalk/ide/Toolset/resources/supporting_files/images/visible_on.png",
                      "id": "137878",
                      "layer": "12",
                      "name": "visible_on",
@@ -18655,7 +18655,7 @@
                   "#name": "image \"space-vertical.png\"",
                   "properties": {
                      "alwaysBuffer": true,
-                     "fileName": "/Users/emily-elizabethhoward/Developer/HyperXTalk/ide/Toolset/resources/supporting_files/images/space-vertical.png",
+                     "fileName": "emily-elizabethhoward/Developer/HyperXTalk/ide/Toolset/resources/supporting_files/images/space-vertical.png",
                      "id": "137879",
                      "layer": "13",
                      "name": "space-vertical.png",
@@ -18666,7 +18666,7 @@
                   "#name": "image \"space-horizontal.png\"",
                   "properties": {
                      "alwaysBuffer": true,
-                     "fileName": "/Users/emily-elizabethhoward/Developer/HyperXTalk/ide/Toolset/resources/supporting_files/images/space-horizontal.png",
+                     "fileName": "emily-elizabethhoward/Developer/HyperXTalk/ide/Toolset/resources/supporting_files/images/space-horizontal.png",
                      "id": "137880",
                      "layer": "14",
                      "name": "space-horizontal.png",
@@ -18677,7 +18677,7 @@
                   "#name": "image \"equalize-width.png\"",
                   "properties": {
                      "alwaysBuffer": true,
-                     "fileName": "/Users/emily-elizabethhoward/Developer/HyperXTalk/ide/Toolset/resources/supporting_files/images/equalize-width.png",
+                     "fileName": "emily-elizabethhoward/Developer/HyperXTalk/ide/Toolset/resources/supporting_files/images/equalize-width.png",
                      "id": "137881",
                      "layer": "15",
                      "name": "equalize-width.png",
@@ -18688,7 +18688,7 @@
                   "#name": "image \"equalize-rect.png\"",
                   "properties": {
                      "alwaysBuffer": true,
-                     "fileName": "/Users/emily-elizabethhoward/Developer/HyperXTalk/ide/Toolset/resources/supporting_files/images/equalize-rect.png",
+                     "fileName": "emily-elizabethhoward/Developer/HyperXTalk/ide/Toolset/resources/supporting_files/images/equalize-rect.png",
                      "id": "137882",
                      "layer": "16",
                      "name": "equalize-rect.png",
@@ -18699,7 +18699,7 @@
                   "#name": "image \"equalize-height.png\"",
                   "properties": {
                      "alwaysBuffer": true,
-                     "fileName": "/Users/emily-elizabethhoward/Developer/HyperXTalk/ide/Toolset/resources/supporting_files/images/equalize-height.png",
+                     "fileName": "emily-elizabethhoward/Developer/HyperXTalk/ide/Toolset/resources/supporting_files/images/equalize-height.png",
                      "id": "137883",
                      "layer": "17",
                      "name": "equalize-height.png",
@@ -18710,7 +18710,7 @@
                   "#name": "image \"align-top.png\"",
                   "properties": {
                      "alwaysBuffer": true,
-                     "fileName": "/Users/emily-elizabethhoward/Developer/HyperXTalk/ide/Toolset/resources/supporting_files/images/align-top.png",
+                     "fileName": "emily-elizabethhoward/Developer/HyperXTalk/ide/Toolset/resources/supporting_files/images/align-top.png",
                      "id": "137884",
                      "layer": "18",
                      "name": "align-top.png",
@@ -18721,7 +18721,7 @@
                   "#name": "image \"align-middle.png\"",
                   "properties": {
                      "alwaysBuffer": true,
-                     "fileName": "/Users/emily-elizabethhoward/Developer/HyperXTalk/ide/Toolset/resources/supporting_files/images/align-middle.png",
+                     "fileName": "emily-elizabethhoward/Developer/HyperXTalk/ide/Toolset/resources/supporting_files/images/align-middle.png",
                      "id": "137885",
                      "layer": "19",
                      "name": "align-middle.png",
@@ -18732,7 +18732,7 @@
                   "#name": "image \"align-center.png\"",
                   "properties": {
                      "alwaysBuffer": true,
-                     "fileName": "/Users/emily-elizabethhoward/Developer/HyperXTalk/ide/Toolset/resources/supporting_files/images/align-center.png",
+                     "fileName": "emily-elizabethhoward/Developer/HyperXTalk/ide/Toolset/resources/supporting_files/images/align-center.png",
                      "id": "137886",
                      "layer": "20",
                      "name": "align-center.png",
@@ -18743,7 +18743,7 @@
                   "#name": "image \"align-bottom.png\"",
                   "properties": {
                      "alwaysBuffer": true,
-                     "fileName": "/Users/emily-elizabethhoward/Developer/HyperXTalk/ide/Toolset/resources/supporting_files/images/align-bottom.png",
+                     "fileName": "emily-elizabethhoward/Developer/HyperXTalk/ide/Toolset/resources/supporting_files/images/align-bottom.png",
                      "id": "137887",
                      "layer": "21",
                      "name": "align-bottom.png",
@@ -18768,7 +18768,7 @@
                   "#name": "image \"align-left.png\"",
                   "properties": {
                      "alwaysBuffer": true,
-                     "fileName": "/Users/emily-elizabethhoward/Developer/HyperXTalk/ide/Toolset/resources/supporting_files/images/align-left.png",
+                     "fileName": "emily-elizabethhoward/Developer/HyperXTalk/ide/Toolset/resources/supporting_files/images/align-left.png",
                      "id": "137889",
                      "layer": "23",
                      "name": "align-left.png",
@@ -18799,7 +18799,7 @@
                   },
                   "properties": {
                      "borderWidth": "0",
-                     "fileName": "/Users/emily-elizabethhoward/Developer/HyperXTalk/ide/Toolset/resources/supporting_files/images/vertical.png",
+                     "fileName": "emily-elizabethhoward/Developer/HyperXTalk/ide/Toolset/resources/supporting_files/images/vertical.png",
                      "id": "500001",
                      "layer": "30",
                      "name": "vertical",
@@ -18839,7 +18839,7 @@
                   "#name": "image \"group.png\"",
                   "properties": {
                      "alwaysBuffer": true,
-                     "fileName": "/Users/emily-elizabethhoward/Developer/HyperXTalk/ide/Toolset/resources/supporting_files/images/group.png",
+                     "fileName": "emily-elizabethhoward/Developer/HyperXTalk/ide/Toolset/resources/supporting_files/images/group.png",
                      "id": "751172",
                      "layer": "27",
                      "name": "group.png",
@@ -18851,7 +18851,7 @@
                   "#name": "image \"card.png\"",
                   "properties": {
                      "alwaysBuffer": true,
-                     "fileName": "/Users/emily-elizabethhoward/Developer/HyperXTalk/ide/Toolset/resources/supporting_files/images/card.png.png",
+                     "fileName": "emily-elizabethhoward/Developer/HyperXTalk/ide/Toolset/resources/supporting_files/images/card.png.png",
                      "id": "751173",
                      "layer": "28",
                      "name": "card.png",
@@ -18863,7 +18863,7 @@
                   "#name": "image \"stack.png\"",
                   "properties": {
                      "alwaysBuffer": true,
-                     "fileName": "/Users/emily-elizabethhoward/Developer/HyperXTalk/ide/Toolset/resources/supporting_files/images/stack.png",
+                     "fileName": "emily-elizabethhoward/Developer/HyperXTalk/ide/Toolset/resources/supporting_files/images/stack.png",
                      "id": "751174",
                      "layer": "29",
                      "name": "stack.png",
@@ -18878,7 +18878,7 @@
                   },
                   "properties": {
                      "borderWidth": "0",
-                     "fileName": "/Users/emily-elizabethhoward/Developer/HyperXTalk/ide/Toolset/resources/supporting_files/images/childContracted.png",
+                     "fileName": "emily-elizabethhoward/Developer/HyperXTalk/ide/Toolset/resources/supporting_files/images/childContracted.png",
                      "id": "772479",
                      "layer": "31",
                      "name": "childContracted",
@@ -18893,7 +18893,7 @@
                   },
                   "properties": {
                      "borderWidth": "0",
-                     "fileName": "/Users/emily-elizabethhoward/Developer/HyperXTalk/ide/Toolset/resources/supporting_files/images/childExpanded.png",
+                     "fileName": "emily-elizabethhoward/Developer/HyperXTalk/ide/Toolset/resources/supporting_files/images/childExpanded.png",
                      "id": "772480",
                      "layer": "32",
                      "name": "childExpanded",
@@ -18908,7 +18908,7 @@
                   },
                   "properties": {
                      "borderWidth": "0",
-                     "fileName": "/Users/emily-elizabethhoward/Developer/HyperXTalk/ide/Toolset/resources/supporting_files/images/corner.png",
+                     "fileName": "emily-elizabethhoward/Developer/HyperXTalk/ide/Toolset/resources/supporting_files/images/corner.png",
                      "id": "772481",
                      "layer": "33",
                      "name": "corner",
@@ -18923,7 +18923,7 @@
                   },
                   "properties": {
                      "borderWidth": "0",
-                     "fileName": "/Users/emily-elizabethhoward/Developer/HyperXTalk/ide/Toolset/resources/supporting_files/images/branch.png",
+                     "fileName": "emily-elizabethhoward/Developer/HyperXTalk/ide/Toolset/resources/supporting_files/images/branch.png",
                      "id": "772482",
                      "layer": "34",
                      "name": "branch",
@@ -18938,7 +18938,7 @@
                   },
                   "properties": {
                      "borderWidth": "0",
-                     "fileName": "/Users/emily-elizabethhoward/Developer/HyperXTalk/ide/Toolset/resources/supporting_files/images/cantExpand.png",
+                     "fileName": "emily-elizabethhoward/Developer/HyperXTalk/ide/Toolset/resources/supporting_files/images/cantExpand.png",
                      "id": "772483",
                      "layer": "35",
                      "name": "cantExpand",
@@ -18953,7 +18953,7 @@
                   },
                   "properties": {
                      "borderWidth": "0",
-                     "fileName": "/Users/emily-elizabethhoward/Developer/HyperXTalk/ide/Toolset/resources/supporting_files/images/stackContracted.png",
+                     "fileName": "emily-elizabethhoward/Developer/HyperXTalk/ide/Toolset/resources/supporting_files/images/stackContracted.png",
                      "id": "772484",
                      "layer": "36",
                      "name": "stackContracted",
@@ -18968,7 +18968,7 @@
                   },
                   "properties": {
                      "borderWidth": "0",
-                     "fileName": "/Users/emily-elizabethhoward/Developer/HyperXTalk/ide/Toolset/resources/supporting_files/images/stackExpanded.png",
+                     "fileName": "emily-elizabethhoward/Developer/HyperXTalk/ide/Toolset/resources/supporting_files/images/stackExpanded.png",
                      "id": "772506",
                      "layer": "37",
                      "lockLoc": true,
@@ -18981,7 +18981,7 @@
                   "#name": "image \"graphic.png\"",
                   "properties": {
                      "alwaysBuffer": true,
-                     "fileName": "/Users/emily-elizabethhoward/Developer/HyperXTalk/ide/Toolset/resources/supporting_files/images/graphic.png",
+                     "fileName": "emily-elizabethhoward/Developer/HyperXTalk/ide/Toolset/resources/supporting_files/images/graphic.png",
                      "id": "780821",
                      "layer": "38",
                      "name": "graphic.png",
@@ -18993,7 +18993,7 @@
                   "#name": "image \"horizontal\"",
                   "properties": {
                      "alwaysBuffer": true,
-                     "fileName": "/Users/emily-elizabethhoward/Developer/HyperXTalk/ide/Toolset/resources/supporting_files/images/horizontal.png",
+                     "fileName": "emily-elizabethhoward/Developer/HyperXTalk/ide/Toolset/resources/supporting_files/images/horizontal.png",
                      "id": "793006",
                      "layer": "39",
                      "name": "horizontal",
@@ -19004,7 +19004,7 @@
                   "#name": "image \"back scripts\"",
                   "properties": {
                      "alwaysBuffer": true,
-                     "fileName": "/Users/emily-elizabethhoward/Developer/HyperXTalk/ide/Toolset/resources/supporting_files/images/back scripts.png",
+                     "fileName": "emily-elizabethhoward/Developer/HyperXTalk/ide/Toolset/resources/supporting_files/images/back scripts.png",
                      "id": "814994",
                      "layer": "40",
                      "name": "back scripts",
@@ -19016,7 +19016,7 @@
                   "#name": "image \"front scripts\"",
                   "properties": {
                      "alwaysBuffer": true,
-                     "fileName": "/Users/emily-elizabethhoward/Developer/HyperXTalk/ide/Toolset/resources/supporting_files/images/front scripts.png",
+                     "fileName": "emily-elizabethhoward/Developer/HyperXTalk/ide/Toolset/resources/supporting_files/images/front scripts.png",
                      "id": "814995",
                      "layer": "41",
                      "name": "front scripts",
@@ -19028,7 +19028,7 @@
                   "#name": "image \"Stacks in use\"",
                   "properties": {
                      "alwaysBuffer": true,
-                     "fileName": "/Users/emily-elizabethhoward/Developer/HyperXTalk/ide/Toolset/resources/supporting_files/images/Stacks in use.png",
+                     "fileName": "emily-elizabethhoward/Developer/HyperXTalk/ide/Toolset/resources/supporting_files/images/Stacks in use.png",
                      "id": "814996",
                      "layer": "42",
                      "name": "Stacks in use",
@@ -19040,7 +19040,7 @@
                   "#name": "image \"field.png\"",
                   "properties": {
                      "alwaysBuffer": true,
-                     "fileName": "/Users/emily-elizabethhoward/Developer/HyperXTalk/ide/Toolset/resources/supporting_files/images/field.png.png",
+                     "fileName": "emily-elizabethhoward/Developer/HyperXTalk/ide/Toolset/resources/supporting_files/images/field.png.png",
                      "id": "826147",
                      "layer": "43",
                      "name": "field.png",
@@ -19052,7 +19052,7 @@
                   "#name": "image \"scrollbar.png\"",
                   "properties": {
                      "alwaysBuffer": true,
-                     "fileName": "/Users/emily-elizabethhoward/Developer/HyperXTalk/ide/Toolset/resources/supporting_files/images/scrollbar.png",
+                     "fileName": "emily-elizabethhoward/Developer/HyperXTalk/ide/Toolset/resources/supporting_files/images/scrollbar.png",
                      "id": "826148",
                      "layer": "44",
                      "name": "scrollbar.png",
@@ -19064,7 +19064,7 @@
                   "#name": "image \"player.png\"",
                   "properties": {
                      "alwaysBuffer": true,
-                     "fileName": "/Users/emily-elizabethhoward/Developer/HyperXTalk/ide/Toolset/resources/supporting_files/images/player.png",
+                     "fileName": "emily-elizabethhoward/Developer/HyperXTalk/ide/Toolset/resources/supporting_files/images/player.png",
                      "id": "826149",
                      "layer": "45",
                      "name": "player.png",
@@ -19076,7 +19076,7 @@
                   "#name": "image \"image.png\"",
                   "properties": {
                      "alwaysBuffer": true,
-                     "fileName": "/Users/emily-elizabethhoward/Developer/HyperXTalk/ide/Toolset/resources/supporting_files/images/image.png",
+                     "fileName": "emily-elizabethhoward/Developer/HyperXTalk/ide/Toolset/resources/supporting_files/images/image.png",
                      "id": "826150",
                      "layer": "46",
                      "name": "image.png",
@@ -19088,7 +19088,7 @@
                   "#name": "image \"button.png\"",
                   "properties": {
                      "alwaysBuffer": true,
-                     "fileName": "/Users/emily-elizabethhoward/Developer/HyperXTalk/ide/Toolset/resources/supporting_files/images/button.png.png",
+                     "fileName": "emily-elizabethhoward/Developer/HyperXTalk/ide/Toolset/resources/supporting_files/images/button.png.png",
                      "id": "826151",
                      "layer": "47",
                      "name": "button.png",
@@ -19100,7 +19100,7 @@
                   "#name": "image \"group.png\"",
                   "properties": {
                      "alwaysBuffer": true,
-                     "fileName": "/Users/emily-elizabethhoward/Developer/HyperXTalk/ide/Toolset/resources/supporting_files/images/group.png",
+                     "fileName": "emily-elizabethhoward/Developer/HyperXTalk/ide/Toolset/resources/supporting_files/images/group.png",
                      "id": "826152",
                      "layer": "48",
                      "name": "group.png",
@@ -19112,7 +19112,7 @@
                   "#name": "image \"substack.png\"",
                   "properties": {
                      "alwaysBuffer": true,
-                     "fileName": "/Users/emily-elizabethhoward/Developer/HyperXTalk/ide/Toolset/resources/supporting_files/images/substack.png",
+                     "fileName": "emily-elizabethhoward/Developer/HyperXTalk/ide/Toolset/resources/supporting_files/images/substack.png",
                      "id": "854519",
                      "layer": "49",
                      "name": "substack.png",
@@ -19124,7 +19124,7 @@
                   "#name": "image \"audioclip.png\"",
                   "properties": {
                      "alwaysBuffer": true,
-                     "fileName": "/Users/emily-elizabethhoward/Developer/HyperXTalk/ide/Toolset/resources/supporting_files/images/audioclip.png",
+                     "fileName": "emily-elizabethhoward/Developer/HyperXTalk/ide/Toolset/resources/supporting_files/images/audioclip.png",
                      "id": "877632",
                      "layer": "50",
                      "name": "audioclip.png",
@@ -19136,7 +19136,7 @@
                   "#name": "image \"videoclip.png\"",
                   "properties": {
                      "alwaysBuffer": true,
-                     "fileName": "/Users/emily-elizabethhoward/Developer/HyperXTalk/ide/Toolset/resources/supporting_files/images/videoclip.png",
+                     "fileName": "emily-elizabethhoward/Developer/HyperXTalk/ide/Toolset/resources/supporting_files/images/videoclip.png",
                      "id": "877633",
                      "layer": "51",
                      "name": "videoclip.png",
@@ -19148,7 +19148,7 @@
                   "#name": "image \"videoclips\"",
                   "properties": {
                      "alwaysBuffer": true,
-                     "fileName": "/Users/emily-elizabethhoward/Developer/HyperXTalk/ide/Toolset/resources/supporting_files/images/videoclips.png",
+                     "fileName": "emily-elizabethhoward/Developer/HyperXTalk/ide/Toolset/resources/supporting_files/images/videoclips.png",
                      "id": "877805",
                      "layer": "52",
                      "name": "videoclips",
@@ -19160,7 +19160,7 @@
                   "#name": "image \"audioclips\"",
                   "properties": {
                      "alwaysBuffer": true,
-                     "fileName": "/Users/emily-elizabethhoward/Developer/HyperXTalk/ide/Toolset/resources/supporting_files/images/audioclips.png",
+                     "fileName": "emily-elizabethhoward/Developer/HyperXTalk/ide/Toolset/resources/supporting_files/images/audioclips.png",
                      "id": "877806",
                      "layer": "53",
                      "name": "audioclips",
@@ -19172,7 +19172,7 @@
                   "#name": "image \"back script\"",
                   "properties": {
                      "alwaysBuffer": true,
-                     "fileName": "/Users/emily-elizabethhoward/Developer/HyperXTalk/ide/Toolset/resources/supporting_files/images/back script.png",
+                     "fileName": "emily-elizabethhoward/Developer/HyperXTalk/ide/Toolset/resources/supporting_files/images/back script.png",
                      "id": "884997",
                      "layer": "54",
                      "name": "back script",
@@ -19184,7 +19184,7 @@
                   "#name": "image \"front script\"",
                   "properties": {
                      "alwaysBuffer": true,
-                     "fileName": "/Users/emily-elizabethhoward/Developer/HyperXTalk/ide/Toolset/resources/supporting_files/images/front script.png",
+                     "fileName": "emily-elizabethhoward/Developer/HyperXTalk/ide/Toolset/resources/supporting_files/images/front script.png",
                      "id": "884998",
                      "layer": "55",
                      "name": "front script",
@@ -19196,7 +19196,7 @@
                   "#name": "image \"Library stack\"",
                   "properties": {
                      "alwaysBuffer": true,
-                     "fileName": "/Users/emily-elizabethhoward/Developer/HyperXTalk/ide/Toolset/resources/supporting_files/images/Library stack.png",
+                     "fileName": "emily-elizabethhoward/Developer/HyperXTalk/ide/Toolset/resources/supporting_files/images/Library stack.png",
                      "id": "884999",
                      "layer": "56",
                      "name": "Library stack",
@@ -19223,7 +19223,7 @@
                   "#name": "image \"widget.png\"",
                   "properties": {
                      "alwaysBuffer": true,
-                     "fileName": "/Users/emily-elizabethhoward/Developer/HyperXTalk/ide/Toolset/resources/supporting_files/images/widget.png",
+                     "fileName": "emily-elizabethhoward/Developer/HyperXTalk/ide/Toolset/resources/supporting_files/images/widget.png",
                      "id": "944653",
                      "layer": "58",
                      "name": "widget.png",
@@ -20099,7 +20099,7 @@
          "backColor": "#323232",
          "behavior": "stack \"revProjectBrowserBehavior\"",
          "decorations": "title,menu,minimize,close",
-         "fileName": "/Users/milby/Developer/HyperXTalk/ide/Toolset/palettes/project browser/revideprojectbrowser.livecode",
+         "fileName": "ide/Toolset/palettes/project browser/revideprojectbrowser.livecode",
          "foreColor": "#ffffff",
          "id": "959040",
          "minWidth": "326",

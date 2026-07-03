@@ -879,7 +879,7 @@
       "properties": {
          "alwaysBuffer": true,
          "decorations": "default",
-         "fileName": "/Users/milby/Developer/HyperXTalk/ide/Toolset/palettes/revdatagridlibrary.rev",
+         "fileName": "ide/Toolset/palettes/revdatagridlibrary.rev",
          "id": "1176",
          "liveResizing": false,
          "name": "revDataGridLibrary",

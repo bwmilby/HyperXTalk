@@ -909,7 +909,7 @@
       "longID": "stack \"revOnlineLibrary\"",
       "properties": {
          "decorations": "default",
-         "fileName": "/Users/milby/Developer/HyperXTalk/ide/Toolset/palettes/revonlinelibrary.rev",
+         "fileName": "ide/Toolset/palettes/revonlinelibrary.rev",
          "id": "1014",
          "liveResizing": false,
          "name": "revOnlineLibrary",

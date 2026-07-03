@@ -664,7 +664,7 @@
       "longID": "stack \"revExtensionBuilder\"",
       "properties": {
          "behavior": "stack \"revExtensionBuilderBehavior\"",
-         "fileName": "/Users/milby/Developer/HyperXTalk/ide/Toolset/palettes/extension builder/revextensionbuilder.livecode",
+         "fileName": "ide/Toolset/palettes/extension builder/revextensionbuilder.livecode",
          "id": "1613",
          "minHeight": "400",
          "minWidth": "116",

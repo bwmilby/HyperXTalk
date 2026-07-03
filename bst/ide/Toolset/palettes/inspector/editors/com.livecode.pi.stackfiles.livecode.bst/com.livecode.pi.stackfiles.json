@@ -193,7 +193,7 @@
       },
       "longID": "stack \"com.livecode.pi.stackfiles\"",
       "properties": {
-         "fileName": "/Users/milby/Developer/HyperXTalk/ide/Toolset/palettes/inspector/editors/com.livecode.pi.stackfiles.livecode",
+         "fileName": "ide/Toolset/palettes/inspector/editors/com.livecode.pi.stackfiles.livecode",
          "id": "1013",
          "name": "com.livecode.pi.stackfiles",
          "rect": "592,176,1232,745"

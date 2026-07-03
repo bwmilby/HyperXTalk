@@ -175,7 +175,7 @@
       },
       "longID": "stack \"com.livecode.pi.nudge\"",
       "properties": {
-         "fileName": "/Users/milby/Developer/HyperXTalk/ide/Toolset/palettes/inspector/editors/com.livecode.pi.nudge.livecode",
+         "fileName": "ide/Toolset/palettes/inspector/editors/com.livecode.pi.nudge.livecode",
          "id": "1045",
          "name": "com.livecode.pi.nudge",
          "rect": "109,293,392,492"

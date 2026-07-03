@@ -162,7 +162,7 @@
       "longID": "stack \"SyntaxCaravanAssistant\"",
       "properties": {
          "decorations": "default",
-         "fileName": "/Users/milby/Developer/HyperXTalk/tools/legacyexec_compare.livecode",
+         "fileName": "tools/legacyexec_compare.livecode",
          "id": "1025",
          "liveResizing": false,
          "name": "SyntaxCaravanAssistant",

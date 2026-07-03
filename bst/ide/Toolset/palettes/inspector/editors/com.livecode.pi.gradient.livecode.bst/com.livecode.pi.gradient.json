@@ -64,7 +64,7 @@
       },
       "longID": "stack \"com.livecode.pi.gradient\"",
       "properties": {
-         "fileName": "/Users/milby/Developer/HyperXTalk/ide/Toolset/palettes/inspector/editors/com.livecode.pi.gradient.livecode",
+         "fileName": "ide/Toolset/palettes/inspector/editors/com.livecode.pi.gradient.livecode",
          "id": "1008",
          "name": "com.livecode.pi.gradient",
          "rect": "615,454,1015,854"

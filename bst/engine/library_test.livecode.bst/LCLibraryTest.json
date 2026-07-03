@@ -84,7 +84,7 @@
       },
       "longID": "stack \"LCLibraryTest\"",
       "properties": {
-         "fileName": "/Users/milby/Developer/HyperXTalk/engine/library_test.livecode",
+         "fileName": "engine/library_test.livecode",
          "id": "1010",
          "name": "LCLibraryTest",
          "rect": "104,109,504,509"

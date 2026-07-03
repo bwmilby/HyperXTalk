@@ -179,7 +179,7 @@
       },
       "longID": "stack \"com.livecode.pi.filelist\"",
       "properties": {
-         "fileName": "/Users/milby/Developer/HyperXTalk/ide/Toolset/palettes/inspector/editors/com.livecode.pi.filelist.livecode",
+         "fileName": "ide/Toolset/palettes/inspector/editors/com.livecode.pi.filelist.livecode",
          "id": "1019",
          "name": "com.livecode.pi.filelist",
          "rect": "1145,210,2174,643"

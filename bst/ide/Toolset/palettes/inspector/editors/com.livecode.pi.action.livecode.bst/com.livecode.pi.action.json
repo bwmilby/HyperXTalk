@@ -50,7 +50,7 @@
       },
       "longID": "stack \"com.livecode.pi.action\"",
       "properties": {
-         "fileName": "/Users/milby/Developer/HyperXTalk/ide/Toolset/palettes/inspector/editors/com.livecode.pi.action.livecode",
+         "fileName": "ide/Toolset/palettes/inspector/editors/com.livecode.pi.action.livecode",
          "id": "1004",
          "name": "com.livecode.pi.action",
          "rect": "287,186,687,586"

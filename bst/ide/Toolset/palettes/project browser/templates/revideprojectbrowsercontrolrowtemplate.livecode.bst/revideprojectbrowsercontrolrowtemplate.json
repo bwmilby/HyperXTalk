@@ -948,7 +948,7 @@
       },
       "longID": "stack \"revideprojectbrowsercontrolrowtemplate\"",
       "properties": {
-         "fileName": "/Users/milby/Developer/HyperXTalk/ide/Toolset/palettes/project browser/templates/revideprojectbrowsercontrolrowtemplate.livecode",
+         "fileName": "ide/Toolset/palettes/project browser/templates/revideprojectbrowsercontrolrowtemplate.livecode",
          "id": "1056",
          "name": "revideprojectbrowsercontrolrowtemplate",
          "rect": "354,210,754,610",

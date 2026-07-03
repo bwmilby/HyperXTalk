@@ -217,7 +217,7 @@
       },
       "longID": "stack \"com.livecode.pi.relayer\"",
       "properties": {
-         "fileName": "/Users/milby/Developer/HyperXTalk/ide/Toolset/palettes/inspector/editors/com.livecode.pi.relayer.livecode",
+         "fileName": "ide/Toolset/palettes/inspector/editors/com.livecode.pi.relayer.livecode",
          "id": "1034",
          "name": "com.livecode.pi.relayer",
          "rect": "449,115,763,268"

@@ -841,7 +841,7 @@
       "properties": {
          "alwaysBuffer": true,
          "decorations": "default",
-         "fileName": "/Users/milby/Developer/HyperXTalk/ide/Plugins-removed/Navigator.rev",
+         "fileName": "ide/Plugins-removed/Navigator.rev",
          "id": "1192",
          "liveResizing": false,
          "name": "revNavigator",

@@ -111,7 +111,7 @@
       },
       "longID": "stack \"com.livecode.pi.decorations\"",
       "properties": {
-         "fileName": "/Users/milby/Developer/HyperXTalk/ide/Toolset/palettes/inspector/editors/com.livecode.pi.decorations.livecode",
+         "fileName": "ide/Toolset/palettes/inspector/editors/com.livecode.pi.decorations.livecode",
          "id": "1005",
          "name": "com.livecode.pi.decorations",
          "rect": "245,109,645,509"

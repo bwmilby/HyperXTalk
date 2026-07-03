@@ -9600,7 +9600,7 @@
          "cantModify": true,
          "decorations": "title,minimize,close",
          "destroyStack": true,
-         "fileName": "/Users/milby/Developer/HyperXTalk/ide/Documentation/rev/Color Names Reference.rev",
+         "fileName": "ide/Documentation/rev/Color Names Reference.rev",
          "foreColor": "0,0,0",
          "hiliteColor": "102,102,102",
          "id": "2809",

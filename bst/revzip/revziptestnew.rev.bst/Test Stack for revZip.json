@@ -138,7 +138,7 @@
          "alwaysBuffer": true,
          "decorations": "default",
          "externals": "/Users/mark/Desktop/externals/_build/Release/revzip.bundle",
-         "fileName": "/Users/milby/Developer/HyperXTalk/revzip/revziptestnew.rev",
+         "fileName": "revzip/revziptestnew.rev",
          "id": "1028",
          "liveResizing": false,
          "name": "Test Stack for revZip",

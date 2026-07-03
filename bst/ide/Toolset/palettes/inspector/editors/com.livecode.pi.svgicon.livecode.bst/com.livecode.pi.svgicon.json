@@ -47,7 +47,7 @@
       },
       "longID": "stack \"com.livecode.pi.svgicon\"",
       "properties": {
-         "fileName": "/Users/milby/Developer/HyperXTalk/ide/Toolset/palettes/inspector/editors/com.livecode.pi.svgicon.livecode",
+         "fileName": "ide/Toolset/palettes/inspector/editors/com.livecode.pi.svgicon.livecode",
          "id": "1004",
          "name": "com.livecode.pi.svgicon",
          "rect": "903,236,1303,636"

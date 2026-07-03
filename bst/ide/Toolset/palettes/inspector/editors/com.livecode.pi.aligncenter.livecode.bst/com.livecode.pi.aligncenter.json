@@ -200,7 +200,7 @@
       },
       "longID": "stack \"com.livecode.pi.aligncenter\"",
       "properties": {
-         "fileName": "/Users/milby/Developer/HyperXTalk/ide/Toolset/palettes/inspector/editors/com.livecode.pi.aligncenter.livecode",
+         "fileName": "ide/Toolset/palettes/inspector/editors/com.livecode.pi.aligncenter.livecode",
          "id": "1006",
          "name": "com.livecode.pi.aligncenter",
          "rect": "158,371,424,592"

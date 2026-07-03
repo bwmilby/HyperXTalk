@@ -1437,7 +1437,7 @@
       "properties": {
          "alwaysBuffer": true,
          "decorations": "default",
-         "fileName": "/Users/milby/Developer/HyperXTalk/ide/Toolset/palettes/reviconchooser.rev",
+         "fileName": "ide/Toolset/palettes/reviconchooser.rev",
          "id": "1079",
          "liveResizing": false,
          "name": "revIconChooser",

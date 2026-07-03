@@ -981,7 +981,7 @@
       "longID": "stack \"balloon\"",
       "properties": {
          "decorations": "default",
-         "fileName": "/Users/milby/Developer/HyperXTalk/ide/Resources/Start Center/samples/sample_4/balloon.livecode",
+         "fileName": "ide/Resources/Start Center/samples/sample_4/balloon.livecode",
          "id": "1083",
          "liveResizing": false,
          "name": "balloon",

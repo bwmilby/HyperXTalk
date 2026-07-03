@@ -54,7 +54,7 @@
       },
       "longID": "stack \"com.livecode.pi.dgcolumnbehavior\"",
       "properties": {
-         "fileName": "/Users/milby/Developer/HyperXTalk/ide/Toolset/palettes/inspector/editors/com.livecode.pi.dgcolumnbehavior.livecode",
+         "fileName": "ide/Toolset/palettes/inspector/editors/com.livecode.pi.dgcolumnbehavior.livecode",
          "id": "1005",
          "name": "com.livecode.pi.dgcolumnbehavior",
          "rect": "1424,283,1824,683"

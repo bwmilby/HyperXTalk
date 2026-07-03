@@ -41,7 +41,7 @@
       },
       "longID": "stack \"com.livecode.pi.editorList\"",
       "properties": {
-         "fileName": "/Users/milby/Developer/HyperXTalk/ide/Toolset/palettes/inspector/editors/com.livecode.pi.editorlist.livecode",
+         "fileName": "ide/Toolset/palettes/inspector/editors/com.livecode.pi.editorlist.livecode",
          "id": "1012",
          "name": "com.livecode.pi.editorList",
          "rect": "365,175,955,478"

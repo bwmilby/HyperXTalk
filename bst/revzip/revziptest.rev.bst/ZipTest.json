@@ -152,7 +152,7 @@
          "alwaysBuffer": true,
          "decorations": "default",
          "externals": "/Users/mark/Desktop/externals/_build/Release/revzip.bundle",
-         "fileName": "/Users/milby/Developer/HyperXTalk/revzip/revziptest.rev",
+         "fileName": "revzip/revziptest.rev",
          "id": "1022",
          "liveResizing": false,
          "name": "ZipTest",

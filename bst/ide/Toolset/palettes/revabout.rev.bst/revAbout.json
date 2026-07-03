@@ -195,7 +195,7 @@
          "alwaysBuffer": true,
          "backColor": "0,0,0",
          "decorations": "title,menu,close",
-         "fileName": "/Users/milby/Developer/HyperXTalk/ide/Toolset/palettes/revabout.rev",
+         "fileName": "ide/Toolset/palettes/revabout.rev",
          "foreColor": "0,0,0",
          "id": "102264",
          "liveResizing": false,

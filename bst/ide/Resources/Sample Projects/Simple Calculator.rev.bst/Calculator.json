@@ -219,10 +219,10 @@
                         "#name": "button \"-\"",
                         "properties": {
                            "id": "1023",
-                           "label": ,
-                           "-layer": "20",
-                           "name": ,
-                           "-rect": "129,93,163,127",
+                           "label": "-",
+                           "layer": "20",
+                           "name": "-",
+                           "rect": "129,93,163,127",
                            "style": "rectangle"
                         }
                      },
@@ -298,7 +298,7 @@
       "longID": "stack \"Calculator\"",
       "properties": {
          "alwaysBuffer": true,
-         "fileName": "/Users/milby/Developer/HyperXTalk/ide/Resources/Sample Projects/Simple Calculator.rev",
+         "fileName": "ide/Resources/Sample Projects/Simple Calculator.rev",
          "id": "1032",
          "liveResizing": false,
          "name": "Calculator",

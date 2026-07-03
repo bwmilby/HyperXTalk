@@ -92,7 +92,7 @@
       "longID": "stack \"Unicode Table Maker\"",
       "properties": {
          "decorations": "default",
-         "fileName": "/Users/milby/Developer/HyperXTalk/engine/unicode_tables.rev",
+         "fileName": "engine/unicode_tables.rev",
          "id": "1015",
          "liveResizing": false,
          "name": "Unicode Table Maker",

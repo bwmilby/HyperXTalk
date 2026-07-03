@@ -359,7 +359,7 @@
       "longID": "stack \"Builder\"",
       "properties": {
          "decorations": "default",
-         "fileName": "/Users/milby/Developer/HyperXTalk/builder/builder.rev",
+         "fileName": "builder/builder.rev",
          "id": "1066",
          "liveResizing": false,
          "name": "Builder",

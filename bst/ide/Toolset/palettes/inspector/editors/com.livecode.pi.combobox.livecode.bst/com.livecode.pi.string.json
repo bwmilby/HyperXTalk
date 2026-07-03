@@ -54,7 +54,7 @@
       },
       "longID": "stack \"com.livecode.pi.string\"",
       "properties": {
-         "fileName": "/Users/milby/Developer/HyperXTalk/ide/Toolset/palettes/inspector/editors/com.livecode.pi.combobox.livecode",
+         "fileName": "ide/Toolset/palettes/inspector/editors/com.livecode.pi.combobox.livecode",
          "id": "1005",
          "name": "com.livecode.pi.string",
          "rect": "1078,582,1478,982"

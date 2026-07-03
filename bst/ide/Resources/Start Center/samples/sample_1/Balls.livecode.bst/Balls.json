@@ -543,7 +543,7 @@
       "properties": {
          "backColor": "255,255,255",
          "decorations": "default",
-         "fileName": "/Users/milby/Developer/HyperXTalk/ide/Resources/Start Center/samples/sample_1/Balls.livecode",
+         "fileName": "ide/Resources/Start Center/samples/sample_1/Balls.livecode",
          "id": "14189",
          "liveResizing": false,
          "name": "Balls",

@@ -3695,7 +3695,7 @@
       "longID": "stack \"revGettingStartedScripts\"",
       "properties": {
          "decorations": "default",
-         "fileName": "/Users/milby/Developer/HyperXTalk/ide/Documentation/rev/scripts.rev",
+         "fileName": "ide/Documentation/rev/scripts.rev",
          "id": "1271",
          "linkColor": "0,0,0",
          "linkHiliteColor": "255,0,0",

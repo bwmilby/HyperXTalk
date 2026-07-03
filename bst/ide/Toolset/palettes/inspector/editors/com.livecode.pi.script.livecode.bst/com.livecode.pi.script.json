@@ -96,7 +96,7 @@
       },
       "longID": "stack \"com.livecode.pi.script\"",
       "properties": {
-         "fileName": "/Users/milby/Developer/HyperXTalk/ide/Toolset/palettes/inspector/editors/com.livecode.pi.script.livecode",
+         "fileName": "ide/Toolset/palettes/inspector/editors/com.livecode.pi.script.livecode",
          "id": "1012",
          "name": "com.livecode.pi.script",
          "rect": "728,681,1128,1081"

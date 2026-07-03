@@ -10459,7 +10459,7 @@
          "backColor": "#ececec",
          "behavior": "stack \"revStandaloneSettingsBehavior\"",
          "decorations": "title,menu,minimize,close",
-         "fileName": "/Users/milby/Developer/HyperXTalk/ide/Toolset/palettes/standalone settings/revstandalonesettings.8.rev",
+         "fileName": "ide/Toolset/palettes/standalone settings/revstandalonesettings.8.rev",
          "foreColor": "#000000",
          "id": "32931",
          "liveResizing": false,

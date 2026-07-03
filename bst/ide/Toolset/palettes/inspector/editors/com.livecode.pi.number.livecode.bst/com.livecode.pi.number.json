@@ -90,7 +90,7 @@
       },
       "longID": "stack \"com.livecode.pi.number\"",
       "properties": {
-         "fileName": "/Users/milby/Developer/HyperXTalk/ide/Toolset/palettes/inspector/editors/com.livecode.pi.number.livecode",
+         "fileName": "ide/Toolset/palettes/inspector/editors/com.livecode.pi.number.livecode",
          "id": "1007",
          "name": "com.livecode.pi.number",
          "rect": "1747,567,2147,967"

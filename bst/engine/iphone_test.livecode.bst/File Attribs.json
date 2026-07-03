@@ -7266,7 +7266,7 @@
       },
       "longID": "stack \"File Attribs\"",
       "properties": {
-         "fileName": "/Users/milby/Developer/HyperXTalk/engine/iphone_test.livecode",
+         "fileName": "engine/iphone_test.livecode",
          "id": "1908",
          "liveResizing": false,
          "name": "File Attribs",

@@ -265,7 +265,7 @@
       "longID": "stack \"Docs Helper\"",
       "properties": {
          "behavior": "stack \"revPaletteBehavior\"",
-         "fileName": "/Users/milby/Developer/HyperXTalk/ide/Documentation/Docs Helper.livecode",
+         "fileName": "ide/Documentation/Docs Helper.livecode",
          "id": "1017",
          "minWidth": "53",
          "name": "Docs Helper",

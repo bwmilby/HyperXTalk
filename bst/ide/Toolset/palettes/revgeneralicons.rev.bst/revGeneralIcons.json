@@ -1460,7 +1460,7 @@
       "longID": "stack \"revGeneralIcons\"",
       "properties": {
          "decorations": "default",
-         "fileName": "/Users/milby/Developer/HyperXTalk/ide/Toolset/palettes/revgeneralicons.rev",
+         "fileName": "ide/Toolset/palettes/revgeneralicons.rev",
          "id": "210114",
          "liveResizing": false,
          "name": "revGeneralIcons",

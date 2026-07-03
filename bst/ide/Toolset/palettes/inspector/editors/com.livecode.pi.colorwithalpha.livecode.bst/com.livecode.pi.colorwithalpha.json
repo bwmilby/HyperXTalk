@@ -71,7 +71,7 @@
       },
       "longID": "stack \"com.livecode.pi.colorwithalpha\"",
       "properties": {
-         "fileName": "/Users/milby/Developer/HyperXTalk/ide/Toolset/palettes/inspector/editors/com.livecode.pi.colorwithalpha.livecode",
+         "fileName": "ide/Toolset/palettes/inspector/editors/com.livecode.pi.colorwithalpha.livecode",
          "id": "1013",
          "name": "com.livecode.pi.colorwithalpha",
          "rect": "793,327,1148,714"

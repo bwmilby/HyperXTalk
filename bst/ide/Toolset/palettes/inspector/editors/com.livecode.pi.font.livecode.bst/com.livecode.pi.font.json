@@ -47,7 +47,7 @@
       },
       "longID": "stack \"com.livecode.pi.font\"",
       "properties": {
-         "fileName": "/Users/milby/Developer/HyperXTalk/ide/Toolset/palettes/inspector/editors/com.livecode.pi.font.livecode",
+         "fileName": "ide/Toolset/palettes/inspector/editors/com.livecode.pi.font.livecode",
          "id": "1016",
          "name": "com.livecode.pi.font",
          "rect": "207,215,607,615"

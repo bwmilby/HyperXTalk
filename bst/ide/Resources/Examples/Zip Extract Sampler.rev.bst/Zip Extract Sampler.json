@@ -129,7 +129,7 @@
       "properties": {
          "alwaysBuffer": true,
          "decorations": "default",
-         "fileName": "/Users/milby/Developer/HyperXTalk/ide/Resources/Examples/Zip Extract Sampler.rev",
+         "fileName": "ide/Resources/Examples/Zip Extract Sampler.rev",
          "id": "1009",
          "liveResizing": false,
          "name": "Zip Extract Sampler",

@@ -47,7 +47,7 @@
       },
       "longID": "stack \"com.livecode.pi.enum\"",
       "properties": {
-         "fileName": "/Users/milby/Developer/HyperXTalk/ide/Toolset/palettes/inspector/editors/com.livecode.pi.enum.livecode",
+         "fileName": "ide/Toolset/palettes/inspector/editors/com.livecode.pi.enum.livecode",
          "id": "1013",
          "name": "com.livecode.pi.enum",
          "rect": "1451,495,1851,895"

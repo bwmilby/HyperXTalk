@@ -207,7 +207,7 @@
          "bottomColor": "172,172,172",
          "decorations": "title,close",
          "destroyWindow": true,
-         "fileName": "/Users/milby/Developer/HyperXTalk/ide/Resources/Sample Projects/Video Capture.rev",
+         "fileName": "ide/Resources/Sample Projects/Video Capture.rev",
          "id": "1037",
          "liveResizing": false,
          "name": "Video Capture",

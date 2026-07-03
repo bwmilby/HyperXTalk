@@ -67,7 +67,7 @@
       },
       "longID": "stack \"com.livecode.pi.radiogroup\"",
       "properties": {
-         "fileName": "/Users/milby/Developer/HyperXTalk/ide/Toolset/palettes/inspector/editors/com.livecode.pi.radiogroup.livecode",
+         "fileName": "ide/Toolset/palettes/inspector/editors/com.livecode.pi.radiogroup.livecode",
          "id": "1013",
          "name": "com.livecode.pi.radiogroup",
          "rect": "579,110,979,510"

@@ -94,7 +94,7 @@
       },
       "longID": "stack \"com.livecode.pi.point\"",
       "properties": {
-         "fileName": "/Users/milby/Developer/HyperXTalk/ide/Toolset/palettes/inspector/editors/com.livecode.pi.point.livecode",
+         "fileName": "ide/Toolset/palettes/inspector/editors/com.livecode.pi.point.livecode",
          "id": "1009",
          "name": "com.livecode.pi.point",
          "rect": "442,300,842,700"

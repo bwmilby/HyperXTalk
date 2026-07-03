@@ -153,7 +153,7 @@
       "properties": {
          "bottomColor": "128,128,128",
          "decorations": "default",
-         "fileName": "/Users/milby/Developer/HyperXTalk/ide/Toolset/palettes/revmessagewatcher.rev",
+         "fileName": "ide/Toolset/palettes/revmessagewatcher.rev",
          "id": "1016",
          "liveResizing": false,
          "minHeight": "165",

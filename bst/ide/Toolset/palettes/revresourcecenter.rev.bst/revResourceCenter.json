@@ -69123,7 +69123,7 @@
                "788442": {
                   "#name": "image \"topBanner\"",
                   "properties": {
-                     "fileName": "/Users/panos/Desktop/github/livecode/ide/Toolset/resources/community/ideSkin/resource-center-top.png",
+                     "fileName": "panos/Desktop/github/livecode/ide/Toolset/resources/community/ideSkin/resource-center-top.png",
                      "id": "788442",
                      "layer": "2",
                      "name": "topBanner",
@@ -69137,7 +69137,7 @@
                   },
                   "properties": {
                      "borderWidth": "0",
-                     "fileName": "/Users/panos/Desktop/github/livecode/ide/Toolset/resources/community/ideSkin/resource-center-bottom.png",
+                     "fileName": "panos/Desktop/github/livecode/ide/Toolset/resources/community/ideSkin/resource-center-bottom.png",
                      "id": "788443",
                      "layer": "3",
                      "name": "footer",
@@ -69148,7 +69148,7 @@
                "794619": {
                   "#name": "image \"topTitle\"",
                   "properties": {
-                     "fileName": "/Users/panos/Desktop/github/livecode/ide/Toolset/resources/community/ideSkin/resource-center-title.png",
+                     "fileName": "panos/Desktop/github/livecode/ide/Toolset/resources/community/ideSkin/resource-center-title.png",
                      "id": "794619",
                      "layer": "704",
                      "name": "topTitle",
@@ -69297,7 +69297,7 @@
                      "borderWidth": "2",
                      "cantSelect": false,
                      "disabled": false,
-                     "fileName": "/Users/laura/Documents/My Revolution Enterprise/Resources/Video Tutorials/free_variables.avi",
+                     "fileName": "laura/Documents/My Revolution Enterprise/Resources/Video Tutorials/free_variables.avi",
                      "id": "433724",
                      "ink": "srcCopy",
                      "layer": "705",
@@ -100173,7 +100173,7 @@
       "properties": {
          "alwaysBuffer": true,
          "backColor": "255,255,255",
-         "fileName": "/Users/milby/Developer/HyperXTalk/ide/Toolset/palettes/revresourcecenter.rev",
+         "fileName": "ide/Toolset/palettes/revresourcecenter.rev",
          "id": "813838",
          "liveResizing": false,
          "minHeight": "450",

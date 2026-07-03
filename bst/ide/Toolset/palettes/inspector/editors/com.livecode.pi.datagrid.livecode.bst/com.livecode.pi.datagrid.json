@@ -93,7 +93,7 @@
       },
       "longID": "stack \"com.livecode.pi.datagrid\"",
       "properties": {
-         "fileName": "/Users/milby/Developer/HyperXTalk/ide/Toolset/palettes/inspector/editors/com.livecode.pi.datagrid.livecode",
+         "fileName": "ide/Toolset/palettes/inspector/editors/com.livecode.pi.datagrid.livecode",
          "id": "1064",
          "name": "com.livecode.pi.datagrid",
          "rect": "664,173,1010,603"

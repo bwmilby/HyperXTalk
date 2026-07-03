@@ -85,7 +85,7 @@
       "properties": {
          "alwaysBuffer": true,
          "decorations": "default",
-         "fileName": "/Users/milby/Developer/HyperXTalk/ide/Toolset/palettes/revaddlibrarystack.livecode",
+         "fileName": "ide/Toolset/palettes/revaddlibrarystack.livecode",
          "id": "1009",
          "liveResizing": false,
          "name": "revAddLibraryStack",

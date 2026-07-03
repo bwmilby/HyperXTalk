@@ -1586,7 +1586,7 @@
       "properties": {
          "alwaysBuffer": true,
          "decorations": "default",
-         "fileName": "/Users/milby/Developer/HyperXTalk/ide/Toolset/palettes/revsearch.rev",
+         "fileName": "ide/Toolset/palettes/revsearch.rev",
          "id": "1397",
          "liveResizing": false,
          "maxWidth": "450",

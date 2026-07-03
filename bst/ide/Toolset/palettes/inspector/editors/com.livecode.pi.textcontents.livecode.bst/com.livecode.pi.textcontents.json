@@ -178,7 +178,7 @@
       },
       "longID": "stack \"com.livecode.pi.textcontents\"",
       "properties": {
-         "fileName": "/Users/milby/Developer/HyperXTalk/ide/Toolset/palettes/inspector/editors/com.livecode.pi.textcontents.livecode",
+         "fileName": "ide/Toolset/palettes/inspector/editors/com.livecode.pi.textcontents.livecode",
          "id": "1014",
          "name": "com.livecode.pi.textcontents",
          "rect": "257,109,657,509"

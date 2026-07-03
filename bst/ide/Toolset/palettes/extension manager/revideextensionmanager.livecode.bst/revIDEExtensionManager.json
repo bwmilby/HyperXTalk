@@ -4108,7 +4108,7 @@
                                           },
                                           "properties": {
                                              "borderWidth": "1",
-                                             "fileName": "/Users/alilloyd/Documents/GitHub/livecode/extensions/widgets/list/support/icon.png",
+                                             "fileName": "alilloyd/Documents/GitHub/livecode/extensions/widgets/list/support/icon.png",
                                              "id": "39634",
                                              "layer": "154",
                                              "name": "icon",
@@ -4960,7 +4960,7 @@
                                           },
                                           "properties": {
                                              "borderWidth": "1",
-                                             "fileName": "/Users/alilloyd/Documents/GitHub/livecode/extensions/widgets/list/support/icon.png",
+                                             "fileName": "alilloyd/Documents/GitHub/livecode/extensions/widgets/list/support/icon.png",
                                              "id": "39682",
                                              "layer": "106",
                                              "name": "icon",
@@ -6174,7 +6174,7 @@
       "properties": {
          "behavior": "stack \"revIDEExtensionManagerBehavior\"",
          "decorations": "title,menu,minimize,close",
-         "fileName": "/Users/milby/Developer/HyperXTalk/ide/Toolset/palettes/extension manager/revideextensionmanager.livecode",
+         "fileName": "ide/Toolset/palettes/extension manager/revideextensionmanager.livecode",
          "id": "39710",
          "minHeight": "350",
          "minWidth": "220",

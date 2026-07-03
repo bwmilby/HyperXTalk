@@ -105,7 +105,7 @@
       "properties": {
          "alwaysBuffer": true,
          "decorations": "default",
-         "fileName": "/Users/milby/Developer/HyperXTalk/ide/Resources/Examples/Relaunch Sampler.rev",
+         "fileName": "ide/Resources/Examples/Relaunch Sampler.rev",
          "id": "1014",
          "liveResizing": false,
          "name": "Relaunch Sampler",

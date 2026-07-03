@@ -215,7 +215,7 @@
       },
       "longID": "stack \"com.livecode.pi.equalize\"",
       "properties": {
-         "fileName": "/Users/milby/Developer/HyperXTalk/ide/Toolset/palettes/inspector/editors/com.livecode.pi.equalize.livecode",
+         "fileName": "ide/Toolset/palettes/inspector/editors/com.livecode.pi.equalize.livecode",
          "id": "1007",
          "name": "com.livecode.pi.equalize",
          "rect": "840,204,1240,604"

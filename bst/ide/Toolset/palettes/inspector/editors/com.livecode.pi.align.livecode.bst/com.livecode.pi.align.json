@@ -379,7 +379,7 @@
       },
       "longID": "stack \"com.livecode.pi.align\"",
       "properties": {
-         "fileName": "/Users/milby/Developer/HyperXTalk/ide/Toolset/palettes/inspector/editors/com.livecode.pi.align.livecode",
+         "fileName": "ide/Toolset/palettes/inspector/editors/com.livecode.pi.align.livecode",
          "id": "1034",
          "name": "com.livecode.pi.align",
          "rect": "693,148,962,313"

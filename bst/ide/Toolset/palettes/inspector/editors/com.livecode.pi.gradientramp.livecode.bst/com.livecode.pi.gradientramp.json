@@ -130,7 +130,7 @@
       },
       "longID": "stack \"com.livecode.pi.gradientramp\"",
       "properties": {
-         "fileName": "/Users/milby/Developer/HyperXTalk/ide/Toolset/palettes/inspector/editors/com.livecode.pi.gradientramp.livecode",
+         "fileName": "ide/Toolset/palettes/inspector/editors/com.livecode.pi.gradientramp.livecode",
          "id": "1016",
          "name": "com.livecode.pi.gradientramp",
          "rect": "790,649,1190,1049"

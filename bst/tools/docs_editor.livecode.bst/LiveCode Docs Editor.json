@@ -2501,7 +2501,7 @@
       "longID": "stack \"LiveCode Docs Editor\"",
       "properties": {
          "decorations": "default",
-         "fileName": "/Users/milby/Developer/HyperXTalk/tools/docs_editor.livecode",
+         "fileName": "tools/docs_editor.livecode",
          "id": "1218",
          "liveResizing": false,
          "name": "LiveCode Docs Editor",

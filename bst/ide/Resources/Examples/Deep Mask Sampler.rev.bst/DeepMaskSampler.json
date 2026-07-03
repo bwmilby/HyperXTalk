@@ -32,7 +32,7 @@
       "properties": {
          "alwaysBuffer": true,
          "decorations": null,
-         "fileName": "/Users/milby/Developer/HyperXTalk/ide/Resources/Examples/Deep Mask Sampler.rev",
+         "fileName": "ide/Resources/Examples/Deep Mask Sampler.rev",
          "id": "1003",
          "liveResizing": false,
          "name": "DeepMaskSampler",

@@ -438,7 +438,7 @@
          "decorations": "default",
          "destroyStack": true,
          "destroyWindow": true,
-         "fileName": "/Users/milby/Developer/HyperXTalk/ide/Toolset/palettes/revgeneralpatterns.rev",
+         "fileName": "ide/Toolset/palettes/revgeneralpatterns.rev",
          "id": "208034",
          "liveResizing": false,
          "name": "revGeneralPatterns",

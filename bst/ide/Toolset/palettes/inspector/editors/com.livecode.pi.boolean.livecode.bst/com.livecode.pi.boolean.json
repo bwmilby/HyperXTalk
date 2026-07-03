@@ -48,7 +48,7 @@
       },
       "longID": "stack \"com.livecode.pi.boolean\"",
       "properties": {
-         "fileName": "/Users/milby/Developer/HyperXTalk/ide/Toolset/palettes/inspector/editors/com.livecode.pi.boolean.livecode",
+         "fileName": "ide/Toolset/palettes/inspector/editors/com.livecode.pi.boolean.livecode",
          "id": "1012",
          "name": "com.livecode.pi.boolean",
          "rect": "1316,420,1716,820"

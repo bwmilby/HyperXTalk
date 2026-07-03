@@ -40,7 +40,7 @@
       },
       "longID": "stack \"com.livecode.pi.color\"",
       "properties": {
-         "fileName": "/Users/milby/Developer/HyperXTalk/ide/Toolset/palettes/inspector/editors/com.livecode.pi.color.livecode",
+         "fileName": "ide/Toolset/palettes/inspector/editors/com.livecode.pi.color.livecode",
          "id": "1009",
          "name": "com.livecode.pi.color",
          "rect": "972,341,1327,728"
