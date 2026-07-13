@@ -4,6 +4,12 @@
 
 LINUX_ARCHS = x86_64 x86 armv6hf armv7
 
+# [[ MDW-2017-05-09 ]] feature_clean_target
+clean-linux-%:
+	rm -rf linux-*-bin
+	rm -rf build-linux-*
+	$(MAKE) clean-common-linux-$*
+
 config-linux-%:
 ifneq ($(TRAVIS),undefined)
 	@echo "travis_fold:start:config"

@@ -42,6 +42,11 @@ prebuilt-mac:
 	@echo ""
 	@echo "=== prebuilt-mac: done. Next: make compile-mac ==="
 
+clean-mac:
+	rm -rf mac-bin
+	rm -rf build-mac
+	$(MAKE) clean-common-mac
+
 config-mac:
 ifneq ($(TRAVIS),undefined)
 	@echo "travis_fold:start:config"

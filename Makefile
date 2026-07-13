@@ -47,12 +47,11 @@ include Makefile.common
 .DEFAULT: all
 
 all: all-$(guess_platform)
+clean: clean-$(guess_platform)
 check: check-$(guess_platform)
 
 # [[ MDW-2017-05-09 ]] feature_clean_target
-clean-linux:
-	rm -rf linux-*-bin
-	rm -rf build-linux-*
+clean-common-%:
 	rm -rf prebuilt/build
 	rm -rf prebuilt/lib
 	find . -name \*.lcb | xargs touch
