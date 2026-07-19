@@ -2062,7 +2062,8 @@ private function revMenubarHelpMenu pContext
 //   put "Sample Scripts" & return after tHelp
 //   put "-" & return after tHelp
 //   put "Beginners Guide" & return after tHelp
-//   put "All Guides" & return after tHelp
+   put "All Guides" & return after tHelp
+   put "!i:text.document " before line -1 of tHelp  -- added RK 7.4.26
 //   put "Tutorials" & return after tHelp
 //   put "-" & return after tHelp
    put "Forums" & return after tHelp
@@ -3386,7 +3387,9 @@ on revMenubarHelpMenuPick pWhich
          revIDELaunchResource tPick
          break
       case "All Guides"
-         revIDEOpenPalette "guide"
+         revIDEGenerateDictionaryHTML "guide"
+         launch url ("file:" & revIDEGetDictionaryUrl("guide"))
+         //revIDEOpenPalette "guide"
          break
          // HXT case "Relicense"
          // HXT revIDEActionRelicense
