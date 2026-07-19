@@ -1420,11 +1420,46 @@ command revSaveAsLinuxStandalone pStack, pRestoreFileName, pFolder, @xStandalone
       
       revStandaloneDeployWithParams tTarget, tStackSourceFile, tDeployInfo
 
-      -- Bundle VLC runtime alongside the binary if the project uses player controls.
-      -- tDirectory ends with a path separator; strip it before passing to the helper.
-      if tNeedsVLC then
-         revSBCopyVLCToStandalone "Linux", char 1 to -2 of tDirectory, tStandalonePath, tNeedsVLC
+      -- Patch RPATH on the deployed binary so it finds bundled VLC libs in lib/.
+      -- This is safe: deploy_linux.cpp has finished embedding the project into
+      -- tStandalonePath; we are patching the OUTPUT binary, not the Standalone
+      -- engine template.  "Bad section order" does not apply here.
+      --
+      -- NOTE: standalone-community is built with -Wl,-rpath,$ORIGIN/lib baked in
+      -- at link time (engine.gyp), so the deployed binary already has the correct
+      -- RPATH.  The patchelf call below is belt-and-suspenders for older binaries
+      -- and is intentionally best-effort: if patchelf is not available, the
+      -- standalone will still work correctly because the link-time RPATH is present.
+      local tPatchelf
+      if revEnvironmentIsInstalled() then
+         -- revEnvironmentRuntimePath() = <tools>/Runtime; strip "/Runtime" to get <tools>
+         local tToolsPath
+         set the itemDelimiter to slash
+         put item 1 to -2 of revEnvironmentRuntimePath() into tToolsPath
+         set the itemDelimiter to comma
+         put tToolsPath & slash & "patchelf" into tPatchelf
+         if there is no file tPatchelf then
+            put "patchelf" into tPatchelf
+         end if
+      else
+         put "patchelf" into tPatchelf
       end if
+      -- Single-quote $ORIGIN so the shell does not expand it as a variable
+      local tSQ
+      put numToChar(39) into tSQ
+      get shell(quote & tPatchelf & quote & " --set-rpath " & tSQ & "$ORIGIN/lib" & tSQ & " " & quote & tStandalonePath & quote & " 2>&1")
+      -- Non-zero exit is non-fatal: the link-time RPATH is already correct.
+      -- Only warn if patchelf was explicitly found but still failed (suggests a
+      -- real ELF issue), not if it simply wasn't installed.
+      if the result is not 0 and tPatchelf is not "patchelf" then
+         revStandaloneAddWarning "patchelf: could not set RPATH on standalone binary. The standalone may still work if built with a recent engine." & return & it
+      end if
+
+      -- Always bundle VLC: the standalone binary links libvlc.so.5 at load time
+      -- (NEEDED entry in the ELF) and will fail to start without it, even when no
+      -- player control is used.  This matches the Windows behaviour.
+      -- tDirectory ends with a path separator; strip it before passing to the helper.
+      revSBCopyVLCToStandalone "Linux", char 1 to -2 of tDirectory, tStandalonePath, tNeedsVLC
 
       --Restore stack to its post-savingStandalone message state
       __RestoreStackFromTemporaryLocation pStack, pRestoreFileName, tOriginalFileName
@@ -2683,116 +2718,12 @@ private command revCopyModule pPlatform, pModuleName, pSourceFile, pSourceFolder
    revAddMapping pPlatform, pModuleName, tTargetModule
 end revCopyModule
 
-private command revCopyCEFResources pPlatform, pStandalonePath, pCopyRevBrowserResources, pCopyLibBrowserResources
-   if not (pCopyRevBrowserResources or pCopyLibBrowserResources) then
-      // No CEF resources required
-      exit revCopyCEFResources
-   end if
-   
-   // IM-2014-08-14: [[ LibCef2062 ]] Reorganisation of libcef framework files
-   local tDetails
-   put revStandalonePlatformDetails(pPlatform) into tDetails
-   local tExternalPath
-   put revExternalPath("Browser", tDetails["platform"], tDetails["architecture"]) into tExternalPath
-   // AL-2015-03-13: [[ Bug 14936 ]] Switch where case takes an expression should not switch on a value
-   local tCurrentLocation, tCEFResources, tCEFDest
-   set the itemdel to slash
-   put item 1 to -2 of pStandalonePath into tCurrentLocation
-   switch
-      case pPlatform begins with "Windows"
-         put (item 1 to -2 of tExternalPath) & "/CEF" into tCEFResources
-         put tCurrentLocation & slash & "Externals/CEF" into tCEFDest
-         
-         revSBEnsureFolder tCEFDest
-         if the result is not empty then
-            revStandaloneAddWarning "Windows, external failed to create folder:" && quote & tCEFDest & quote
-         end if
-         
-         local tCEFFiles
-         // make sure we only copy the required helper process executable
-         put revListFiles(tCEFResources) into tCEFFiles
-         filter lines of tCEFFIles not matching "*.exe"
-         if the last char of tCEFFiles is not return then
-            put return after tCEFFiles
-         end if
-         if pCopyRevBrowserResources then
-            put "revbrowser-cefprocess.exe" & return after tCEFFiles
-         end if
-         if pCopyLibBrowserResources then
-            put "libbrowser-cefprocess.exe" & return after tCEFFiles
-         end if
-         repeat for each line tCEFFile in tCEFFiles
-            revSBCopyFileToFolder tCefResources & slash & tCEFFile, tCEFDest, "revStandaloneProgressCallback", the long id of me
-            if the result is not empty then
-               revStandaloneAddWarning "Windows, external failed to copy:" && quote & tCefResources & slash & tCEFFile & quote
-            end if
-         end repeat
-         
-         revSBCopyFolderToDestination tCefResources & slash & "locales", tCEFDest, "revStandaloneProgressCallback", the long id of me
-         if the result is not empty then
-            revStandaloneAddWarning "Windows, external failed to copy:" && quote & tCefResources & slash & "locales" & quote
-         end if
-         revAddMapping pPlatform, "CEF/libcef", "Externals/CEF/libcef"
-         break
-      case pPlatform contains "Linux"
-         if revEnvironmentIsInstalled() then
-            put (item 1 to -2 of tExternalPath) & "/CEF" into tCEFResources
-         else
-            put (item 1 to -2 of tExternalPath) & "/Externals/CEF" into tCEFResources
-         end if
-         put tCurrentLocation & slash & "Externals/CEF" into tCEFDest
-         
-         revSBEnsureFolder tCEFDest
-         if the result is not empty then
-            revStandaloneAddWarning "Linux, external failed to create folder:" && quote & tCEFDest & quote
-         end if
-         
-         // make sure we only copy the required helper process executable
-         put revListFiles(tCEFResources) into tCEFFiles
-         
-         // Copy files to CEF resource folder.
-         repeat for each line tCEFFile in tCEFFiles
-            revSBCopyFileToFolder tCefResources & slash & tCEFFile, tCEFDest, "revStandaloneProgressCallback", the long id of me
-            if the result is not empty then
-               revStandaloneAddWarning "Linux, external failed to copy:" && quote & tCefResources & slash & tCEFFile & quote
-            end if
-         end repeat
-         
-         revSBCopyFolderToDestination tCefResources & slash & "locales", tCEFDest, "revStandaloneProgressCallback", the long id of me
-         if the result is not empty then
-            revStandaloneAddWarning "Linux, external failed to copy:" && quote & tCefResources & slash & "locales" & quote
-         end if
-         
-         // Copy files to standalone folder
-         put empty into tCEFFiles
-         if pCopyRevBrowserResources then
-            put "revbrowser-cefprocess" & return after tCEFFiles
-         end if
-         if pCopyLibBrowserResources then
-            put "libbrowser-cefprocess" & return after tCEFFiles
-         end if
-         
-         repeat for each line tCEFFile in tCEFFiles
-            revSBCopyFileToFolder tCefResources & slash & ".." & slash & ".." & slash & tCEFFile, tCurrentLocation, "revStandaloneProgressCallback", the long id of me
-            if the result is not empty then
-               revStandaloneAddWarning "Linux, external failed to copy:" && quote & tCefResources & slash & tCEFFile & quote
-            end if
-         end repeat
-         revAddMapping pPlatform, "CEF/libcef", "Externals/CEF/libcef"
-         break
-      default
-         break
-   end switch
-end revCopyCEFResources
-
 private command revCopyExternals pPlatform, pStackFilePath, pEnginePath, pStandalonePath
    local tExternalRes, tColors, tCursorName, tCurrentLocation, tExternalPath, tExternals, tExternalLibrary
    local tCopyFiles, tOrigVisible, tPath, tExternalFile, x, tColor, tPattern, tExternalName
    
    local tScriptLibraries
    put sStandaloneSettingsA["scriptLibraries"] into tScriptLibraries
-   
-   local tAppBundle, tCEFFramework, tCEFResources, tCEFDest
    
    revStandaloneProgress "Copying externals..."
    

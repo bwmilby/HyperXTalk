@@ -10,7 +10,8 @@
 ; ============================================================
 
 #define MyAppName      "HyperXTalk"
-#define MyAppVersion   "0.9.13"
+#define MyAppVersion   "0.9.15"
+#define MyAppVersionUS StringChange(StringChange(MyAppVersion, ".", "_"), "-", "_")
 #define MyAppPublisher "HyperXTalk.com"
 #define MyAppURL       "https://HyperXTalk.com"
 #define MyAppExeName   "HyperXTalk.exe"
@@ -79,6 +80,9 @@ Name: "fileassoc"; \
 
 ; ============================================================
 [Files]
+; ---- Visual C++ redistributable ----
+Source: "redist\VC_redist.x64.exe"; DestDir: "{tmp}"; Flags: deleteafterinstall
+
 ; ---- Main executables ----
 Source: "{#SourceDir}\HyperXTalk.exe";           DestDir: "{app}"; Flags: ignoreversion
 Source: "{#SourceDir}\standalone-community.exe"; DestDir: "{app}"; Flags: ignoreversion
@@ -193,8 +197,6 @@ Source: "..\ide\Externals\Database Drivers\Database Drivers.txt"; \
 ;   {app}\Runtime\Windows\x86-64\Externals
 ;       revExternalPath() reads Externals.txt here to resolve DLL paths when the
 ;       standalone builder copies externals into a Windows standalone.
-Source: "{#SourceDir}\revbrowser.dll"; DestDir: "{app}\Externals";                         Flags: ignoreversion skipifsourcedoesntexist
-Source: "{#SourceDir}\revbrowser.dll"; DestDir: "{app}\Runtime\Windows\x86-64\Externals";  Flags: ignoreversion skipifsourcedoesntexist
 Source: "{#SourceDir}\revdb.dll";      DestDir: "{app}\Externals";                         Flags: ignoreversion
 Source: "{#SourceDir}\revdb.dll";      DestDir: "{app}\Runtime\Windows\x86-64\Externals";  Flags: ignoreversion
 Source: "{#SourceDir}\revxml.dll";     DestDir: "{app}\Externals";                         Flags: ignoreversion
@@ -293,6 +295,12 @@ Source: "..\ide\Documentation\*"; \
     DestDir: "{app}\Documentation"; \
     Flags: ignoreversion recursesubdirs createallsubdirs
 
+; ---- Documentation Cache: html_viewer ----
+; The runtime copies html_viewer via "cp -a" (Unix only) — pre-populate on Windows.
+Source: "..\ide\Documentation\html_viewer\*"; \
+    DestDir: "{localappdata}\HyperXTalk\Documentation Cache\{#MyAppVersionUS}_\html_viewer"; \
+    Flags: ignoreversion recursesubdirs createallsubdirs
+
 ; ---- IDE support libraries (deploy, revliburl, etc.) ----
 Source: "..\ide-support\*"; \
     DestDir: "{app}\ide-support"; \
@@ -365,8 +373,67 @@ Root: HKA; Subkey: "Software\Classes\HyperXTalk.Script\shell\open\command"; \
     ValueType: string; ValueName: ""; ValueData: """{app}\{#MyAppExeName}"" ""%1"""; \
     Tasks: fileassoc
 
+; ---- File association: .livecode ----
+Root: HKA; Subkey: "Software\Classes\.livecode"; \
+    ValueType: string; ValueName: ""; ValueData: "HyperXTalk.LiveCodeStack"; \
+    Flags: uninsdeletevalue; Tasks: fileassoc
+Root: HKA; Subkey: "Software\Classes\HyperXTalk.LiveCodeStack"; \
+    ValueType: string; ValueName: ""; ValueData: "LiveCode Stack"; \
+    Flags: uninsdeletekey; Tasks: fileassoc
+Root: HKA; Subkey: "Software\Classes\HyperXTalk.LiveCodeStack\DefaultIcon"; \
+    ValueType: string; ValueName: ""; ValueData: "{app}\{#MyAppExeName},0"; \
+    Tasks: fileassoc
+Root: HKA; Subkey: "Software\Classes\HyperXTalk.LiveCodeStack\shell\open\command"; \
+    ValueType: string; ValueName: ""; ValueData: """{app}\{#MyAppExeName}"" ""%1"""; \
+    Tasks: fileassoc
+
+; ---- File association: .livecodescript ----
+Root: HKA; Subkey: "Software\Classes\.livecodescript"; \
+    ValueType: string; ValueName: ""; ValueData: "HyperXTalk.LiveCodeScript"; \
+    Flags: uninsdeletevalue; Tasks: fileassoc
+Root: HKA; Subkey: "Software\Classes\HyperXTalk.LiveCodeScript"; \
+    ValueType: string; ValueName: ""; ValueData: "LiveCode Script-only Stack"; \
+    Flags: uninsdeletekey; Tasks: fileassoc
+Root: HKA; Subkey: "Software\Classes\HyperXTalk.LiveCodeScript\DefaultIcon"; \
+    ValueType: string; ValueName: ""; ValueData: "{app}\{#MyAppExeName},0"; \
+    Tasks: fileassoc
+Root: HKA; Subkey: "Software\Classes\HyperXTalk.LiveCodeScript\shell\open\command"; \
+    ValueType: string; ValueName: ""; ValueData: """{app}\{#MyAppExeName}"" ""%1"""; \
+    Tasks: fileassoc
+
+; ---- File association: .rev ----
+Root: HKA; Subkey: "Software\Classes\.rev"; \
+    ValueType: string; ValueName: ""; ValueData: "HyperXTalk.RevStack"; \
+    Flags: uninsdeletevalue; Tasks: fileassoc
+Root: HKA; Subkey: "Software\Classes\HyperXTalk.RevStack"; \
+    ValueType: string; ValueName: ""; ValueData: "Runtime Revolution Stack"; \
+    Flags: uninsdeletekey; Tasks: fileassoc
+Root: HKA; Subkey: "Software\Classes\HyperXTalk.RevStack\DefaultIcon"; \
+    ValueType: string; ValueName: ""; ValueData: "{app}\{#MyAppExeName},0"; \
+    Tasks: fileassoc
+Root: HKA; Subkey: "Software\Classes\HyperXTalk.RevStack\shell\open\command"; \
+    ValueType: string; ValueName: ""; ValueData: """{app}\{#MyAppExeName}"" ""%1"""; \
+    Tasks: fileassoc
+
 ; ============================================================
 [Run]
+Filename: "{tmp}\VC_redist.x64.exe"; \
+    Parameters: "/install /quiet /norestart"; \
+    StatusMsg: "Installing Visual C++ Runtime..."; \
+    Check: VCRedistNeedsInstall
 Filename: "{app}\{#MyAppExeName}"; \
     Description: "{cm:LaunchProgram,{#StringChange(MyAppName, '&', '&&')}}"; \
     Flags: nowait postinstall skipifsilent
+
+[Code]
+function VCRedistNeedsInstall: Boolean;
+var
+  Installed: Cardinal;
+begin
+  // Check for VS 2015-2022 x64 redistributable
+  Result := not RegQueryDWordValue(
+    HKLM,
+    'SOFTWARE\Microsoft\VisualStudio\14.0\VC\Runtimes\x64',
+    'Installed',
+    Installed) or (Installed <> 1);
+end;

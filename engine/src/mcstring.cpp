@@ -1,3 +1,19 @@
+/* Copyright (C) 2003-2015 LiveCode Ltd.
+
+This file is part of LiveCode.
+
+LiveCode is free software; you can redistribute it and/or modify it under
+the terms of the GNU General Public License v3 as published by the Free
+Software Foundation.
+
+LiveCode is distributed in the hope that it will be useful, but WITHOUT ANY
+WARRANTY; without even the implied warranty of MERCHANTABILITY or
+FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License
+for more details.
+
+You should have received a copy of the GNU General Public License
+along with LiveCode.  If not see <http://www.gnu.org/licenses/>.  */
+
 #include "prefix.h"
 
 #include "globdefs.h"
@@ -335,6 +351,7 @@ MCNameRef MCM_close_background;
 MCNameRef MCM_close_card;
 MCNameRef MCM_close_control;
 MCNameRef MCM_close_field;
+MCNameRef MCM_field_validation_failed;
 MCNameRef MCM_close_stack;
 MCNameRef MCM_close_stack_request;
 MCNameRef MCM_color_changed;
@@ -789,6 +806,7 @@ const struct { const char *cstring; MCNameRef *name_var; } kInitialNames[] =
 	{ "closeCard", &MCM_close_card },
 	{ "closeControl", &MCM_close_control },
 	{ "closeField", &MCM_close_field },
+	{ "fieldValidationFailed", &MCM_field_validation_failed },
 	{ "closeStack", &MCM_close_stack },
 	{ "closeStackRequest", &MCM_close_stack_request },
 	{ "colorChanged", &MCM_color_changed },

@@ -338,6 +338,9 @@
 			'src/vclip.cpp',
 			'src/toolbar.cpp',
 			'src/exec-interface-toolbar.cpp',
+				'src/lnx-hotkey.cpp',
+				'src/lnx-hotkey-x11.cpp',
+				'src/lnx-hotkey-portal.cpp',
 			'src/widget.cpp',
 			'src/widget-events.cpp',
             'src/widget-ref.cpp',
@@ -647,6 +650,15 @@
 			'src/mac-battery.mm',
 			'src/w32-battery.cpp',
 
+			# Global hotkeys
+			'src/hotkey.h',
+			'src/hotkey.cpp',
+			'src/lnx-hotkey.cpp',
+			'src/lnx-hotkey-x11.cpp',
+			'src/lnx-hotkey-portal.cpp',
+			'src/mac-hotkey.mm',
+			'src/w32-hotkey.cpp',
+
 			# Credential storage
 			'src/exec-credentials.h',
 			'src/exec-credentials.cpp',
@@ -715,6 +727,8 @@
 			'src/lnxaudio.h',
 			'src/lnxdc.h',
 			'src/lnxflst.h',
+			'src/lnxgtk-compat.h',
+			'src/lnxgtk-window.h',
 			'src/lnxgtkthemedrawing.h',
 			'src/lnximagecache.h',
 			'src/lnxmplayer.h',
@@ -730,6 +744,8 @@
 			'src/lnxdclnx.cpp',
 			'src/lnxdcs.cpp',
 			'src/lnxdnd.cpp',
+			'src/lnxgtk-compat.cpp',
+			'src/lnxgtk-window.cpp',
 			'src/lnxgtktheme.cpp',
 			'src/lnxgtkthemedrawing.cpp',
 			'src/lnximage.cpp',
@@ -740,6 +756,7 @@
 			'src/lnx-activate.cpp',
 			'src/lnx-core-compat.cpp',
 			'src/lnx-fileicon.cpp',
+			'src/lnx-gtk3-direct-stubs.cpp',
 			'src/lnxpsprinter.cpp',
 			'src/lnxspec.cpp',
 			'src/lnxstack.cpp',
@@ -1048,8 +1065,15 @@
 			'src/stacke.cpp',
 			'src/toolbar.cpp',
 			'src/exec-interface-toolbar.cpp',
+				# Platform hotkey backends require the desktop event loop.
+				# hotkey.cpp (cross-platform registry) stays shared.
+				'src/mac-hotkey.mm',
+				'src/w32-hotkey.cpp',
+				'src/lnx-hotkey.cpp',
+				'src/lnx-hotkey-x11.cpp',
+				'src/lnx-hotkey-portal.cpp',
 		],
-		
+
 		# Sources used to implement LCB modules in the engine
 		'engine_module_source_files':
 		[
@@ -1242,10 +1266,11 @@
 						'src/platform-recorder.cpp',
 						'src/platform-surface.cpp',
 						'src/platform-window.cpp',
+						'src/gtk3_direct_stubs.cpp',
 					],
 				},
 			],
-			
+
 			[
 				'OS == "mac"',
 				{
@@ -1258,6 +1283,7 @@
 						'src/tilecachegl.cpp',
 						'src/tilecachegl3.x.cpp',
 						'src/glcontext.cpp',
+						'src/gtk3_direct_stubs.cpp',
 					],
 				},
 			],
