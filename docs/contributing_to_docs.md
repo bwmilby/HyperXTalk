@@ -162,7 +162,7 @@ https://github.com/emily-elizabeth/HyperXTalk/blob/main/docs/dictionary/command/
 
 Either go directly to the community docs branch URL
 (https://github.com/emily-elizabeth/HyperXTalk/tree/main) or if you are 
-on the main LiveCode repository page, select 'main' from the 
+on the main HyperXTalk repository page, select 'main' from the 
 branch dropdown menu:
 
 ![](images/branch-dropdown.png)
