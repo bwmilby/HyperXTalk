@@ -1341,8 +1341,18 @@ on revIDEInitialiseIDELibrary
    ## Load Extensions
    revInternal__LoadLibrary "revideextensionlibrary"
    
+   ## If we are running in development mode, we must set the driver path
+   if the environment is "development" then
+      if revEnvironmentIsInstalled() then
+         revSetDatabaseDriverPath revEnvironmentExternalsPath() & slash & "Database Drivers"
+      else
+         local tDriverPath
+         put revEnvironmentBinariesPath() into tDriverPath
+         revSetDatabaseDriverPath tDriverPath
+      end if
+   end if
+
    ## Regenerate dictionary data
-   revInternal__LoadLibrary "revDatabaseLibrary"
    revIDERegenerateBuiltDictionaryData
    
    ## Initialise property library
