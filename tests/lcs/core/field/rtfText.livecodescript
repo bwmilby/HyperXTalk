@@ -65,7 +65,7 @@ end checkMetadata
 private command setLink pStart, pEnd
    put pStart into sLinkStart
    put pEnd into sLinkEnd
-   set the textStyle of char pStart to pEnd of field "input" to link
+   set the textStyle of char pStart to pEnd of field "input" to "link"
    set the linkText of char pStart to pEnd of field "input" to "www.livecode.com"
 end setLink
 
@@ -73,7 +73,7 @@ private function checkLink
    if sLinkStart is 0 then
       return true
    else
-      return (the textstyle of char sLinkStart to sLinkEnd of field "input" is link \
+      return (the textstyle of char sLinkStart to sLinkEnd of field "input" is "link" \
             and the linkText of char sLinkStart to sLinkEnd of field "input" is "www.livecode.com")
    end if
 end checkLink
